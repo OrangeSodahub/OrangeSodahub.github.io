@@ -1,0 +1,58 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>All Posts - ZonLin</title>
+        <link>https://orangesodahub.github.io/posts/</link>
+        <description>All Posts | ZonLin</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>gzzyyxy@gmail.com (ZonLin)</managingEditor>
+            <webMaster>gzzyyxy@gmail.com (ZonLin)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 07 Mar 2021 14:34:58 &#43;0800</lastBuildDate><atom:link href="https://orangesodahub.github.io/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>DOWNLOAD VIDEO FROM WEBSITE</title>
+    <link>https://orangesodahub.github.io/download-video-from-website/</link>
+    <pubDate>Sun, 07 Mar 2021 14:34:58 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>https://orangesodahub.github.io/download-video-from-website/</guid>
+    <description><![CDATA[https://zhuanlan.zhihu.com/p/142349349]]></description>
+</item><item>
+    <title>HTML</title>
+    <link>https://orangesodahub.github.io/html/</link>
+    <pubDate>Wed, 17 Feb 2021 11:32:39 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>https://orangesodahub.github.io/html/</guid>
+    <description><![CDATA[Something about HTML What is HTML?  HTML is a language used to describe web pages. HTML is Hyper Text Markup Language. Markup language is a set of markup tags. HTML uses markup tags to describe Web pages.  HTML tag HTML markup tags are often referred to as HTML tags.
+ HTML tags are keywords surrounded by Angle brackets, such as &lt;HTML&gt;. HTML tags usually come in pairs, such as &lt;b&gt; and &lt;/b&gt;.]]></description>
+</item><item>
+    <title>HTML/CSS</title>
+    <link>https://orangesodahub.github.io/html-and-css/</link>
+    <pubDate>Wed, 17 Feb 2021 10:52:38 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>https://orangesodahub.github.io/html-and-css/</guid>
+    <description><![CDATA[Brief Introduction Here are some introductions and choose one or more you want to learn.
+HTML HTML stands for Hpertext Markup Language and is the key to the world of Web technology. Click here to learn more about it.
+XHTML XHTML is more rigorous and clean version of HTML. There are the differences between HTML and XHTML, and the advantages of XHTML for you. And, how to upgrade your site to XHTML to help quickly deploy XHTML technology.]]></description>
+</item><item>
+    <title>MARKDOWN-USAGE</title>
+    <link>https://orangesodahub.github.io/markdown-note/</link>
+    <pubDate>Sun, 14 Feb 2021 19:59:50 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>https://orangesodahub.github.io/markdown-note/</guid>
+    <description><![CDATA[Markdown is a lightwight markup language with a compact typographical syntax that allows people to focus more on content than typography. It uses easy-to-read and easy-to-write plain text format to write documents, can be mixed with HTML, can export HTML, PDF and its own .md format files. Markdown is widely used on websites such as Github and Wikipedia, as well as on major blogging platforms like WordPress, Drupal and Short Book because of its simplicity, efficiency, ease of reading and writing.]]></description>
+</item><item>
+    <title>BLOGSITE-CREAT-NOTE</title>
+    <link>https://orangesodahub.github.io/blogsite-creat-note/</link>
+    <pubDate>Sun, 14 Feb 2021 19:28:24 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>https://orangesodahub.github.io/blogsite-creat-note/</guid>
+    <description><![CDATA[I&rsquo;ve jot down here the essentials of creating my first blog using Hugo for future reference.Even though there are a lot of resources and instructions on the Internet, it is still more convenient to view mine.
+[windows]
+INSTALL CHOCOLATE More info: https://chocolatey.org/
+  First, ensure that you are using an administrative shell - you can also install as a non-admin, check out Non-Administrative Installation.
+  Install with powershell.exe]]></description>
+</item><item>
+    <title>TRANSFER-MAJOR</title>
+    <link>https://orangesodahub.github.io/transfer-major/</link>
+    <pubDate>Sat, 13 Feb 2021 20:16:57 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>https://orangesodahub.github.io/transfer-major/</guid>
+    <description><![CDATA[Only now found that my life road has a totally flip-flop for the sake of major-transfer.
+1 When I was admitted to Shanghai Jiao Tong University, I was delightful anyway. After all, it was a thing I had never thought of before my last year in senior high school. But that major I enrolled, which is Landscape Architecture, had never been kown to me ever before. I know that name for the first time on the website of the college-entrance applicants, at that time there were altogether 5 candidates to choose from and they are Naval architecture and ocean engineering, Electronic Information-specialties, mechanical specialties and LA and I cannot recall the last one now.]]></description>
+</item></channel>
+</rss>

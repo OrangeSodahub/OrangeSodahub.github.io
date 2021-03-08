@@ -1,0 +1,67 @@
+/* toc style */
+.post-toc {
+    position: fixed;
+    top: 20%;
+    right: 0.1rem;
+    width: 20%;
+    transform: translateY(-50%);
+    /*background-color: #f6f6f6;*/
+    /*border: solid 1px #c9c9c9;*/
+    border-radius: 5px;
+    padding-bottom: 2rem;
+}
+
+.post-toc .toc-header {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.toc-nav ul {
+    overflow:hidden;
+    white-space:nowrap;
+    line-height: 1rem;
+}
+
+/* ignore h1 header */
+.toc-nav ul ul ul {
+    margin-left: 2rem;
+}
+
+.toc-nav .nav-link {
+    text-overflow:ellipsis;
+    overflow:hidden;
+    color: #333;
+}
+
+.toc-nav li.active .nav-link {
+    background-color: #f6f6f6;
+    color: var(--accent);
+    border-left: solid 2px var(--accent);
+}
+
+/* Media Queries */
+@media (max-width: 1080px) {
+    main {
+        max-width: 100%;
+    }
+    .post-toc {
+        display: none;
+    }
+}
+
+#goTopBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 25px; /* Place the button at the bottom of the page */
+    right: 25px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 10px; /* Some padding */
+    border-radius: 0.3em; /* Rounded corners */
+    font-size: 30px; /* Increase font size */
+  }
+  #goTopBtn:hover {
+      color: gray;
+  }
