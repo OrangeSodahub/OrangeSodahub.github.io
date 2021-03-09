@@ -1,13 +1,23 @@
-# About ME
+# About
 
+
+### [About ME]demo
+
+#### Who am I?
 
 My real Chinese name is Yang Xiuyu, and my first name was derived from the idiom "Chung Ling Yu Xiu" so that I choose the other two characters "Chung Ling" to be my nickname. And ZonLin was the homonym for the Chinese pronunciation of the two characters.
+
+#### Where am I from?
+
+I was born in Guizhou, province. 
+
+#### What  do I do?
 
 I'm studying in SJTU since 2019. For the first year I major in Landscape and Architecture and I transfered my major to Information Engineering during the last semester of my freshman year and summer holiday after that. 
 
 Any question please view my homepage and click on any one of my other personal website link or contact me directly:[CONTACT ME](https://orangesodahub.github.io/about/).
 
-### [About  hugo]
+### [About  HUGO]
 
 #### Performance and SEO
 

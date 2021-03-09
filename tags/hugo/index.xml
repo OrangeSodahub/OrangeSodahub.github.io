@@ -5,15 +5,11 @@
         <description>Hugo - Tag - ZonLin</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>gzzyyxy@gmail.com (ZonLin)</managingEditor>
             <webMaster>gzzyyxy@gmail.com (ZonLin)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 14 Feb 2021 19:28:24 &#43;0800</lastBuildDate><atom:link href="https://orangesodahub.github.io/tags/hugo/" rel="self" type="application/rss+xml" /><item>
-    <title>BLOGSITE-CREAT-NOTE</title>
+    <title>BLOGSITE-BUILD-NOTE</title>
     <link>https://orangesodahub.github.io/blogsite-creat-note/</link>
     <pubDate>Sun, 14 Feb 2021 19:28:24 &#43;0800</pubDate>
     <author>Author</author>
     <guid>https://orangesodahub.github.io/blogsite-creat-note/</guid>
-    <description><![CDATA[I&rsquo;ve jot down here the essentials of creating my first blog using Hugo for future reference.Even though there are a lot of resources and instructions on the Internet, it is still more convenient to view mine.
-[windows]
-INSTALL CHOCOLATE More info: https://chocolatey.org/
-  First, ensure that you are using an administrative shell - you can also install as a non-admin, check out Non-Administrative Installation.
-  Install with powershell.exe]]></description>
+    <description><![CDATA[I&rsquo;ve jot down here the essentials of creating my first blog using Hugo for future reference.Even though there are a lot of resources and instructions on the Internet, it is still more convenient to view mine. Also, the official website of Hugo offers the most correct, formal descriptions and guidelines for everyone but, that&rsquo;s too flexible and hard to percisely find out what we individually really need. And here I write down the most concise procedures from the new user&rsquo;s perspective.]]></description>
 </item></channel>
 </rss>
