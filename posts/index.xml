@@ -4,7 +4,15 @@
         <link>https://orangesodahub.github.io/posts/</link>
         <description>All Posts | ZonLin</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>gzzyyxy@gmail.com (ZonLin)</managingEditor>
-            <webMaster>gzzyyxy@gmail.com (ZonLin)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 08 Mar 2021 23:36:20 &#43;0800</lastBuildDate><atom:link href="https://orangesodahub.github.io/posts/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>gzzyyxy@gmail.com (ZonLin)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 10 Mar 2021 17:57:58 &#43;0800</lastBuildDate><atom:link href="https://orangesodahub.github.io/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>USE ALGOLIA to SEARCH</title>
+    <link>https://orangesodahub.github.io/use-algolia-to-search/</link>
+    <pubDate>Wed, 10 Mar 2021 17:57:58 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>https://orangesodahub.github.io/use-algolia-to-search/</guid>
+    <description><![CDATA[https://edward852.github.io/post/hugo%E6%B7%BB%E5%8A%A0algolia%E6%90%9C%E7%B4%A2%E6%94%AF%E6%8C%81/
+https://www.xiexianbin.cn/staticgen/hugo/2018-12-01-search-with-algolia-in-hugo/index.html]]></description>
+</item><item>
     <title>FFMPEG</title>
     <link>https://orangesodahub.github.io/ffmpeg/</link>
     <pubDate>Mon, 08 Mar 2021 23:36:20 &#43;0800</pubDate>
