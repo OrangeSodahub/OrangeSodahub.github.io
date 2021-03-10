@@ -3,6 +3,8 @@
 
 ### [About ME]demo
 
+[![License](https://img.shields.io/github/license/dillonzq/LoveIt?style=flat-square)](https://github.com/yangxiuyu99/OrangeSodahub.github.io/master/LICENSE)
+
 #### Who am I?
 
 My real Chinese name is Yang Xiuyu, and my first name was derived from the idiom "Chung Ling Yu Xiu" so that I choose the other two characters "Chung Ling" to be my nickname. And ZonLin was the homonym for the Chinese pronunciation of the two characters.
