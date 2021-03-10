@@ -44,7 +44,7 @@
                     href="https://orangesodahub.github.io/tags/"
                     /></url><url>
             <loc>https://orangesodahub.github.io/tags/untagged/</loc><lastmod>2021-03-07T14:34:58&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://orangesodahub.github.io/categories/</loc><lastmod>2021-02-17T11:32:39&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.8</priority><xhtml:link
+            <loc>https://orangesodahub.github.io/categories/</loc><lastmod>2021-02-17T11:32:39&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.7</priority><xhtml:link
                         rel="alternate"
                         hreflang="zh-cn"
                         href="https://orangesodahub.github.io/zh-cn/categories/"
@@ -57,7 +57,7 @@
                     hreflang="en"
                     href="https://orangesodahub.github.io/categories/"
                     /></url><url>
-            <loc>https://orangesodahub.github.io/html/</loc><lastmod>2021-02-17T11:32:39&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.8</priority><xhtml:link
+            <loc>https://orangesodahub.github.io/html/</loc><lastmod>2021-02-17T11:32:39&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.7</priority><xhtml:link
                         rel="alternate"
                         hreflang="zh-cn"
                         href="https://orangesodahub.github.io/zh-cn/html/"
@@ -70,7 +70,7 @@
                     hreflang="en"
                     href="https://orangesodahub.github.io/html/"
                     /></url><url>
-            <loc>https://orangesodahub.github.io/tags/website/</loc><lastmod>2021-02-17T11:32:39&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.8</priority><xhtml:link
+            <loc>https://orangesodahub.github.io/tags/website/</loc><lastmod>2021-02-17T11:32:39&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.7</priority><xhtml:link
                         rel="alternate"
                         hreflang="zh-cn"
                         href="https://orangesodahub.github.io/zh-cn/tags/website/"
@@ -83,7 +83,7 @@
                     hreflang="en"
                     href="https://orangesodahub.github.io/tags/website/"
                     /></url><url>
-            <loc>https://orangesodahub.github.io/categories/website/</loc><lastmod>2021-02-17T11:32:39&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.8</priority><xhtml:link
+            <loc>https://orangesodahub.github.io/categories/website/</loc><lastmod>2021-02-17T11:32:39&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.7</priority><xhtml:link
                         rel="alternate"
                         hreflang="zh-cn"
                         href="https://orangesodahub.github.io/zh-cn/categories/website/"
@@ -96,7 +96,7 @@
                     hreflang="en"
                     href="https://orangesodahub.github.io/categories/website/"
                     /></url><url>
-            <loc>https://orangesodahub.github.io/html-and-css/</loc><lastmod>2021-02-17T10:52:38&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.8</priority><xhtml:link
+            <loc>https://orangesodahub.github.io/html-and-css/</loc><lastmod>2021-02-17T10:52:38&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.7</priority><xhtml:link
                         rel="alternate"
                         hreflang="zh-cn"
                         href="https://orangesodahub.github.io/zh-cn/html-and-css/"
