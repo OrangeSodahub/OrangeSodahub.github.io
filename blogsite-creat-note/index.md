@@ -101,7 +101,7 @@ Here are steps of quick method:
 
 - Configure your **config.toml** which can be found in the site's root directory. You can only change the **theme** configuration to the name of your wanted theme's name. Or a recommended way is copy the **config.toml** inside the exampleSite in the theme's directory which you just added and it can be seen in the **themes** folder.
 
-- (If you find the "Quick Start" before then skip current and subsequent setps) If it doesn't exist the command you can directly clone the theme to local then do like this: on the top or the page of the theme you can't miss the two or sometimes three or other quantitis buttons right left, behind the heading. Find the one which the word "DOWNLOAD" on it. Click it and go to the source webpage "Github repository" and again find the button which represent "**DOWNLOAD**". I usually choose "DOWNLOAD as ZIP". 
+- (If you find the "Quick Start" before then skip current and subsequent setps) If it doesn't exist the command you can directly clone the theme to local then do like this: on the top or the page of the theme you can't miss the two or sometimes three or other quantitis buttons right left, behind the heading. Find the one which the word "DOWNLOAD" on it. Click it and go to the source webpage "Github repository" and again find the button which represent "**DOWNLOAD**". Simply choose "DOWNLOAD as ZIP" and unzip. 
 
 - Once you download them to your root directory then copy or cut them and paste to the folder "themes". Last, back to root directory and find a file named "**.gitmodules**" to open it. You'll find several similar statements if you have the experience of using command "git submodule". Write one in their image and the url is right the URL of the webpage which you download the zip source from. Or directly just refer to this:
 
@@ -113,10 +113,20 @@ Here are steps of quick method:
 
   You must replace the name of theme and the path and the url accordingly.
 
-- Further you can modify some of configurations in the **config.toml** arrording to your preference but that will be detailed explained [here,]() not in the current post.
+- Open the file "**config.toml**" and find the line "theme", add the name of your choice and the simplest configuration is already set. Further you can modify some of configurations in the config.toml arrording to your preference but that will be detailed explained [here,]() not in the current post.
 
-- Run the CMD command **hugo server -D**  or **hugo server** in the site's root directory to see the result at `http://localhost:1313/`.
+- Run the CMD command **hugo server -D**  or **hugo server** in the site's root directory to see the result at `http://localhost:1313/. The fomer which contains "-D" means all of your post files will be pushed to local server whether or not it's labled as draft, so the latter only show the posts which have the "false" value of the "draft".  
 
 ### Correctly edit your post
+
+Our post files are saved as the form of markdown and in the "content" folder. We should only input what we want to show on the site in these files. For briefness and convenience, we can use "**Typora**" or just "**VScode**" to edit these files. The former is recommended.
+
+[More info about Typora:]: https://typora.io/	"a very nice markdown editor"
+
+And if you use the VScode you cannnot view of some of the styles of markdwon languages.
+
+## ENRICH YOUR STYLES
+
+> In this section many indexs are offered to you to direct to another page or pages that describe a certain topic. You can over view all of them here and choose one or more. And that's a necessary situation so if something is so brief that it could be explain within several lines then no links are necessary.
 
 

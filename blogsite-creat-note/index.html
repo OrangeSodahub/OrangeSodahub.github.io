@@ -29,7 +29,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/orangesodahub.github.io\/blogsite-creat-note\/"
-        },"image": ["https:\/\/orangesodahub.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "Hugo, Website","wordcount":  1047 ,
+        },"image": ["https:\/\/orangesodahub.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "Hugo, Website","wordcount":  1236 ,
         "url": "https:\/\/orangesodahub.github.io\/blogsite-creat-note\/","datePublished": "2021-02-14T19:28:24+08:00","dateModified": "2021-02-14T19:28:24+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
             "@type": "Organization",
             "name": "ZonLin","logo": "https:\/\/orangesodahub.github.io\/images\/%E4%B8%8B%E8%BD%BD.jpg"},"author": {
@@ -110,8 +110,8 @@
             <div class="toc-content" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animated flipInX">BLOGSITE-BUILD-NOTE</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>ZonLin</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-02-14">2021-02-14</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;1047 words&nbsp;
-                <i class="far fa-clock fa-fw"></i>&nbsp;5 minutes&nbsp;</div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-02-14">2021-02-14</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;1236 words&nbsp;
+                <i class="far fa-clock fa-fw"></i>&nbsp;6 minutes&nbsp;</div>
         </div><div class="details toc" id="toc-static"  kept="">
                 <div class="details-summary toc-title">
                     <span>Contents</span>
@@ -128,6 +128,7 @@
         <li><a href="#correctly-edit-your-post">Correctly edit your post</a></li>
       </ul>
     </li>
+    <li><a href="#enrich-your-styles">ENRICH YOUR STYLES</a></li>
   </ul>
 </nav></div>
             </div><div class="content" id="content"><!-- toc -->
@@ -251,7 +252,7 @@
 <p>Configure your <strong>config.toml</strong> which can be found in the site&rsquo;s root directory. You can only change the <strong>theme</strong> configuration to the name of your wanted theme&rsquo;s name. Or a recommended way is copy the <strong>config.toml</strong> inside the exampleSite in the theme&rsquo;s directory which you just added and it can be seen in the <strong>themes</strong> folder.</p>
 </li>
 <li>
-<p>(If you find the &ldquo;Quick Start&rdquo; before then skip current and subsequent setps) If it doesn&rsquo;t exist the command you can directly clone the theme to local then do like this: on the top or the page of the theme you can&rsquo;t miss the two or sometimes three or other quantitis buttons right left, behind the heading. Find the one which the word &ldquo;DOWNLOAD&rdquo; on it. Click it and go to the source webpage &ldquo;Github repository&rdquo; and again find the button which represent &ldquo;<strong>DOWNLOAD</strong>&rdquo;. I usually choose &ldquo;DOWNLOAD as ZIP&rdquo;.</p>
+<p>(If you find the &ldquo;Quick Start&rdquo; before then skip current and subsequent setps) If it doesn&rsquo;t exist the command you can directly clone the theme to local then do like this: on the top or the page of the theme you can&rsquo;t miss the two or sometimes three or other quantitis buttons right left, behind the heading. Find the one which the word &ldquo;DOWNLOAD&rdquo; on it. Click it and go to the source webpage &ldquo;Github repository&rdquo; and again find the button which represent &ldquo;<strong>DOWNLOAD</strong>&rdquo;. Simply choose &ldquo;DOWNLOAD as ZIP&rdquo; and unzip.</p>
 </li>
 <li>
 <p>Once you download them to your root directory then copy or cut them and paste to the folder &ldquo;themes&rdquo;. Last, back to root directory and find a file named &ldquo;<strong>.gitmodules</strong>&rdquo; to open it. You&rsquo;ll find several similar statements if you have the experience of using command &ldquo;git submodule&rdquo;. Write one in their image and the url is right the URL of the webpage which you download the zip source from. Or directly just refer to this:</p>
@@ -270,13 +271,19 @@
 </div><p>You must replace the name of theme and the path and the url accordingly.</p>
 </li>
 <li>
-<p>Further you can modify some of configurations in the <strong>config.toml</strong> arrording to your preference but that will be detailed explained <a href="" rel="">here,</a> not in the current post.</p>
+<p>Open the file &ldquo;<strong>config.toml</strong>&rdquo; and find the line &ldquo;theme&rdquo;, add the name of your choice and the simplest configuration is already set. Further you can modify some of configurations in the config.toml arrording to your preference but that will be detailed explained <a href="" rel="">here,</a> not in the current post.</p>
 </li>
 <li>
-<p>Run the CMD command <strong>hugo server -D</strong>  or <strong>hugo server</strong> in the site&rsquo;s root directory to see the result at <code>http://localhost:1313/</code>.</p>
+<p>Run the CMD command <strong>hugo server -D</strong>  or <strong>hugo server</strong> in the site&rsquo;s root directory to see the result at `http://localhost:1313/. The fomer which contains &ldquo;-D&rdquo; means all of your post files will be pushed to local server whether or not it&rsquo;s labled as draft, so the latter only show the posts which have the &ldquo;false&rdquo; value of the &ldquo;draft&rdquo;.</p>
 </li>
 </ul>
 <h3 id="correctly-edit-your-post">Correctly edit your post</h3>
+<p>Our post files are saved as the form of markdown and in the &ldquo;content&rdquo; folder. We should only input what we want to show on the site in these files. For briefness and convenience, we can use &ldquo;<strong>Typora</strong>&rdquo; or just &ldquo;<strong>VScode</strong>&rdquo; to edit these files. The former is recommended.</p>
+<p>And if you use the VScode you cannnot view of some of the styles of markdwon languages.</p>
+<h2 id="enrich-your-styles">ENRICH YOUR STYLES</h2>
+<blockquote>
+<p>In this section many indexs are offered to you to direct to another page or pages that describe a certain topic. You can over view all of them here and choose one or more. And that&rsquo;s a necessary situation so if something is so brief that it could be explain within several lines then no links are necessary.</p>
+</blockquote>
 </div><div class="post-footer" id="post-footer">
     <div class="post-info">
         <div class="post-info-line">
