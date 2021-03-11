@@ -29,7 +29,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/orangesodahub.github.io\/blogsite-creat-note\/"
-        },"image": ["https:\/\/orangesodahub.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "Hugo, Website","wordcount":  1236 ,
+        },"image": ["https:\/\/orangesodahub.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "Hugo, Website","wordcount":  1624 ,
         "url": "https:\/\/orangesodahub.github.io\/blogsite-creat-note\/","datePublished": "2021-02-14T19:28:24+08:00","dateModified": "2021-02-14T19:28:24+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
             "@type": "Organization",
             "name": "ZonLin","logo": "https:\/\/orangesodahub.github.io\/images\/%E4%B8%8B%E8%BD%BD.jpg"},"author": {
@@ -110,8 +110,8 @@
             <div class="toc-content" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animated flipInX">BLOGSITE-BUILD-NOTE</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>ZonLin</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-02-14">2021-02-14</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;1236 words&nbsp;
-                <i class="far fa-clock fa-fw"></i>&nbsp;6 minutes&nbsp;</div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-02-14">2021-02-14</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;1624 words&nbsp;
+                <i class="far fa-clock fa-fw"></i>&nbsp;8 minutes&nbsp;</div>
         </div><div class="details toc" id="toc-static"  kept="">
                 <div class="details-summary toc-title">
                     <span>Contents</span>
@@ -128,7 +128,16 @@
         <li><a href="#correctly-edit-your-post">Correctly edit your post</a></li>
       </ul>
     </li>
-    <li><a href="#enrich-your-styles">ENRICH YOUR STYLES</a></li>
+    <li><a href="#post-to-webpages">POST TO WEBPAGES</a></li>
+    <li><a href="#enrich-your-styles">ENRICH YOUR STYLES</a>
+      <ul>
+        <li><a href="#make-your-contents-searchable---algolia">Make your contents searchable&mdash;Algolia</a></li>
+        <li><a href="#configure-the-toctable-of-content">Configure the TOC(table of content)</a></li>
+        <li><a href="#add-the-comment-plugin">Add the comment plugin</a></li>
+        <li><a href="#add-pages-view-record-and-dispaly">Add pages view record and dispaly</a></li>
+        <li><a href="#add-statistical-function">Add statistical function</a></li>
+      </ul>
+    </li>
   </ul>
 </nav></div>
             </div><div class="content" id="content"><!-- toc -->
@@ -280,10 +289,66 @@
 <h3 id="correctly-edit-your-post">Correctly edit your post</h3>
 <p>Our post files are saved as the form of markdown and in the &ldquo;content&rdquo; folder. We should only input what we want to show on the site in these files. For briefness and convenience, we can use &ldquo;<strong>Typora</strong>&rdquo; or just &ldquo;<strong>VScode</strong>&rdquo; to edit these files. The former is recommended.</p>
 <p>And if you use the VScode you cannnot view of some of the styles of markdwon languages.</p>
+<h2 id="post-to-webpages">POST TO WEBPAGES</h2>
+<p>A local visalbe blogsite has already been built basically and now it&rsquo;s time to push it to webpages online so that everyone that connects to internet can browse it. Here we have many methods, like Github pages, Gitee pages, and Gitlab pages. Each of them has its own merits. I&rsquo;ll explain some differences among them later.</p>
+<p>Here we use Github pages.</p>
+<ol>
+<li>
+<p>First you must own a github account. That&rsquo;s not difficult. Go to <a href="http://github.com">http://github.com</a> and sign up.</p>
+</li>
+<li>
+<p>Creat a new repository and give it name &ldquo;XXX.github.io&rdquo;. &ldquo;XXX&rdquo; equals to your account name. Besides the name can only be this one, not any others. That&rsquo;s the only rule.</p>
+</li>
+<li>
+<p>Then we need Git. (If you don&rsquo;t have or don&rsquo;t know, here[Git][https://www.zonlin.cn/Git/]) Go back to your root directory and run the CMD command <strong>hugo</strong>, if no errors or warnings occur then your site is already successfully post to a new folder named &ldquo;<strong>public</strong>&rdquo; in the root. Change the current directory to &ldquo;<strong>public</strong>&rdquo;, right-click to choose the &ldquo;<strong>Git bash here</strong>&rdquo; then a new command line window will start. Now we need to connect the local repostiory with the remote repostiory(Github repo), use git commands:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">git remote add origin https://github.com/Your account name/Your repository name.git
+git remote -v #Check the address of your remote repository
+git remote rm origin #Disconnect the local repo with the remote.
+</code></pre></td></tr></table>
+</div>
+</div><p>If you want to connect not only one remote reprository then add it just like the first line above.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">git remote add XXX XXX
+</code></pre></td></tr></table>
+</div>
+</div><p>The first &ldquo;XXX&rdquo; represents the nickname of your remote repo&mdash;you need it to call it in local. The second &ldquo;XXX&rdquo; is your repo&rsquo;s address like the first line.</p>
+<p>Once you successfully connect the local and the remote, now push all of your contents to your remote repository so that Github pages could configure your site online automatically. Remember the following commands:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">git add .
+git commit -m &#34;your annotation&#34;
+git push -u origin master
+</code></pre></td></tr></table>
+</div>
+</div><p>Some solutions of errors:</p>
+</li>
+</ol>
 <h2 id="enrich-your-styles">ENRICH YOUR STYLES</h2>
 <blockquote>
 <p>In this section many indexs are offered to you to direct to another page or pages that describe a certain topic. You can over view all of them here and choose one or more. And that&rsquo;s a necessary situation so if something is so brief that it could be explain within several lines then no links are necessary.</p>
 </blockquote>
+<h3 id="make-your-contents-searchable---algolia">Make your contents searchable&mdash;Algolia</h3>
+<p>As our posts becoming more and more, how to search for a certain topic we want through some key words? That&rsquo;s it&mdash;algolia. Go to [[Algolia&mdash;make your content searchable]](<a href="https://www.zonlin.cn/algolia---make">https://www.zonlin.cn/algolia---make</a> your content searchable/) and achieve it.</p>
+<h3 id="configure-the-toctable-of-content">Configure the TOC(table of content)</h3>
+<h3 id="add-the-comment-plugin">Add the comment plugin</h3>
+<h3 id="add-pages-view-record-and-dispaly">Add pages view record and dispaly</h3>
+<h3 id="add-statistical-function">Add statistical function</h3>
 </div><div class="post-footer" id="post-footer">
     <div class="post-info">
         <div class="post-info-line">

@@ -125,8 +125,56 @@ Our post files are saved as the form of markdown and in the "content" folder. We
 
 And if you use the VScode you cannnot view of some of the styles of markdwon languages.
 
+## POST TO WEBPAGES
+
+A local visalbe blogsite has already been built basically and now it's time to push it to webpages online so that everyone that connects to internet can browse it. Here we have many methods, like Github pages, Gitee pages, and Gitlab pages. Each of them has its own merits. I'll explain some differences among them later.
+
+Here we use Github pages. 
+
+1. First you must own a github account. That's not difficult. Go to http://github.com and sign up.
+
+2. Creat a new repository and give it name "XXX.github.io". "XXX" equals to your account name. Besides the name can only be this one, not any others. That's the only rule.
+
+3. Then we need Git. (If you don't have or don't know, here[Git][https://www.zonlin.cn/Git/]) Go back to your root directory and run the CMD command **hugo**, if no errors or warnings occur then your site is already successfully post to a new folder named "**public**" in the root. Change the current directory to "**public**", right-click to choose the "**Git bash here**" then a new command line window will start. Now we need to connect the local repostiory with the remote repostiory(Github repo), use git commands:
+
+   ```
+   git remote add origin https://github.com/Your account name/Your repository name.git
+   git remote -v #Check the address of your remote repository
+   git remote rm origin #Disconnect the local repo with the remote.
+   ```
+
+   If you want to connect not only one remote reprository then add it just like the first line above. 
+
+   ```
+   git remote add XXX XXX
+   ```
+
+   The first "XXX" represents the nickname of your remote repo---you need it to call it in local. The second "XXX" is your repo's address like the first line.
+
+   Once you successfully connect the local and the remote, now push all of your contents to your remote repository so that Github pages could configure your site online automatically. Remember the following commands:
+
+   ```
+   git add .
+   git commit -m "your annotation"
+   git push -u origin master
+   ```
+
+   Some solutions of errors:
+
 ## ENRICH YOUR STYLES
 
 > In this section many indexs are offered to you to direct to another page or pages that describe a certain topic. You can over view all of them here and choose one or more. And that's a necessary situation so if something is so brief that it could be explain within several lines then no links are necessary.
+
+### Make your contents searchable---Algolia
+
+As our posts becoming more and more, how to search for a certain topic we want through some key words? That's it---algolia. Go to [[Algolia---make your content searchable]](https://www.zonlin.cn/algolia---make your content searchable/) and achieve it.
+
+### Configure the TOC(table of content)
+
+### Add the comment plugin
+
+### Add pages view record and dispaly
+
+### Add statistical function
 
 
