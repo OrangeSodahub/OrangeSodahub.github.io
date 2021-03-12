@@ -135,7 +135,7 @@ Here we use Github pages.
 
 2. Creat a new repository and give it name "XXX.github.io". "XXX" equals to your account name. Besides the name can only be this one, not any others. That's the only rule.
 
-3. Then we need Git. (If you don't have or don't know, here[Git][https://www.zonlin.cn/Git/]) Go back to your root directory and run the CMD command **hugo**, if no errors or warnings occur then your site is already successfully post to a new folder named "**public**" in the root. Change the current directory to "**public**", right-click to choose the "**Git bash here**" then a new command line window will start. Now we need to connect the local repostiory with the remote repostiory(Github repo), use git commands:
+3. Then we need Git. (If you don't have or don't know it, here[Git][https://www.zonlin.cn/Git/]) Go back to your root directory and run the CMD command **hugo**, if no errors or warnings occur then your site is already successfully post to a new folder named "**public**" in the root. Change the current directory to "**public**", right-click to choose the "**Git bash here**" then a new command line window will start. Now we need to connect the local repostiory with the remote repostiory(Github repo), use git commands:
 
    ```
    git remote add origin https://github.com/Your account name/Your repository name.git
@@ -167,7 +167,7 @@ Here we use Github pages.
 
 ### Make your contents searchable---Algolia
 
-As our posts becoming more and more, how to search for a certain topic we want through some key words? That's it---algolia. Go to [[Algolia---make your content searchable]](https://www.zonlin.cn/algolia---make your content searchable/) and achieve it.
+As our posts becoming more and more, how to search for a certain topic we want through some key words? The biggest drawback is the lost of search. That's it---algolia. Go to [SEARCH-WITH-ALGOLIA](https://www.zonlin.cn/search-with-algolia/) and achieve it.
 
 ### Configure the TOC(table of content)
 
