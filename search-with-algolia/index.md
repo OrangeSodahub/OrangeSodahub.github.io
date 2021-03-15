@@ -126,6 +126,8 @@ Back to your Aloglia account page and find **Indices** in the sidebar, click the
 
 ### Automatically commit
 
+I have not figured it out yet.
+
 
 
 
