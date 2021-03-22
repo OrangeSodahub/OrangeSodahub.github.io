@@ -7,12 +7,15 @@
             <webMaster>gzzyyxy@gmail.com (ZonLin)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 21 Mar 2021 18:11:36 &#43;0800</lastBuildDate>
             <atom:link href="https://orangesodahub.github.io/index.xml" rel="self" type="application/rss+xml" />
         <item>
-    <title>PROBLEM Only_size 1_arrays_can_be_converted_to_Python_scalars</title>
+    <title>PythonTypeError：Only size-1 arrays can be converted to Python scalars</title>
     <link>https://orangesodahub.github.io/problem-only_size-1_arrays_can_be_converted_to_python_scalars/</link>
     <pubDate>Sun, 21 Mar 2021 18:11:36 &#43;0800</pubDate>
     <author>Author</author>
     <guid>https://orangesodahub.github.io/problem-only_size-1_arrays_can_be_converted_to_python_scalars/</guid>
-    <description><![CDATA[156]]></description>
+    <description><![CDATA[Here are the sorce code: Calculate something to NTH power
+1 2 3 4 5 6  import math import matplotlib.pyplot as plt plt.rcParams[&#39;font.sans-serif&#39;] = [&#39;SimHei&#39;] r = np.arange(0, 1, 0.01) T_0 = pow(math.sqrt(1-pow(r,2)),-1) #error list L_0 = math.sqrt(1-pow(r,2)) #error list   And the Error message:
+1  TypeError: only size-1 arrays can be converted to Python scalars   SOLUTION:
+Change the &lsquo;math&rsquo; package to the &ldquo;numpy&rdquo; package. Here are the code:]]></description>
 </item><item>
     <title>ADD-WEBSITE-STATISTICS</title>
     <link>https://orangesodahub.github.io/add-website-statistics/</link>
