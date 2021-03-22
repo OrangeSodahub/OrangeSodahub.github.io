@@ -2,7 +2,8 @@
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
     xmlns:xhtml="http://www.w3.org/1999/xhtml"
     ><url>
-            <loc>https://orangesodahub.github.io/posts/</loc><lastmod>2021-03-21T18:11:36&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
+            <loc>https://orangesodahub.github.io/pack-to-download-chorme-extensions/</loc><lastmod>2021-03-22T13:42:50&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://orangesodahub.github.io/posts/</loc><lastmod>2021-03-22T13:42:50&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
                         rel="alternate"
                         hreflang="zh-cn"
                         href="https://orangesodahub.github.io/zh-cn/posts/"
@@ -15,8 +16,7 @@
                     hreflang="en"
                     href="https://orangesodahub.github.io/posts/"
                     /></url><url>
-            <loc>https://orangesodahub.github.io/problem-only_size-1_arrays_can_be_converted_to_python_scalars/</loc><lastmod>2021-03-21T18:11:36&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://orangesodahub.github.io/</loc><lastmod>2021-03-21T18:11:36&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
+            <loc>https://orangesodahub.github.io/</loc><lastmod>2021-03-22T13:42:50&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
                         rel="alternate"
                         hreflang="zh-cn"
                         href="https://orangesodahub.github.io/zh-cn/"
@@ -29,6 +29,7 @@
                     hreflang="en"
                     href="https://orangesodahub.github.io/"
                     /></url><url>
+            <loc>https://orangesodahub.github.io/problem-only_size-1_arrays_can_be_converted_to_python_scalars/</loc><lastmod>2021-03-21T18:11:36&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>https://orangesodahub.github.io/add-website-statistics/</loc><lastmod>2021-03-15T15:05:48&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>https://orangesodahub.github.io/categories/</loc><lastmod>2021-03-15T15:05:48&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
                         rel="alternate"
