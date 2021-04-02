@@ -173,8 +173,10 @@ As our posts becoming more and more, how to search for a certain topic we want t
 
 ### Add the comment plugin
 
-### Add pages view record and dispaly
+### Add website statistics---Busuanzi, UMeng, BaiduAnalysics, GoogleAnalysics
 
-### Add statistical function
+With more and more contents being added to our websites, how do we get to know how many viewers are watching what content, at what time, for how much time, and how do we know what content is being viewed the most often and for the longest duration which represents that part of content should be better relatively.
+
+Add the analytical method to your blogsite. There are varieties of choices like busuanzi, youmeng......Go to [ADD-WEBSITE-STATISTICS](https://www.zonlin.cn/add-website-statistics/) and set it.
 
 

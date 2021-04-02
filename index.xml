@@ -7,7 +7,7 @@
             <webMaster>gzzyyxy@gmail.com (ZonLin)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 02 Apr 2021 12:09:05 &#43;0800</lastBuildDate>
             <atom:link href="https://orangesodahub.github.io/index.xml" rel="self" type="application/rss+xml" />
         <item>
-    <title>Convert a Color Picture to a Line Draft</title>
+    <title>PS：Convert a Color Picture to a Line Draft</title>
     <link>https://orangesodahub.github.io/convert-a-color-picture-to-a-line-draft/</link>
     <pubDate>Fri, 02 Apr 2021 12:09:05 &#43;0800</pubDate>
     <author>Author</author>
@@ -44,12 +44,16 @@ Here are steps:
 1  TypeError: only size-1 arrays can be converted to Python scalars   SOLUTION:
 Change the &lsquo;math&rsquo; package to the &ldquo;numpy&rdquo; package. Here are the code:]]></description>
 </item><item>
-    <title>ADD-WEBSITE-STATISTICS</title>
+    <title>ADD WEBSITE STATISTICS</title>
     <link>https://orangesodahub.github.io/add-website-statistics/</link>
     <pubDate>Mon, 15 Mar 2021 15:05:48 &#43;0800</pubDate>
     <author>Author</author>
     <guid>https://orangesodahub.github.io/add-website-statistics/</guid>
-    <description><![CDATA[123]]></description>
+    <description><![CDATA[Go anyone you prefer:
+Busuanzi Busuanzi is a plug-in which is designed by a technologist for the blog-statistic usage exclusively&mdash;individually, not officially. Anyway, its advantages are: simplicity, efficiency, convenience, minimalism and dependability.
+Here are the steps:
+Install the scirpt(Required) To use busuanzi you must input the busuanzi.js to your site. Current version:
+1 2  &lt;script async src=&#34;//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js&#34;&gt; &lt;/script&gt;   You can copy that and paste it to anywhere in the root of your site.]]></description>
 </item><item>
     <title>SEARCH-WITH-ALGOLIA</title>
     <link>https://orangesodahub.github.io/search-with-algolia/</link>

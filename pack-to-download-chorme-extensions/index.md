@@ -9,7 +9,7 @@ Here are steps:
 
 2. Choose the "manage the extension" option then popuo a new page.
 
-   ![](F:\ZonLinSurviveRecords\ZonLinyy\static\images\03.png)
+   ![0](F:\ZonLinSurviveRecords\ZonLinyy\static\images\03.png)
 
 3. Enable the developer mode. Upper right of the page.
 
