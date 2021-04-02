@@ -11,7 +11,9 @@
     <author>Author</author>
     <guid>https://orangesodahub.github.io/convert-a-color-picture-to-a-line-draft/</guid>
     <description><![CDATA[Here we use PS to convert a colorful pictrue to a line draft.
- Set up the PS software(e.g.PSCC) and input the picture that wo want to process. Click on the menu bar &ldquo;Image-&gt;Adjust-&gt;Black and wihte&rdquo;, or you can directly press the shortcut key&quot;Alt+Shift+Ctrl+B&quot;. Then the image automatically turns to black and white. Click on the menu bar &ldquo;Coverage-&gt;Copy coverage&rdquo; to make a copy for our use. Click on the menu bar &ldquo;Image-&gt;Adjust-&gt;Invert&rdquo; or directly press the shorcut key &ldquo;Ctrl+I&rdquo;.]]></description>
+  Set up the PS software(e.g.PSCC) and input the picture that wo want to process.
+  Click on the menu bar &ldquo;Image-&gt;Adjust-&gt;Black and wihte&rdquo;, or you can directly press the shortcut key&quot;Alt+Shift+Ctrl+B&quot;. Then the image automatically turns to black and white.
+  Click on the menu bar &ldquo;Coverage-&gt;Copy coverage&rdquo; to make a copy for our use.]]></description>
 </item><item>
     <title>Failed to Connect to Github.com Port 443</title>
     <link>https://orangesodahub.github.io/failed-to-connect-to-github-com-port-443.ed/</link>
