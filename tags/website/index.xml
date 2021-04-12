@@ -10,48 +10,41 @@
     <pubDate>Mon, 15 Mar 2021 15:05:48 &#43;0800</pubDate>
     <author>Author</author>
     <guid>https://orangesodahub.github.io/add-website-statistics/</guid>
-    <description><![CDATA[Go anyone you prefer:
-Busuanzi Busuanzi is a plug-in which is designed by a technologist for the blog-statistic usage exclusively&mdash;individually, not officially. Anyway, its advantages are: simplicity, efficiency, convenience, minimalism and dependability.
-Here are the steps:
-Install the scirpt(Required) To use busuanzi you must input the busuanzi.js to your site. Current version:
-1 2  &lt;script async src=&#34;//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js&#34;&gt; &lt;/script&gt;   You can copy that and paste it to anywhere in the root of your site.]]></description>
+    <description><![CDATA[]]></description>
 </item><item>
     <title>SEARCH-WITH-ALGOLIA</title>
     <link>https://orangesodahub.github.io/search-with-algolia/</link>
     <pubDate>Wed, 10 Mar 2021 17:57:58 &#43;0800</pubDate>
     <author>Author</author>
     <guid>https://orangesodahub.github.io/search-with-algolia/</guid>
-    <description><![CDATA[INTRODUCTION What makes Aloglia great?  The goal of the JAMStack is eliminate server dependencies. Although Algolia is a bussiness solution, it offers a very generous free plan and performs up to 200 faster than open-source solutions like ElasticSearch.  How Algolia works? Algolia provides a REST API to query and update your search indices. All input and output is provided in JSON, making it extremely easy to use in frontend Javascript.]]></description>
+    <description><![CDATA[]]></description>
 </item><item>
     <title>HTML</title>
     <link>https://orangesodahub.github.io/html/</link>
     <pubDate>Wed, 17 Feb 2021 11:32:39 &#43;0800</pubDate>
     <author>Author</author>
     <guid>https://orangesodahub.github.io/html/</guid>
-    <description><![CDATA[Something about HTML What is HTML?  HTML is a language used to describe web pages. HTML is Hyper Text Markup Language. Markup language is a set of markup tags. HTML uses markup tags to describe Web pages.  HTML tag HTML markup tags are often referred to as HTML tags.
- HTML tags are keywords surrounded by Angle brackets, such as &lt;HTML&gt;. HTML tags usually come in pairs, such as &lt;b&gt; and &lt;/b&gt;.]]></description>
+    <description><![CDATA[]]></description>
 </item><item>
     <title>HTML/CSS</title>
     <link>https://orangesodahub.github.io/html-and-css/</link>
     <pubDate>Wed, 17 Feb 2021 10:52:38 &#43;0800</pubDate>
     <author>Author</author>
     <guid>https://orangesodahub.github.io/html-and-css/</guid>
-    <description><![CDATA[Brief Introduction Here are some introductions and choose one or more you want to learn.
-HTML HTML stands for Hpertext Markup Language and is the key to the world of Web technology. Click here to learn more about it.
-XHTML XHTML is more rigorous and clean version of HTML. There are the differences between HTML and XHTML, and the advantages of XHTML for you. And, how to upgrade your site to XHTML to help quickly deploy XHTML technology.]]></description>
+    <description><![CDATA[]]></description>
 </item><item>
     <title>MARKDOWN-USAGE</title>
     <link>https://orangesodahub.github.io/markdown-note/</link>
     <pubDate>Sun, 14 Feb 2021 19:59:50 &#43;0800</pubDate>
     <author>Author</author>
     <guid>https://orangesodahub.github.io/markdown-note/</guid>
-    <description><![CDATA[Markdown is a lightwight markup language with a compact typographical syntax that allows people to focus more on content than typography. It uses easy-to-read and easy-to-write plain text format to write documents, can be mixed with HTML, can export HTML, PDF and its own .md format files. Markdown is widely used on websites such as Github and Wikipedia, as well as on major blogging platforms like WordPress, Drupal and Short Book because of its simplicity, efficiency, ease of reading and writing.]]></description>
+    <description><![CDATA[]]></description>
 </item><item>
     <title>BLOGSITE-BUILD-NOTE</title>
     <link>https://orangesodahub.github.io/blogsite-creat-note/</link>
     <pubDate>Sun, 14 Feb 2021 19:28:24 &#43;0800</pubDate>
     <author>Author</author>
     <guid>https://orangesodahub.github.io/blogsite-creat-note/</guid>
-    <description><![CDATA[I&rsquo;ve jot down here the essentials of creating my first blog using Hugo for future reference.Even though there are a lot of resources and instructions on the Internet, it is still more convenient to view mine. Also, the official website of Hugo offers the most correct, formal descriptions and guidelines for everyone but, that&rsquo;s too flexible and hard to percisely find out what we individually really need. And here I write down the most concise procedures from the new user&rsquo;s perspective.]]></description>
+    <description><![CDATA[]]></description>
 </item></channel>
 </rss>

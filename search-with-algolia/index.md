@@ -64,7 +64,7 @@ In **[params.algolia]**:
 
 > Attemtion: Look out the format of your file: config.XXX. Is it a .toml file or a .yaml file? Please switch the linguistic form according to it.
 
-If yours is .yaml but not .toml then they are:
+If yours is **.yaml** but not **.toml** then they are:
 
 ```
 outputFormats:

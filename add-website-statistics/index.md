@@ -1,7 +1,7 @@
 # ADD WEBSITE STATISTICS
 
 
-Go anyone you prefer:
+Choose anyone you prefer:
 
 ## Busuanzi
 

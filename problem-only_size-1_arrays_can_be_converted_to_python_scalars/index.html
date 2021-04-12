@@ -133,53 +133,8 @@ Change the &lsquo;math&rsquo; package to the &ldquo;numpy&rdquo; package. Here a
                     <span>Contents</span>
                     <span><i class="details-icon fas fa-angle-right"></i></span>
                 </div>
-                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents"></nav></div>
-            </div><div class="content" id="content"><p>Here are the sorce code: Calculate something to NTH power</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
-</span><span class="lnt">6
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">import math
-import matplotlib.pyplot as plt
-plt.rcParams[&#39;font.sans-serif&#39;] = [&#39;SimHei&#39;]
-r = np.arange(0, 1, 0.01)
-T_0 = pow(math.sqrt(1-pow(r,2)),-1) #error list
-L_0 = math.sqrt(1-pow(r,2)) #error list
-</code></pre></td></tr></table>
-</div>
-</div><p>And the Error message:</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">TypeError: only size-1 arrays can be converted to Python scalars
-</code></pre></td></tr></table>
-</div>
-</div><p>SOLUTION:</p>
-<p>Change the &lsquo;math&rsquo; package to the &ldquo;numpy&rdquo; package. Here are the code:</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">import numpy as np
-...
-T_0 = pow(np.sqrt(1-pow(r,2)),-1) #error list
-L_0 = np.sqrt(1-pow(r,2)) #error list
-</code></pre></td></tr></table>
-</div>
-</div><p>Compile successfully.</p>
-</div><div class="post-footer" id="post-footer">
+                <div class="details-content toc-content" id="toc-content-static"></div>
+            </div><div class="content" id="content"></div><div class="post-footer" id="post-footer">
     <div class="post-info">
         <div class="post-info-line">
             <div class="post-info-mod">
@@ -208,11 +163,7 @@ L_0 = np.sqrt(1-pow(r,2)) #error list
 </article></div>
             </main><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js">
 </script>
-<div id="map" style="padding-left:500px; position:fixed;margin-right:0%;margin-bottom:50%">
-    <a href="#" id="map" class="map" title=""><div>
-    <script type="text/javascript" src="//rf.revolvermaps.com/0/0/6.js?i=5z4pghidafe&amp;m=7&amp;c=e63100&amp;cr1=ffffff&amp;f=arial&amp;l=0&amp;bv=90&amp;lx=-420&amp;ly=420&amp;hi=20&amp;he=7&amp;hc=a8ddff&amp;rs=80" async="async"></script>
-</div></a>
-</div><footer class="footer">
+<footer class="footer">
         <div class="footer-container"><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2019 - 2021</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank">ZonLin</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span><div><span class="icp-splitter"></span><br class="icp-br"/>
                         <span class="icp"><a href="https://beian.miit.gov.cn/#/Integrated/index">黔ICP备2021002279号-1</a>&nbsp;|&nbsp;</span><span>
                             </a><img src="/images/备案图标.png"/><a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=52032102000640" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;">贵公网安备 52032102000640号</a>

@@ -1,7 +1,9 @@
 # TRANSFER-MAJOR
 
 
-<!-- toc -->
+<!--more-->
+
+{{% hugo-encryptor "PASSWORD" %}}
 
 Only now found that my life road has a totally flip-flop for the sake of major-transfer.
 
@@ -12,6 +14,8 @@ When I was admitted to Shanghai Jiao Tong University, I was delightful anyway. A
 More than nine out of ten persons around me thought that I should prepare for transfering the major. At that time I shared the news of my admission with mass of my friends and classmates, including my upperclassmen and most of them felt funny and comical and I wanted to laugh as well. Only the H upperclassman studying in SJTU was the most quiet and calm, he said to me that I had no necessary to worry about it because I could make the choice to transfer major. From then on, I began the endless journey of my collecting messages and information about transfering major, and I gathered lots of information based on how much free time I had during that long holidays. But the result was that I got many similar responses: It's too early to think about this.
 
 I did prove this sentence later. After the formal opening of the school, I did not spent so much time to think about this matter, but on my major study. The motivation was not that I wanted to get a high average score to make my transfer-major plan successful at all, but a habit I still kept since high school. Just for this sake I rarely remenbered what I worried about for the entire holiday. The first semester passed soon and my core average score ranked 5/29. But as soon as the semester was over, I return to my deep depress about changing my major again. My \<College English> course only took an examination of 60 points which cannot be lower. But fortunately My gross average score was in the top 30% —— the minimun requierment to apply to change one's major. I thought it's time to motivate myself on English and began to read and recite the words and articles, or read some foreign periodical .etc. And woefully the year 2020 be forced to start with a tragedy——coronavirus diease 2019, which  was entitled the name "COVID-19". A pandemic diease, like the severe acute respiratory syndrome(SARS) swept over the globe, made billions of people or even more throughout the world painful phsically or mentally. We alse were compeled to attend class and lecture staying at our home. It's apparent that I put that matter——change my major, aside. I didn't remenber it when I took online course selection at all and I selected many "meaningless and useless" courses which reminded me of how boring these courses were even more so after I choosed to change the major later. For all this, I kept reciting English words and practicing English listening comprehension. I very often use Baicizhan app on the phone to learn words when I got bored to current lesson siting in front of the cold screen. Just click one word and remenber it and click another and remenber again, again and again, more and more, no condition of mantal weariness, just full of mechanical repetition. Such was the day of online school. Now in retrospect, I didn't waste that period of time anyway at that time——though in the circumstance of cozy and easeful. It's turned out that most of my friends were playing during that time and I didn't know that clearly for a lone time. It alse proved that I behaved so because I always stay alone——notwithstanding there exists cozy surrondings but there's no something that distrubs me or seduces me and I had no opportunity to get to know common situation about all the people. At least they told me or revealed inadvertently that they took class in the bed and played video games during lesson time but I never.
+
+{{% /hugo-encryptor %}}
 
 ## 2
 
