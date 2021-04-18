@@ -127,8 +127,138 @@
                     <span>目录</span>
                     <span><i class="details-icon fas fa-angle-right"></i></span>
                 </div>
-                <div class="details-content toc-content" id="toc-content-static"></div>
-            </div><div class="content" id="content"></div><div class="post-footer" id="post-footer">
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#install-chocolate">INSTALL CHOCOLATE</a></li>
+    <li><a href="#install-hugo">INSTALL HUGO</a></li>
+    <li><a href="#build-a-site">BUILD A SITE</a></li>
+    <li><a href="#edit-the-site-further">EDIT THE SITE FURTHER</a>
+      <ul>
+        <li><a href="#quickly-comfigure-a-theme">Quickly comfigure a theme</a></li>
+        <li><a href="#correctly-edit-your-post">Correctly edit your post</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><!-- toc -->
+<p>I&rsquo;ve jot down here the essentials of creating my first blog using Hugo for future reference.Even though there are a lot of resources and instructions on the Internet, it is still more convenient to view mine.</p>
+<p>[windows]</p>
+<h2 id="install-chocolate">INSTALL CHOCOLATE</h2>
+<p>More info: <a href="https://chocolatey.org" target="_blank" rel="noopener noreffer">https://chocolatey.org</a>/</p>
+<ul>
+<li>
+<p>First, ensure that you are using an <strong>administrative shell</strong> - you can also install as a non-admin, check out <a href="https://docs.chocolatey.org/en-us/choco/setup#non-administrative-install" target="_blank" rel="noopener noreffer">Non-Administrative Installation</a>.</p>
+</li>
+<li>
+<p>Install with powershell.exe</p>
+<p>With PowerShell, you must ensure <a href="https://go.microsoft.com/fwlink/?LinkID=135170" target="_blank" rel="noopener noreffer">Get-ExecutionPolicy</a> is not Restricted. We suggest using <code>Bypass</code> to bypass the policy to get things installed or <code>AllSigned</code> for quite a bit more security :</p>
+<p>Run <code>Get-ExecutionPolicy</code>. If it returns <code>Restricted</code>, then run <code>Set-ExecutionPolicy AllSigned</code> or <code>Set-ExecutionPolicy Bypass -Scope Process</code>.</p>
+<p>Now run the following command:Paste the text into your shell and press Enter.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString(&#39;https://chocolatey.org/install.ps1&#39;))
+</code></pre></td></tr></table>
+</div>
+</div></li>
+<li>
+<p>Wait a few seconds for the command to complete.</p>
+</li>
+<li>
+<p>Type <code>choco</code> to see your choco version or <code>choco -</code> to see more instructions.</p>
+</li>
+</ul>
+<h2 id="install-hugo">INSTALL HUGO</h2>
+<p>There are many other methods to install hugo:</p>
+<ul>
+<li></li>
+</ul>
+<p>Here we use Chocolatey for package management, you can install Hugo with the following cmd code:</p>
+<p>install with chocolatey.ps1</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">choco install hugo -confirm
+</code></pre></td></tr></table>
+</div>
+</div><p>Or the &ldquo;extended&rdquo; Sass/Scss version:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">choco install hugo-extended -confirm
+</code></pre></td></tr></table>
+</div>
+</div><p>Wait and if you see no errors occur then Hugo is ready.</p>
+<h2 id="build-a-site">BUILD A SITE</h2>
+<ul>
+<li>
+<p>Select a folder as your site&rsquo;s root directory. Any name of it is OK.</p>
+</li>
+<li>
+<p>Go to the root directory and run the CMD command:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">hugo new site XXX
+</code></pre></td></tr></table>
+</div>
+</div><p>Here &ldquo;XXX&rdquo; is your site&rsquo;s name then you&rsquo;ll see it generates a new folder named &ldquo;XXX&rdquo; and that is your really site&rsquo;s local directory.</p>
+</li>
+<li>
+<p>Double click the site&rsquo;s folder to go to the site&rsquo;s local directory and run the CMD command:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">hugo new posts/my-first-post.md
+</code></pre></td></tr></table>
+</div>
+</div><p>Here &ldquo;posts&rdquo; is the name of the folder that contains your .md post file named &ldquo;my-first-post&rdquo;. Double click the &ldquo;content&rdquo; folder and you&rsquo;ll see it.</p>
+</li>
+</ul>
+<p>At this time a basic site has been successfully built.</p>
+<h2 id="edit-the-site-further">EDIT THE SITE FURTHER</h2>
+<h3 id="quickly-comfigure-a-theme">Quickly comfigure a theme</h3>
+<p>Comfigure a theme for you site and make it look different and personal. Here are steps of quick method:</p>
+<ul>
+<li>
+<p>First enter the website of hugo themes: <a href="https://themes.gohugo.io/">https://themes.gohugo.io/</a></p>
+</li>
+<li>
+<p>Glance over the diverse hugo themes and select one theme you prefer to and click it.</p>
+</li>
+<li>
+<p>On the theme page,  you can browse the style of the theme . Find the &ldquo;Quick Start&rdquo; (maybe it dosen&rsquo;t exsist) or find directly the command to add the repository into your Hugo Project repository as a submodule. The command like this:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">git submodule add https://github.com/luizdepra/hugo-coder.git themes/hugo-coder
+</code></pre></td></tr></table>
+</div>
+</div></li>
+<li>
+<p>Configure your <code>config.toml</code> which can be found in the site&rsquo;s root directory. You can only change the <code>theme</code> configuration to the name of your wanted theme&rsquo;s name. Or a recommended way is copy the <code>config.toml</code> inside the exampleSite in the theme&rsquo;s directory which you just added and it can be seen in the <code>themes</code> folder.</p>
+</li>
+<li>
+<p>Further you can modify some of configurations in the <code>config.toml</code> arrording to your preference but that will be detailed explained <a href="" rel="">here,</a> not in the current post.</p>
+</li>
+<li>
+<p>Run the CMD command <code>hugo server -D</code>  of <code>hugo server</code> in the site&rsquo;s root directory to see the result at <code>http://localhost:1313/</code>.</p>
+</li>
+</ul>
+<h3 id="correctly-edit-your-post">Correctly edit your post</h3>
+</div><div class="post-footer" id="post-footer">
     <div class="post-info">
         <div class="post-info-line">
             <div class="post-info-mod">

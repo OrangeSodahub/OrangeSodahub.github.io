@@ -133,8 +133,53 @@ Change the &lsquo;math&rsquo; package to the &ldquo;numpy&rdquo; package. Here a
                     <span>Contents</span>
                     <span><i class="details-icon fas fa-angle-right"></i></span>
                 </div>
-                <div class="details-content toc-content" id="toc-content-static"></div>
-            </div><div class="content" id="content"></div><div class="post-footer" id="post-footer">
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents"></nav></div>
+            </div><div class="content" id="content"><p>Here are the sorce code: Calculate something to NTH power</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">import math
+import matplotlib.pyplot as plt
+plt.rcParams[&#39;font.sans-serif&#39;] = [&#39;SimHei&#39;]
+r = np.arange(0, 1, 0.01)
+T_0 = pow(math.sqrt(1-pow(r,2)),-1) #error list
+L_0 = math.sqrt(1-pow(r,2)) #error list
+</code></pre></td></tr></table>
+</div>
+</div><p>And the Error message:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">TypeError: only size-1 arrays can be converted to Python scalars
+</code></pre></td></tr></table>
+</div>
+</div><p>SOLUTION:</p>
+<p>Change the &lsquo;math&rsquo; package to the &ldquo;numpy&rdquo; package. Here are the code:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">import numpy as np
+...
+T_0 = pow(np.sqrt(1-pow(r,2)),-1) #error list
+L_0 = np.sqrt(1-pow(r,2)) #error list
+</code></pre></td></tr></table>
+</div>
+</div><p>Compile successfully.</p>
+</div><div class="post-footer" id="post-footer">
     <div class="post-info">
         <div class="post-info-line">
             <div class="post-info-mod">

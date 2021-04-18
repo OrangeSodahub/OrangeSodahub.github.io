@@ -129,8 +129,182 @@
                     <span>目录</span>
                     <span><i class="details-icon fas fa-angle-right"></i></span>
                 </div>
-                <div class="details-content toc-content" id="toc-content-static"></div>
-            </div><div class="content" id="content"></div><div class="post-footer" id="post-footer">
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#something-about-html">Something about HTML</a>
+      <ul>
+        <li><a href="#what-is-html">What is HTML?</a></li>
+        <li><a href="#html-tag">HTML tag</a></li>
+        <li><a href="#html-document--web-page">HTML document = Web page</a></li>
+      </ul>
+    </li>
+    <li><a href="#html-editor">HTML editor</a>
+      <ul>
+        <li><a href="#21-use-notepad-or-textedit-to-edit-html">2.1 Use Notepad or TextEdit to edit HTML</a></li>
+      </ul>
+    </li>
+    <li><a href="#html-basic">HTML Basic</a>
+      <ul>
+        <li><a href="#html-heading">HTML Heading</a></li>
+        <li><a href="#html-paragraph">HTML Paragraph</a></li>
+        <li><a href="#html-link">HTML Link</a></li>
+        <li><a href="#html-image">HTML Image</a></li>
+      </ul>
+    </li>
+    <li><a href="#html-element">HTML Element</a>
+      <ul>
+        <li><a href="#html-element-syntax">HTML Element Syntax</a></li>
+        <li><a href="#nested-html-element">Nested HTML Element</a></li>
+        <li><a href="#empty-html-element">Empty HTML Element</a></li>
+        <li><a href="#use-lowercase-tag">Use Lowercase Tag</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><h2 id="something-about-html">Something about HTML</h2>
+<h3 id="what-is-html">What is HTML?</h3>
+<ul>
+<li>HTML is a language used to describe web pages.</li>
+<li>HTML is Hyper Text Markup Language.</li>
+<li>Markup language is a set of markup tags.</li>
+<li>HTML uses markup tags to describe Web pages.</li>
+</ul>
+<h3 id="html-tag">HTML tag</h3>
+<p>HTML markup tags are often referred to as HTML tags.</p>
+<ul>
+<li>HTML tags are keywords surrounded by Angle brackets, such as &lt;HTML&gt;.</li>
+<li>HTML tags usually come in pairs, such as &lt;b&gt; and &lt;/b&gt;.</li>
+<li>The first tag in a tag pair is the start tag and the second tag is the end tag.</li>
+<li>Start and end tags are also known as open and closed tags.</li>
+</ul>
+<h3 id="html-document--web-page">HTML document = Web page</h3>
+<ul>
+<li>HTML documents describe Web pages.</li>
+<li>HTML documents contain HTML tags and plain text.</li>
+<li>HTML documents are also called Web pages.</li>
+</ul>
+<h2 id="html-editor">HTML editor</h2>
+<h3 id="21-use-notepad-or-textedit-to-edit-html">2.1 Use Notepad or TextEdit to edit HTML</h3>
+<p>Also you can use a professional HTML editor to write HTML.</p>
+<ul>
+<li>Adobe Dreamweaver</li>
+<li>Microsoft Expression Web</li>
+<li>CoffeeCup HTML Editor</li>
+</ul>
+<p>Here are four steps fo using text editor to build a web page.</p>
+<ol>
+<li>
+<p>Start Notepad.</p>
+</li>
+<li>
+<p>Type the HTML code in the Notepad. e.g.:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">&lt;!DOCTYPE HTML&gt;
+&lt;html&gt;
+&lt;body&gt;
+   
+&lt;h1&gt;Heading level 2&lt;/h1&gt;
+   
+&lt;p&gt;Paragraph 1&lt;/p&gt;
+   
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre></td></tr></table>
+</div>
+</div></li>
+<li>
+<p>Save the files as HTML</p>
+<p>Select &ldquo;Save As&rdquo; from the file menu in Notepad and there are no differences between the extension .htm and .html.</p>
+</li>
+<li>
+<p>Run the HTML file in a browser</p>
+<p>Start the browser and select &ldquo;Open&rdquo; from &ldquo;File&rdquo; from File menu or directly double click the HTML file you just saved. Then you can see the content you just typed in the Web page.</p>
+</li>
+</ol>
+<h2 id="html-basic">HTML Basic</h2>
+<p>Here are four the most commonly used HTML tags:</p>
+<h3 id="html-heading">HTML Heading</h3>
+<p>HTML headings are defined wtih tags &lt;h1&gt;-&lt;h6&gt;. e.g.:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">&lt;h1&gt;Heading level 1&lt;\h1&gt;
+&lt;h2&gt;Heading level 2&lt;\h2&gt;
+&lt;h3&gt;Heading level 3&lt;\h3&gt;
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="html-paragraph">HTML Paragraph</h3>
+<p>HTML paragraphs are defined with tags &lt;p&gt;. e.g.:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">&lt;p&gt;This is a paragraph.&lt;/p&gt;
+&lt;p&gt;This is another paragraph.&lt;/p&gt;
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="html-link">HTML Link</h3>
+<p>HTML links are defined with tags &lt;a&gt;. e.g.:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">&lt;a href=&#34;https://orangesodahub.github.io&#34;&gt;This is a link.&lt;/a&gt;
+</code></pre></td></tr></table>
+</div>
+</div><p>Specify the address of the link in the &ldquo;herf&rdquo; attribute.</p>
+<h3 id="html-image">HTML Image</h3>
+<p>HTML images are defined with tags &lt;img&gt;. e.g.:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">&lt;img src=&#34;orangesoda.jpg&#34; width=&#34;100&#34; height=&#34;20&#34; /&gt;
+</code></pre></td></tr></table>
+</div>
+</div><p>The name and size of the image are provided as attributes.</p>
+<h2 id="html-element">HTML Element</h2>
+<p>HTML doucments are defined by HTML elements.</p>
+<p>HTML element refers to all the codes from the start tag to the end tag.</p>
+<h3 id="html-element-syntax">HTML Element Syntax</h3>
+<ul>
+<li>HTML element begin with openning tag.</li>
+<li>HTML element terminates with closing tag.</li>
+<li>The content of the element is the content between the start tag and the end tag.</li>
+<li>Some HTML elements have empty content.</li>
+<li>An empty element is closed in the start tag (namely ends with the end of the start tag), like how the HTML images are defined.</li>
+<li>Most HTML elements can have attributes.</li>
+</ul>
+<h3 id="nested-html-element">Nested HTML Element</h3>
+<p>Most HTML elements are allowed to be nested (can include other HTML elements). HTML documents consist of nested HTML elements.</p>
+<h3 id="empty-html-element">Empty HTML Element</h3>
+<p>The HTML elements which have no content are called Empty HTML Element and they are closed in the start tag.</p>
+<p>For example, &lt;br&gt; is an empty element without closing tag. (&lt;br&gt; tag defines linefeed) In XHTML, XML, and future versions of HTML, all elements must be closed.</p>
+<p>Adding slash in the start tag like &lt;br/&gt; is the right way to close the empty elements.</p>
+<h3 id="use-lowercase-tag">Use Lowercase Tag</h3>
+<p>HTML tags are not case sensitive. W3C recommends lowercase in HTML4 and Lowercase is mandatory in future (X) version of HTML.</p>
+</div><div class="post-footer" id="post-footer">
     <div class="post-info">
         <div class="post-info-line">
             <div class="post-info-mod">

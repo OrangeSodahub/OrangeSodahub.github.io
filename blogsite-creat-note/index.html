@@ -127,8 +127,239 @@
                     <span>Contents</span>
                     <span><i class="details-icon fas fa-angle-right"></i></span>
                 </div>
-                <div class="details-content toc-content" id="toc-content-static"></div>
-            </div><div class="content" id="content"></div><div class="post-footer" id="post-footer">
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#install-chocolate">INSTALL CHOCOLATE</a></li>
+    <li><a href="#install-hugo">INSTALL HUGO</a></li>
+    <li><a href="#build-a-site-and-creat-a-post">BUILD A SITE AND CREAT A POST</a></li>
+    <li><a href="#simply-configure-your-site">SIMPLY CONFIGURE YOUR SITE</a>
+      <ul>
+        <li><a href="#quickly-comfigure-a-theme">Quickly comfigure a theme</a></li>
+        <li><a href="#correctly-edit-your-post">Correctly edit your post</a></li>
+      </ul>
+    </li>
+    <li><a href="#post-to-webpages">POST TO WEBPAGES</a></li>
+    <li><a href="#enrich-your-styles">ENRICH YOUR STYLES</a>
+      <ul>
+        <li><a href="#make-your-contents-searchable---algolia">Make your contents searchable&mdash;Algolia</a></li>
+        <li><a href="#configure-the-toctable-of-content">Configure the TOC(table of content)</a></li>
+        <li><a href="#add-the-comment-plugin">Add the comment plugin</a></li>
+        <li><a href="#add-website-statistics---busuanzi-umeng-baiduanalysics-googleanalysics">Add website statistics&mdash;Busuanzi, UMeng, BaiduAnalysics, GoogleAnalysics</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><!-- toc -->
+<p>I&rsquo;ve jot down here the essentials of creating my first blog using Hugo for future reference.Even though there are a lot of resources and instructions on the Internet, it is still more convenient to view mine. Also, the official website of Hugo offers the most correct, formal descriptions and guidelines for everyone but, that&rsquo;s too flexible and hard to percisely find out what we individually really need. And here I write down the most concise procedures from the new user&rsquo;s perspective.</p>
+<blockquote>
+<p>Tips: the words or pharses which are set bold in order to draw your attention are important, they usually are the name of file or foldr you &rsquo;ll operate or some shortcode you &rsquo;ll type them yourself and so on. And some paragraph that are framed in gray squares apparantly contains the codes and you can directly copy them through click the button in the upper right without typing them in the flesh. Attention.</p>
+</blockquote>
+<p>[for windows user]</p>
+<h2 id="install-chocolate">INSTALL CHOCOLATE</h2>
+<p>More info: <a href="https://chocolatey.org" target="_blank" rel="noopener noreffer">https://chocolatey.org</a></p>
+<p>Simply explanation: the Chocolaty is a tool we use to install and setup the hugo.</p>
+<ul>
+<li>
+<p>First, ensure that you are using an <strong>administrative shell</strong> - you can also install as a non-admin, check out <a href="https://docs.chocolatey.org/en-us/choco/setup#non-administrative-install" target="_blank" rel="noopener noreffer">Non-Administrative Installation</a>.</p>
+</li>
+<li>
+<p>Install with powershell.exe</p>
+<p>With PowerShell, you must ensure <a href="https://go.microsoft.com/fwlink/?LinkID=135170" target="_blank" rel="noopener noreffer">Get-ExecutionPolicy</a> is not Restricted. We suggest using <strong>Bypass</strong> to bypass the policy to get things installed or <strong>AllSigned</strong> for quite a bit more security :</p>
+<p>Run <strong>Get-ExecutionPolicy</strong>. If it returns <strong>Restricted</strong>, then run <strong>Set-ExecutionPolicy</strong> AllSigned or <strong>Set-ExecutionPolicy Bypass -Scope Process</strong>.</p>
+<p>Now run the following command:Paste the text into your shell and press Enter.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString(&#39;https://chocolatey.org/install.ps1&#39;))
+</code></pre></td></tr></table>
+</div>
+</div></li>
+<li>
+<p>Wait a few seconds for the command to complete.</p>
+</li>
+<li>
+<p>Type <strong>choco</strong> to see your choco version or <strong>choco -</strong> to see more instructions.</p>
+</li>
+</ul>
+<h2 id="install-hugo">INSTALL HUGO</h2>
+<p>There are many other methods to install hugo:</p>
+<ul>
+<li>Directly download the source file and configure manually. Then Download the appropriate version for your platform from <a href="https://github.com/gohugoio/hugo/releases" target="_blank" rel="noopener noreffer">Hugo Releases</a>.</li>
+<li>Chocolatey(Windows) for whom uses Chocolaey for package management.</li>
+<li>Scoop(Windows) for whom uses Scoop for package management.</li>
+</ul>
+<p>Here we use Chocolatey for package management, you can install Hugo with the following cmd code:</p>
+<p>install with chocolatey.ps1</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">choco install hugo -confirm
+</code></pre></td></tr></table>
+</div>
+</div><p>Or the &ldquo;extended&rdquo; Sass/Scss version:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">choco install hugo-extended -confirm
+</code></pre></td></tr></table>
+</div>
+</div><p>Wait and if you see no errors occur then Hugo is ready.</p>
+<h2 id="build-a-site-and-creat-a-post">BUILD A SITE AND CREAT A POST</h2>
+<ul>
+<li>
+<p>Select a folder as your site&rsquo;s root directory. Any name of it is OK.</p>
+</li>
+<li>
+<p>Go to the root directory and run the CMD command:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">hugo new site XXX
+</code></pre></td></tr></table>
+</div>
+</div><p>Here &ldquo;XXX&rdquo; is your site&rsquo;s name then you&rsquo;ll see it generates a new folder named &ldquo;XXX&rdquo; and that is your really site&rsquo;s local directory. If you succeed, you&rsquo;ll see a new folder named &ldquo;XXX&rdquo; right in the current directory.</p>
+</li>
+<li>
+<p>Double click the site&rsquo;s folder to go to the site&rsquo;s local directory and run the CMD command:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">hugo new posts/my-first-post.md
+</code></pre></td></tr></table>
+</div>
+</div><p>Here &ldquo;posts&rdquo; is the name of the folder that contains your .md post file named &ldquo;my-first-post&rdquo;. Double click the &ldquo;content&rdquo; folder and you&rsquo;ll see it.</p>
+</li>
+</ul>
+<p>At this time a basic site has been successfully built. And untill now all the steps are so easy and simple to finish because they are the ways everyone must pass as the fundermental.</p>
+<h2 id="simply-configure-your-site">SIMPLY CONFIGURE YOUR SITE</h2>
+<h3 id="quickly-comfigure-a-theme">Quickly comfigure a theme</h3>
+<p>Comfigure a theme for you site and make it look different and personal. That&rsquo;s to say use many of CSS files and JS filse and others to decorate, configure the pages according to your will, like clothing a puppy, to make it more like a real website.</p>
+<blockquote>
+<p>Tips: As a new user I&rsquo;ve been puzzled and beset here for a long time because ignorance of the construction of these new things. I looked up to so many many information and material including others' blogsite-build-note or experiences. And if you really want to be more clear about the construction then <a href="" rel="">[BLOGSITE-CONSTRUCTI]</a> can help you. It also help you to understand how to config your site first.</p>
+</blockquote>
+<p>Here are steps of quick method:</p>
+<ul>
+<li>
+<p>First enter the website of hugo themes: <a href="https://themes.gohugo.io/">https://themes.gohugo.io/</a></p>
+</li>
+<li>
+<p>Glance over the diverse hugo themes and select one theme you prefer to and click it.</p>
+</li>
+<li>
+<p>On the theme page,  you can browse the style of the theme . Find the &ldquo;<strong>Quick Start</strong>&rdquo; (maybe it dosen&rsquo;t exsist then skip current and subsequent steps.) or find directly the command to add the repository into your Hugo Project repository as a submodule. The command like this:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">git submodule add https://github.com/luizdepra/hugo-coder.git themes/hugo-coder
+</code></pre></td></tr></table>
+</div>
+</div></li>
+<li>
+<p>Configure your <strong>config.toml</strong> which can be found in the site&rsquo;s root directory. You can only change the <strong>theme</strong> configuration to the name of your wanted theme&rsquo;s name. Or a recommended way is copy the <strong>config.toml</strong> inside the exampleSite in the theme&rsquo;s directory which you just added and it can be seen in the <strong>themes</strong> folder.</p>
+</li>
+<li>
+<p>(If you find the &ldquo;Quick Start&rdquo; before then skip current and subsequent setps) If it doesn&rsquo;t exist the command you can directly clone the theme to local then do like this: on the top or the page of the theme you can&rsquo;t miss the two or sometimes three or other quantitis buttons right left, behind the heading. Find the one which the word &ldquo;DOWNLOAD&rdquo; on it. Click it and go to the source webpage &ldquo;Github repository&rdquo; and again find the button which represent &ldquo;<strong>DOWNLOAD</strong>&rdquo;. Simply choose &ldquo;DOWNLOAD as ZIP&rdquo; and unzip.</p>
+</li>
+<li>
+<p>Once you download them to your root directory then copy or cut them and paste to the folder &ldquo;themes&rdquo;. Last, back to root directory and find a file named &ldquo;<strong>.gitmodules</strong>&rdquo; to open it. You&rsquo;ll find several similar statements if you have the experience of using command &ldquo;git submodule&rdquo;. Write one in their image and the url is right the URL of the webpage which you download the zip source from. Or directly just refer to this:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">[submodule &#34;themes/ananke&#34;]
+  path = themes/ananke
+  url = https://github.com/budparr/gohugo-theme-ananke.git
+</code></pre></td></tr></table>
+</div>
+</div><p>You must replace the name of theme and the path and the url accordingly.</p>
+</li>
+<li>
+<p>Open the file &ldquo;<strong>config.toml</strong>&rdquo; and find the line &ldquo;theme&rdquo;, add the name of your choice and the simplest configuration is already set. Further you can modify some of configurations in the config.toml arrording to your preference but that will be detailed explained <a href="" rel="">here,</a> not in the current post.</p>
+</li>
+<li>
+<p>Run the CMD command <strong>hugo server -D</strong>  or <strong>hugo server</strong> in the site&rsquo;s root directory to see the result at `http://localhost:1313/. The fomer which contains &ldquo;-D&rdquo; means all of your post files will be pushed to local server whether or not it&rsquo;s labled as draft, so the latter only show the posts which have the &ldquo;false&rdquo; value of the &ldquo;draft&rdquo;.</p>
+</li>
+</ul>
+<h3 id="correctly-edit-your-post">Correctly edit your post</h3>
+<p>Our post files are saved as the form of markdown and in the &ldquo;content&rdquo; folder. We should only input what we want to show on the site in these files. For briefness and convenience, we can use &ldquo;<strong>Typora</strong>&rdquo; or just &ldquo;<strong>VScode</strong>&rdquo; to edit these files. The former is recommended.</p>
+<p>And if you use the VScode you cannnot view of some of the styles of markdwon languages.</p>
+<h2 id="post-to-webpages">POST TO WEBPAGES</h2>
+<p>A local visalbe blogsite has already been built basically and now it&rsquo;s time to push it to webpages online so that everyone that connects to internet can browse it. Here we have many methods, like Github pages, Gitee pages, and Gitlab pages. Each of them has its own merits. I&rsquo;ll explain some differences among them later.</p>
+<p>Here we use Github pages.</p>
+<ol>
+<li>
+<p>First you must own a github account. That&rsquo;s not difficult. Go to <a href="http://github.com">http://github.com</a> and sign up.</p>
+</li>
+<li>
+<p>Creat a new repository and give it name &ldquo;XXX.github.io&rdquo;. &ldquo;XXX&rdquo; equals to your account name. Besides the name can only be this one, not any others. That&rsquo;s the only rule.</p>
+</li>
+<li>
+<p>Then we need Git. (If you don&rsquo;t have or don&rsquo;t know it, here[Git][https://www.zonlin.cn/Git/]) Go back to your root directory and run the CMD command <strong>hugo</strong>, if no errors or warnings occur then your site is already successfully post to a new folder named &ldquo;<strong>public</strong>&rdquo; in the root. Change the current directory to &ldquo;<strong>public</strong>&rdquo;, right-click to choose the &ldquo;<strong>Git bash here</strong>&rdquo; then a new command line window will start. Now we need to connect the local repostiory with the remote repostiory(Github repo), use git commands:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">git remote add origin https://github.com/Your account name/Your repository name.git
+git remote -v #Check the address of your remote repository
+git remote rm origin #Disconnect the local repo with the remote.
+</code></pre></td></tr></table>
+</div>
+</div><p>If you want to connect not only one remote reprository then add it just like the first line above.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">git remote add XXX XXX
+</code></pre></td></tr></table>
+</div>
+</div><p>The first &ldquo;XXX&rdquo; represents the nickname of your remote repo&mdash;you need it to call it in local. The second &ldquo;XXX&rdquo; is your repo&rsquo;s address like the first line.</p>
+<p>Once you successfully connect the local and the remote, now push all of your contents to your remote repository so that Github pages could configure your site online automatically. Remember the following commands:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">git add .
+git commit -m &#34;your annotation&#34;
+git push -u origin master
+</code></pre></td></tr></table>
+</div>
+</div><p>Some solutions of errors:</p>
+</li>
+</ol>
+<h2 id="enrich-your-styles">ENRICH YOUR STYLES</h2>
+<blockquote>
+<p>In this section many indexs are offered to you to direct to another page or pages that describe a certain topic. You can over view all of them here and choose one or more. And that&rsquo;s a necessary situation so if something is so brief that it could be explain within several lines then no links are necessary.</p>
+</blockquote>
+<h3 id="make-your-contents-searchable---algolia">Make your contents searchable&mdash;Algolia</h3>
+<p>As our posts becoming more and more, how to search for a certain topic we want through some key words? The biggest drawback is the lost of search. That&rsquo;s it&mdash;algolia. Go to <a href="https://www.zonlin.cn/search-with-algolia/" target="_blank" rel="noopener noreffer">SEARCH-WITH-ALGOLIA</a> and achieve it.</p>
+<h3 id="configure-the-toctable-of-content">Configure the TOC(table of content)</h3>
+<h3 id="add-the-comment-plugin">Add the comment plugin</h3>
+<h3 id="add-website-statistics---busuanzi-umeng-baiduanalysics-googleanalysics">Add website statistics&mdash;Busuanzi, UMeng, BaiduAnalysics, GoogleAnalysics</h3>
+<p>With more and more contents being added to our websites, how do we get to know how many viewers are watching what content, at what time, for how much time, and how do we know what content is being viewed the most often and for the longest duration which represents that part of content should be better relatively.</p>
+<p>Add the analytical method to your blogsite. There are varieties of choices like busuanzi, youmeng&hellip;&hellip;Go to <a href="https://www.zonlin.cn/add-website-statistics/" target="_blank" rel="noopener noreffer">ADD-WEBSITE-STATISTICS</a> and set it.</p>
+</div><div class="post-footer" id="post-footer">
     <div class="post-info">
         <div class="post-info-line">
             <div class="post-info-mod">
