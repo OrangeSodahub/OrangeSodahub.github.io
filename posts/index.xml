@@ -4,7 +4,14 @@
         <link>https://orangesodahub.github.io/posts/</link>
         <description>All Posts | ZonLin</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>gzzyyxy@gmail.com (ZonLin)</managingEditor>
-            <webMaster>gzzyyxy@gmail.com (ZonLin)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 12 Apr 2021 12:34:01 &#43;0800</lastBuildDate><atom:link href="https://orangesodahub.github.io/posts/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>gzzyyxy@gmail.com (ZonLin)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 28 Jun 2021 13:33:43 &#43;0800</lastBuildDate><atom:link href="https://orangesodahub.github.io/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>FRESHMAN YEAE</title>
+    <link>https://orangesodahub.github.io/freshman-yeae/</link>
+    <pubDate>Mon, 28 Jun 2021 13:33:43 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>https://orangesodahub.github.io/freshman-yeae/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
     <title>BUILD ENCRYPTED DOCUMENTS(HUGO)</title>
     <link>https://orangesodahub.github.io/build-encrypted-documents/</link>
     <pubDate>Mon, 12 Apr 2021 12:34:01 &#43;0800</pubDate>
@@ -80,13 +87,5 @@ Install the scirpt(Required) To use busuanzi you must input the busuanzi.js to y
     <author>Author</author>
     <guid>https://orangesodahub.github.io/download-video-from-website/</guid>
     <description><![CDATA[https://zhuanlan.zhihu.com/p/142349349]]></description>
-</item><item>
-    <title>HTML</title>
-    <link>https://orangesodahub.github.io/html/</link>
-    <pubDate>Wed, 17 Feb 2021 11:32:39 &#43;0800</pubDate>
-    <author>Author</author>
-    <guid>https://orangesodahub.github.io/html/</guid>
-    <description><![CDATA[Something about HTML What is HTML?  HTML is a language used to describe web pages. HTML is Hyper Text Markup Language. Markup language is a set of markup tags. HTML uses markup tags to describe Web pages.  HTML tag HTML markup tags are often referred to as HTML tags.
- HTML tags are keywords surrounded by Angle brackets, such as &lt;HTML&gt;. HTML tags usually come in pairs, such as &lt;b&gt; and &lt;/b&gt;.]]></description>
 </item></channel>
 </rss>
