@@ -2,6 +2,7 @@
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
     xmlns:xhtml="http://www.w3.org/1999/xhtml"
     ><url>
+<<<<<<< HEAD
             <loc>https://orangesodahub.github.io/zh-cn/ffmpeg/</loc><lastmod>2021-03-08T23:36:41&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
                         rel="alternate"
                         hreflang="en"
@@ -66,6 +67,46 @@
                     rel="alternate"
                     hreflang="zh-cn"
                     href="https://orangesodahub.github.io/zh-cn/html/"
+=======
+            <loc>https://orangesodahub.github.io/zh-cn/categories/</loc><lastmod>2021-02-17T11:32:39&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
+                        rel="alternate"
+                        hreflang="en"
+                        href="https://orangesodahub.github.io/categories/"
+                        /><xhtml:link
+                        rel="alternate"
+                        hreflang="fr"
+                        href="https://orangesodahub.github.io/fr/categories/"
+                        /><xhtml:link
+                    rel="alternate"
+                    hreflang="zh-cn"
+                    href="https://orangesodahub.github.io/zh-cn/categories/"
+                    /></url><url>
+            <loc>https://orangesodahub.github.io/zh-cn/html/</loc><lastmod>2021-02-17T11:32:39&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
+                        rel="alternate"
+                        hreflang="en"
+                        href="https://orangesodahub.github.io/html/"
+                        /><xhtml:link
+                        rel="alternate"
+                        hreflang="fr"
+                        href="https://orangesodahub.github.io/fr/html/"
+                        /><xhtml:link
+                    rel="alternate"
+                    hreflang="zh-cn"
+                    href="https://orangesodahub.github.io/zh-cn/html/"
+                    /></url><url>
+            <loc>https://orangesodahub.github.io/zh-cn/posts/</loc><lastmod>2021-02-17T11:32:39&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
+                        rel="alternate"
+                        hreflang="en"
+                        href="https://orangesodahub.github.io/posts/"
+                        /><xhtml:link
+                        rel="alternate"
+                        hreflang="fr"
+                        href="https://orangesodahub.github.io/fr/posts/"
+                        /><xhtml:link
+                    rel="alternate"
+                    hreflang="zh-cn"
+                    href="https://orangesodahub.github.io/zh-cn/posts/"
+>>>>>>> a814aebf1f8de7ac7f38f2d0fda4dfd9c519fbd0
                     /></url><url>
             <loc>https://orangesodahub.github.io/zh-cn/tags/</loc><lastmod>2021-02-17T11:32:39&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
                         rel="alternate"
@@ -106,6 +147,22 @@
                     hreflang="zh-cn"
                     href="https://orangesodahub.github.io/zh-cn/categories/website/"
                     /></url><url>
+<<<<<<< HEAD
+=======
+            <loc>https://orangesodahub.github.io/zh-cn/</loc><lastmod>2021-02-17T11:32:39&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
+                        rel="alternate"
+                        hreflang="en"
+                        href="https://orangesodahub.github.io/"
+                        /><xhtml:link
+                        rel="alternate"
+                        hreflang="fr"
+                        href="https://orangesodahub.github.io/fr/"
+                        /><xhtml:link
+                    rel="alternate"
+                    hreflang="zh-cn"
+                    href="https://orangesodahub.github.io/zh-cn/"
+                    /></url><url>
+>>>>>>> a814aebf1f8de7ac7f38f2d0fda4dfd9c519fbd0
             <loc>https://orangesodahub.github.io/zh-cn/html-and-css/</loc><lastmod>2021-02-17T10:52:38&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
                         rel="alternate"
                         hreflang="en"

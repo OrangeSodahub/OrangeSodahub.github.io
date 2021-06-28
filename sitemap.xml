@@ -11,14 +11,22 @@
   <sitemap>
     <loc>https://orangesodahub.github.io/zh-cn/sitemap.xml</loc>
     
+<<<<<<< HEAD
       <lastmod>2021-03-08T23:36:41+08:00</lastmod>
+=======
+      <lastmod>2021-02-17T11:32:39+08:00</lastmod>
+>>>>>>> a814aebf1f8de7ac7f38f2d0fda4dfd9c519fbd0
     
   </sitemap>
   
   <sitemap>
     <loc>https://orangesodahub.github.io/fr/sitemap.xml</loc>
     
+<<<<<<< HEAD
       <lastmod>2021-03-08T23:36:58+08:00</lastmod>
+=======
+      <lastmod>2021-02-17T11:32:39+08:00</lastmod>
+>>>>>>> a814aebf1f8de7ac7f38f2d0fda4dfd9c519fbd0
     
   </sitemap>
   
