@@ -1,0 +1,348 @@
+<script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?fe151ab3944fff51c4da312eeac4eb09";
+      var s = document.getElementsByTagName("script")[0]; 
+      s.parentNode.insertBefore(hm, s);
+    })();
+    </script>
+    
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+        <title>LATEX笔记 - ZonLin</title><meta name="Description" content="关于作者"><meta property="og:title" content="LATEX笔记" />
+<meta property="og:description" content="所使用的的编辑器：TEXworks, TEXstudio。编辑器可以编译，也可以使用命令行编译。 1. 简述 1.1 LATEX命令和代码结构 1.1.1 LATEX命" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://orangesodahub.github.io/zh-cn/latex%E7%AC%94%E8%AE%B0/" />
+<meta property="og:image" content="https://orangesodahub.github.io/logo.png"/>
+<meta property="article:published_time" content="2021-06-28T14:15:53+08:00" />
+<meta property="article:modified_time" content="2021-06-28T14:15:53+08:00" />
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://orangesodahub.github.io/logo.png"/>
+
+<meta name="twitter:title" content="LATEX笔记"/>
+<meta name="twitter:description" content="所使用的的编辑器：TEXworks, TEXstudio。编辑器可以编译，也可以使用命令行编译。 1. 简述 1.1 LATEX命令和代码结构 1.1.1 LATEX命"/>
+<meta name="application-name" content="ZonLin">
+<meta name="apple-mobile-web-app-title" content="ZonLin"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://orangesodahub.github.io/zh-cn/latex%E7%AC%94%E8%AE%B0/" /><link rel="prev" href="https://orangesodahub.github.io/zh-cn/html/" /><link rel="next" href="https://orangesodahub.github.io/zh-cn/project-induction-automatic-water-dispenser/" /><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.0/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css"><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "LATEX笔记",
+        "inLanguage": "zh-CN",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/orangesodahub.github.io\/zh-cn\/latex%E7%AC%94%E8%AE%B0\/"
+        },"image": ["https:\/\/orangesodahub.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","wordcount":  1951 ,
+        "url": "https:\/\/orangesodahub.github.io\/zh-cn\/latex%E7%AC%94%E8%AE%B0\/","datePublished": "2021-06-28T14:15:53+08:00","dateModified": "2021-06-28T14:15:53+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
+            "@type": "Organization",
+            "name": "ZonLin","logo": "https:\/\/orangesodahub.github.io\/images\/%E4%B8%8B%E8%BD%BD.jpg"},"author": {
+                "@type": "Person",
+                "name": "ZonLin"
+            },"description": ""
+    }
+    </script></head>
+    <body header-desktop="fixed" header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/zh-cn/" title="ZonLin"><span class="header-title-pre"><i class='far fa-kiss-wink-heart fa-fw'></i></span>ZonLin</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/zh-cn/posts/"> 所有文章 </a><a class="menu-item" href="/zh-cn/tags/"> 标签 </a><a class="menu-item" href="/zh-cn/categories/"> 分类 </a><a class="menu-item" href="/zh-cn/categories/documentation/"> 文档 </a><a class="menu-item" href="/zh-cn/about/"> 关于 </a><a class="menu-item" href="https://github.com/OrangeSodahub" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw'></i>  </a><span class="menu-item delimiter"></span><a href="javascript:void(0);" class="menu-item language" title="选择语言">简体中文<i class="fas fa-chevron-right fa-fw"></i>
+                        <select class="language-select" id="language-select-desktop" onchange="location = this.value;"><option value="/zh-cn/latex%E7%AC%94%E8%AE%B0/" selected>简体中文</option></select>
+                    </a><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="在此键入" id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="搜索">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="清空">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                    <i class="fas fa-adjust fa-fw"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/zh-cn/" title="ZonLin"><span class="header-title-pre"><i class='far fa-kiss-wink-heart fa-fw'></i></span>ZonLin</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="在此键入" id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="搜索">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="清空">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        取消
+                    </a>
+                </div><a class="menu-item" href="/zh-cn/posts/" title="">所有文章</a><a class="menu-item" href="/zh-cn/tags/" title="">标签</a><a class="menu-item" href="/zh-cn/categories/" title="">分类</a><a class="menu-item" href="/zh-cn/categories/documentation/" title="">文档</a><a class="menu-item" href="/zh-cn/about/" title="">关于</a><a class="menu-item" href="https://github.com/OrangeSodahub" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw'></i></a><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                <i class="fas fa-adjust fa-fw"></i>
+            </a><a href="javascript:void(0);" class="menu-item" title="选择语言">简体中文<i class="fas fa-chevron-right fa-fw"></i>
+                    <select class="language-select" onchange="location = this.value;"><option value="/zh-cn/latex%E7%AC%94%E8%AE%B0/" selected>简体中文</option></select>
+                </a></div>
+    </div>
+</header>
+<div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+</div>
+<div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+</div>
+<main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">目录</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animated flipInX">LATEX笔记</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="/zh-cn/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>ZonLin</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-06-28">2021-06-28</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 1951 字&nbsp;
+                <i class="far fa-clock fa-fw"></i>&nbsp;预计阅读 4 分钟&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  kept="">
+                <div class="details-summary toc-title">
+                    <span>目录</span>
+                    <span><i class="details-icon fas fa-angle-right"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#1-简述">1. 简述</a>
+      <ul>
+        <li><a href="#11-latex命令和代码结构">1.1 LATEX命令和代码结构</a>
+          <ul>
+            <li><a href="#111-latex命令和环境">1.1.1 LATEX命令和环境</a></li>
+            <li><a href="#112-latex源代码结构">1.1.2 LATEX源代码结构</a></li>
+          </ul>
+        </li>
+        <li><a href="#12-latex宏包和文档类">1.2 LATEX宏包和文档类</a>
+          <ul>
+            <li><a href="#121-文档类">1.2.1 文档类</a></li>
+            <li><a href="#122-宏包">1.2.2 宏包</a></li>
+          </ul>
+        </li>
+        <li><a href="#13-文件组织">1.3 文件组织</a></li>
+      </ul>
+    </li>
+    <li><a href="#2-文字">2. 文字</a></li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><blockquote>
+<p>所使用的的编辑器：TEXworks, TEXstudio。编辑器可以编译，也可以使用命令行编译。</p>
+</blockquote>
+<h2 id="1-简述">1. 简述</h2>
+<h3 id="11-latex命令和代码结构">1.1 LATEX命令和代码结构</h3>
+<h4 id="111-latex命令和环境">1.1.1 LATEX命令和环境</h4>
+<p>LATEX中<strong>命令</strong>以 <strong>反斜线\</strong> 开头，有两种形式：</p>
+<ol>
+<li>反斜杠+一串字母。如 \ LATEX，当遇到任意非字母符号（空格、数字、标点等）结束；该种形式会忽略其后的连续空格，若要须引入空格，在命令后面加一对<strong>花括号</strong>阻止其忽略空格。</li>
+<li>反斜杠+单个非字母符号。如 \$ 。</li>
+</ol>
+<blockquote>
+<p>注意：LATEX对大小写敏感，如输入 \LATEX 生成LATEX字母，而输入 \Latex 或 \LaTeX 则不会生成任何东西。</p>
+</blockquote>
+<p>某些LATEX可以接收一些参数，参数内容会影响命令效果。LATEX参数分为可选参数和必选参数，前者以 <strong>方括号[]</strong> 包裹，后者以 <strong>花括号{}</strong> 包裹。某些命令可带星号 *。</p>
+<p>LATEX中<strong>环境</strong>用以令一些效果在局部生效，或是生成特殊的文档元素。用法为一对命令 <strong>\begin</strong> 和 <strong>\end</strong>：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">\begin{&lt;environment name&gt;} [&lt;optional arguments&gt;] {&lt;mandatory arguments&gt;}
+...
+\end{&lt;environment name&gt;}
+</code></pre></td></tr></table>
+</div>
+</div><p>其中&lt;environment name&gt;为环境名， \begin 和 \end 中的环境名需保持一致。后面跟环境所需的必选参数和可选参数，类似命令。参数数量可能一个或多个，也可能为零。</p>
+<h4 id="112-latex源代码结构">1.1.2 LATEX源代码结构</h4>
+<p>LATEX源代码以一个 <strong>\documentclass</strong> 命令开头，其指定了文档使用的文档类。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">\documentclass{...} //documentclass命令有一个可选参数，其传递给相应的文档类，作为文档类的参数
+				    //document环境中的内容是文档正文
+\begin{document}
+\section{...}
+......              //正文
+\end{document}
+</code></pre></td></tr></table>
+</div>
+</div><p>在 \docuemntclass 和 \begin{docuemnt} 之间的位置为导言区，一般会使用 <strong>\usepackage</strong> 调用宏包，以及进行对文档的全局设置。</p>
+<h3 id="12-latex宏包和文档类">1.2 LATEX宏包和文档类</h3>
+<h4 id="121-文档类">1.2.1 文档类</h4>
+<p>文档类规定了LATEX源代码生成的文档性质。源代码开头用 <strong>\documentclass</strong> 指明文档类。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">\documentclass[&lt;options&gt;] {&lt;class-name&gt;}
+</code></pre></td></tr></table>
+</div>
+</div><p>其中&lt;class-name&gt;为文档类的名称，如LATEX提供的article，book，report，或其他。某些文档类支持中文排版，前三个为“标准文档类”。</p>
+<blockquote>
+<ol>
+<li>article：文章格式的文档类，广泛用于科技论文、报告、说明文档等。</li>
+<li>report：长篇报告格式的文档类，具有章节结构，用于综述、长篇论文、简单</li>
+</ol>
+<p>的书籍等。</p>
+<ol start="3">
+<li>book：书籍文档类，包含章节结构和前言、正文、后记等结构。</li>
+<li>proc：基于article 文档类的一个简单的学术文档模板。</li>
+<li>slides：幻灯格式的文档类，使用无衬线字体。</li>
+<li>minimal：一个极其精简的文档类，只设定了纸张大小和基本字号，用作代码测试的最小工作示例（Minimal Working Example）。</li>
+</ol>
+</blockquote>
+<p>可选参数&lt;options&gt;为文档类指定选项，<strong>全局</strong>规定排版参数，如字号、纸张大小、单双面等。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">\documentclass[11pt,twoside,a4paper] {article}
+</code></pre></td></tr></table>
+</div>
+</div><p>规定了article文档类，纸张为A4大小，字号为11pt，双面排版。LATEX的三个标准文档类可指定的选项：</p>
+<ol>
+<li><strong>10pt, 11pt, 12pt</strong> 指定文档的基本字号。默认为10pt。</li>
+<li><strong>a4paper, letterpaper, …</strong> 指定纸张大小，默认为美式信纸letterpaper （8:5 × 11 英寸）。可指定选项还包括a5paper，b5paper，executivepaper 和legalpaper。</li>
+<li><strong>twoside, oneside</strong> 指定单面/双面排版。双面排版时，奇偶页的页眉页脚、页边距不同。article和report 默认为oneside，book 默认为twoside。</li>
+<li><strong>onecolumn, twocolumn</strong> 指定单栏/双栏排版。默认为onecolumn。</li>
+<li><strong>openright, openany</strong> 指定新的一章\chapter 是在奇数页（右侧）开始，还是直接紧跟着上一页开始。report 默认为openany，book 默认为openright。对article 无效。</li>
+<li><strong>landscape</strong> 指定横向排版。默认为纵向。</li>
+<li><strong>titlepage, notitlepage</strong> 指定标题命令\maketitle 是否生成单独的标题页。article 默认notitlepage，report 和book 默认为titlepage。</li>
+<li><strong>fleqn</strong> 令行间公式左对齐。默认为居中对齐。</li>
+<li><strong>leqno</strong> 将公式编号放在左边。默认为右边。</li>
+<li><strong>draft, final</strong> 指定草稿/终稿模式。草稿模式下，断行不良的地方会在行尾添加一个黑色方块。默认为final。</li>
+</ol>
+<h4 id="122-宏包">1.2.2 宏包</h4>
+<p>类似调用文档类，调用宏包：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">\usepackage[&lt;options&gt;] {&lt;package-name&gt;}
+</code></pre></td></tr></table>
+</div>
+</div><p>\usepackage 可以一次调用多个宏包，在 &lt;package-name&gt;中用逗号隔开。调用的宏包需确保安装在计算机中，否则会报错。</p>
+<blockquote>
+<p>注意：宏包（包括文档类）可能定义了许多命令环境，可能会修改LATEX已有的命令和环境。在Windows命令提示符或Linux中断下查阅帮助文档：<strong>texdoc&lt;pkg-name&gt;</strong></p>
+</blockquote>
+<h3 id="13-文件组织">1.3 文件组织</h3>
+<p>LATEX中使用命令 <strong>\include</strong> 在源代码中插入文件：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">\include{&lt;filename&gt;}
+</code></pre></td></tr></table>
+</div>
+</div><p>&lt;filename&gt;为文件名，若和要编译的主文件不在同一目录，则要加上相对或绝对路径。&lt;filename&gt;可不带扩展名，这个时候默认 <strong>.tex</strong> 。</p>
+<p>\include在读入&lt;filename&gt;之前会另起一页。使用 \input 命令，只是把文件里的内容插入：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">\input{&lt;filename&gt;}
+</code></pre></td></tr></table>
+</div>
+</div><p>在导言区使用命令 <strong>\includeonly</strong> 指定全局只载入某些文件：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">\includeonly{&lt;filename1&gt;,&lt;filename2&gt;,...}
+</code></pre></td></tr></table>
+</div>
+</div><p>使用后，正文中不在其列举范围内的include内容不会生效。</p>
+<h2 id="2-文字">2. 文字</h2>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_SVG"></script><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>更新于 2021-06-28</span>
+            </div>
+            <div class="post-info-license"></div>
+        </div>
+        <div class="post-info-line">
+            <div class="post-info-md"></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="分享到 Twitter" data-sharer="twitter" data-url="https://orangesodahub.github.io/zh-cn/latex%E7%AC%94%E8%AE%B0/" data-title="LATEX笔记" data-via="https://twitter.com/6k6u7dglok4U1SG"><i class="fab fa-twitter fa-fw"></i></a><a href="javascript:void(0);" title="分享到 Facebook" data-sharer="facebook" data-url="https://orangesodahub.github.io/zh-cn/latex%E7%AC%94%E8%AE%B0/"><i class="fab fa-facebook-square fa-fw"></i></a><a href="javascript:void(0);" title="分享到 Hacker News" data-sharer="hackernews" data-url="https://orangesodahub.github.io/zh-cn/latex%E7%AC%94%E8%AE%B0/" data-title="LATEX笔记"><i class="fab fa-hacker-news fa-fw"></i></a><a href="javascript:void(0);" title="分享到 Reddit" data-sharer="reddit" data-url="https://orangesodahub.github.io/zh-cn/latex%E7%AC%94%E8%AE%B0/"><i class="fab fa-reddit fa-fw"></i></a><a href="javascript:void(0);" title="分享到 Line" data-sharer="line" data-url="https://orangesodahub.github.io/zh-cn/latex%E7%AC%94%E8%AE%B0/" data-title="LATEX笔记"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@2.14.0/icons/line.svg"></i></a><a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="https://orangesodahub.github.io/zh-cn/latex%E7%AC%94%E8%AE%B0/" data-title="LATEX笔记"><i class="fab fa-weibo fa-fw"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/zh-cn/">主页</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/zh-cn/html/" class="prev" rel="prev" title="HTML"><i class="fas fa-angle-left fa-fw"></i>HTML</a>
+            <a href="/zh-cn/project-induction-automatic-water-dispenser/" class="next" rel="next" title="Project Induction Automatic Water Dispenser">Project Induction Automatic Water Dispenser<i class="fas fa-angle-right fa-fw"></i></a></div>
+</div>
+</article></div>
+            </main><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
+<footer class="footer">
+        <div class="footer-container"><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2019 - 2021</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/zh-cn/" target="_blank">ZonLin</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span><div><span class="icp-splitter"></span><br class="icp-br"/>
+                        <span class="icp"><a href="https://beian.miit.gov.cn/#/Integrated/index">黔ICP备2021002279号-1</a>&nbsp;|&nbsp;</span><span>
+                            </a><img src="/images/备案图标.png"/><a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=52032102000640" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;">贵公网安备 52032102000640号</a>
+                        </span>
+                </div>
+            </div>
+            <span id="busuanzi_container_site_pv">
+                Total Visits:<span id="busuanzi_value_site_pv"></span>
+            </span>
+
+            <span id="busuanzi_container_site_uv">
+                Total Visitors:<span id="busuanzi_value_site_uv"></span>
+            </span>
+            <script type="text/javascript">document.write(unescape("%3Cspan id='cnzz_stat_icon_1279743727'%3E%3C/span%3E%3Cscript src='https://v1.cnzz.com/z_stat.php%3Fid%3D1279743727%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="回到顶部">
+                <i class="fas fa-arrow-up fa-fw"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="查看评论">
+                <i class="fas fa-comment fa-fw"></i>
+            </a>
+        </div><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/smooth-scroll@16.1.3/dist/smooth-scroll.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/autocomplete.js@0.37.1/dist/autocomplete.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/algoliasearch@4.2.0/dist/algoliasearch-lite.umd.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.2.2/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sharer.js@0.4.0/sharer.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"复制到剪贴板","maxShownLines":10},"comment":{},"search":{"algoliaAppID":"PASDMWALPK","algoliaIndex":"index.zh-cn","algoliaSearchKey":"b42948e51daaa93df92381c8e2ac0f93","highlightTag":"em","maxResultLength":10,"noResultsFound":"没有找到结果","snippetLength":50,"type":"algolia"}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+</html>

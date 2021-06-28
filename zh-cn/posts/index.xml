@@ -4,7 +4,28 @@
         <link>https://orangesodahub.github.io/zh-cn/posts/</link>
         <description>所有文章 | ZonLin</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>gzzyyxy@gmail.com (ZonLin)</managingEditor>
-            <webMaster>gzzyyxy@gmail.com (ZonLin)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 17 Feb 2021 11:32:39 &#43;0800</lastBuildDate><atom:link href="https://orangesodahub.github.io/zh-cn/posts/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>gzzyyxy@gmail.com (ZonLin)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 28 Jun 2021 17:29:48 &#43;0800</lastBuildDate><atom:link href="https://orangesodahub.github.io/zh-cn/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>Evaluation Moduel</title>
+    <link>https://orangesodahub.github.io/zh-cn/evaluation-moduel/</link>
+    <pubDate>Mon, 28 Jun 2021 17:29:48 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://orangesodahub.github.io/zh-cn/evaluation-moduel/</guid>
+    <description><![CDATA[1. 打分式评价 1.1 模糊综合评价（Fuzzy Comprehension Evaluation Method） 1.1.1 简述 模糊综合评价法是一种基于模糊数学的综合评价方法。该综合评价法根据模糊数学的隶属]]></description>
+</item><item>
+    <title>Project Induction Automatic Water Dispenser</title>
+    <link>https://orangesodahub.github.io/zh-cn/project-induction-automatic-water-dispenser/</link>
+    <pubDate>Mon, 28 Jun 2021 16:45:08 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://orangesodahub.github.io/zh-cn/project-induction-automatic-water-dispenser/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>LATEX笔记</title>
+    <link>https://orangesodahub.github.io/zh-cn/latex%E7%AC%94%E8%AE%B0/</link>
+    <pubDate>Mon, 28 Jun 2021 14:15:53 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://orangesodahub.github.io/zh-cn/latex%E7%AC%94%E8%AE%B0/</guid>
+    <description><![CDATA[所使用的的编辑器：TEXworks, TEXstudio。编辑器可以编译，也可以使用命令行编译。 1. 简述 1.1 LATEX命令和代码结构 1.1.1 LATEX命]]></description>
+</item><item>
     <title>HTML</title>
     <link>https://orangesodahub.github.io/zh-cn/html/</link>
     <pubDate>Wed, 17 Feb 2021 11:32:39 &#43;0800</pubDate>

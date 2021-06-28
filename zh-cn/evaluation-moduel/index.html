@@ -1,0 +1,303 @@
+<script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?fe151ab3944fff51c4da312eeac4eb09";
+      var s = document.getElementsByTagName("script")[0]; 
+      s.parentNode.insertBefore(hm, s);
+    })();
+    </script>
+    
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+        <title>Evaluation Moduel - ZonLin</title><meta name="Description" content="关于作者"><meta property="og:title" content="Evaluation Moduel" />
+<meta property="og:description" content="1. 打分式评价 1.1 模糊综合评价（Fuzzy Comprehension Evaluation Method） 1.1.1 简述 模糊综合评价法是一种基于模糊数学的综合评价方法。该综合评价法根据模糊数学的隶属" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://orangesodahub.github.io/zh-cn/evaluation-moduel/" />
+<meta property="og:image" content="https://orangesodahub.github.io/logo.png"/>
+<meta property="article:published_time" content="2021-06-28T17:29:48+08:00" />
+<meta property="article:modified_time" content="2021-06-28T17:29:48+08:00" />
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://orangesodahub.github.io/logo.png"/>
+
+<meta name="twitter:title" content="Evaluation Moduel"/>
+<meta name="twitter:description" content="1. 打分式评价 1.1 模糊综合评价（Fuzzy Comprehension Evaluation Method） 1.1.1 简述 模糊综合评价法是一种基于模糊数学的综合评价方法。该综合评价法根据模糊数学的隶属"/>
+<meta name="application-name" content="ZonLin">
+<meta name="apple-mobile-web-app-title" content="ZonLin"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://orangesodahub.github.io/zh-cn/evaluation-moduel/" /><link rel="prev" href="https://orangesodahub.github.io/zh-cn/project-induction-automatic-water-dispenser/" /><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.0/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css"><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Evaluation Moduel",
+        "inLanguage": "zh-CN",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/orangesodahub.github.io\/zh-cn\/evaluation-moduel\/"
+        },"image": ["https:\/\/orangesodahub.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","wordcount":  1673 ,
+        "url": "https:\/\/orangesodahub.github.io\/zh-cn\/evaluation-moduel\/","datePublished": "2021-06-28T17:29:48+08:00","dateModified": "2021-06-28T17:29:48+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
+            "@type": "Organization",
+            "name": "ZonLin","logo": "https:\/\/orangesodahub.github.io\/images\/%E4%B8%8B%E8%BD%BD.jpg"},"author": {
+                "@type": "Person",
+                "name": "ZonLin"
+            },"description": ""
+    }
+    </script></head>
+    <body header-desktop="fixed" header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/zh-cn/" title="ZonLin"><span class="header-title-pre"><i class='far fa-kiss-wink-heart fa-fw'></i></span>ZonLin</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/zh-cn/posts/"> 所有文章 </a><a class="menu-item" href="/zh-cn/tags/"> 标签 </a><a class="menu-item" href="/zh-cn/categories/"> 分类 </a><a class="menu-item" href="/zh-cn/categories/documentation/"> 文档 </a><a class="menu-item" href="/zh-cn/about/"> 关于 </a><a class="menu-item" href="https://github.com/OrangeSodahub" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw'></i>  </a><span class="menu-item delimiter"></span><a href="javascript:void(0);" class="menu-item language" title="选择语言">简体中文<i class="fas fa-chevron-right fa-fw"></i>
+                        <select class="language-select" id="language-select-desktop" onchange="location = this.value;"><option value="/evaluation-moduel/">English</option><option value="/zh-cn/evaluation-moduel/" selected>简体中文</option></select>
+                    </a><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="在此键入" id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="搜索">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="清空">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                    <i class="fas fa-adjust fa-fw"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/zh-cn/" title="ZonLin"><span class="header-title-pre"><i class='far fa-kiss-wink-heart fa-fw'></i></span>ZonLin</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="在此键入" id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="搜索">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="清空">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        取消
+                    </a>
+                </div><a class="menu-item" href="/zh-cn/posts/" title="">所有文章</a><a class="menu-item" href="/zh-cn/tags/" title="">标签</a><a class="menu-item" href="/zh-cn/categories/" title="">分类</a><a class="menu-item" href="/zh-cn/categories/documentation/" title="">文档</a><a class="menu-item" href="/zh-cn/about/" title="">关于</a><a class="menu-item" href="https://github.com/OrangeSodahub" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw'></i></a><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                <i class="fas fa-adjust fa-fw"></i>
+            </a><a href="javascript:void(0);" class="menu-item" title="选择语言">简体中文<i class="fas fa-chevron-right fa-fw"></i>
+                    <select class="language-select" onchange="location = this.value;"><option value="/evaluation-moduel/">English</option><option value="/zh-cn/evaluation-moduel/" selected>简体中文</option></select>
+                </a></div>
+    </div>
+</header>
+<div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+</div>
+<div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+</div>
+<main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">目录</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animated flipInX">Evaluation Moduel</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="/zh-cn/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>ZonLin</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-06-28">2021-06-28</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 1673 字&nbsp;
+                <i class="far fa-clock fa-fw"></i>&nbsp;预计阅读 4 分钟&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  kept="">
+                <div class="details-summary toc-title">
+                    <span>目录</span>
+                    <span><i class="details-icon fas fa-angle-right"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"></div>
+            </div><div class="content" id="content"><h2 id="1-打分式评价">1. 打分式评价</h2>
+
+<h3 id="11-模糊综合评价fuzzy-comprehension-evaluation-method">1.1 模糊综合评价（Fuzzy Comprehension Evaluation Method）</h3>
+
+<h4 id="111-简述">1.1.1 简述</h4>
+
+<p>模糊综合评价法是一种基于<strong>模糊数学</strong>的综合评价方法。该综合评价法根据模糊数学的隶属度理论把定性评价转化为定量评价，即用模糊数学对受到多种因素制约的事物或对象做出一个总体的评价。能较好地解决模糊的、难以量化的问题，适合各种非确定性问题的解决。</p>
+
+<p>术语：</p>
+
+<ol>
+<li>评价指标/评价因素（u）：对评价某个问题的具体内容。为便于权重分配和评议，可以按评价因素的属性将评价因素分成若干类，把每一类都视为单一评价因素，并称之为第一级评价因素（u<sub>1</sub>），继而有第二级评价因素（u<sub>2</sub>）等。</li>
+<li>评价指标值/评价因素值（U）：评价内容的具体值。</li>
+<li>评价值（V）：评价指标的<strong>优劣程度</strong>（优、良、中、差）。最优的评价值为1（百分制时为100），其余情况介于0和1之间，即0≤V≤1（0≤V≤100）。</li>
+<li>平均评价值（v）：评价值之和与评价数的比值。</li>
+<li>权重（A）：评价指标的<strong>重要程度</strong>。第一级评价因素的权重之和为1；每一级的权重之和为1。</li>
+<li>加权平均评价值（r）：平均评价值与权重之积（加权后的平均评价值）。</li>
+<li>综合评价值（R）：同一级评价指标的加权平均评价值之和。</li>
+</ol>
+
+<p>特点：</p>
+
+<p>① 相互比较：以最优的评价因素值为基准，其评价值为1；其余欠优的评价因素依据欠优的程度得到相应的评价值。</p>
+
+<p>② 函数关系：可以依据各类评价因素的特征，确定评价值与评价因素值之间的函数关系（即：隶属度函数）。确定这种函数关系（隶属度函数）有很多种方法。</p>
+
+<h4 id="112-评价步骤">1.1.2 评价步骤</h4>
+
+<p>1.<strong>建立综合评价的因素集u</strong></p>
+
+<p>因素集是以影响评价对象的各种因素为元素组成的集合，即U={u<sub>1</sub>,u<sub>2</sub>,...,u<sub>m</sub>},其中u<sub>i</sub>表示影响评价因素的第i个因素，通常均具有不同程度的模糊性。</p>
+
+<p><figure><img src="F:ZonLinSurviveRecordsZonLinyycontentpostsEVALUATION-MODUEL01.png" alt=""></figure></p>
+
+<p>该评价层分为两层：</p>
+
+<p>第一层：u={学校因素,导师因素,个人因素}</p>
+
+<p>第二层：u<sub>1</sub>=; u<sub>2</sub>= ...不再赘述</p>
+
+<ol class=".." start="2">
+<li><strong>建立综合评价的评价集V</strong></li>
+</ol>
+
+<p>评价集是评价者对评价对象作出的各种结果组成的集合，即V={v<sub>1</sub>,v<sub>2</sub>,...,v<sub>n</sub>}，其中v<sub>j</sub>表示第j种评价结果。这里设定评价集为V={优,良,中,差}。</p>
+
+<ol start="3">
+<li><strong>确定权重向量矩阵A</strong></li>
+</ol>
+
+<p>根据各种评价指标的重要程度不同确定权重。一般借助层次分析法(AHP)、德尔菲法(Delphi)、加权平均法、专家估计法计算。给各因素一个权重，构成各因素的权重集合的模糊集A={a<sub>1</sub>,a<sub>2</sub>,...,a<sub>m</sub>}。这里设定</p>
+
+<p><span  class="math">\[
+A=\left[ \begin{matrix} A \\ A_1 \\ A_2 \\ A_3 \end{matrix} \right]=\left[ \begin{matrix}0.65 & 0.07 & 0.28\\0.06 & 0.45 & 0.49\\0.49 & 0.08 & 0.43\\0.10 & 0.26 & 0.64 \end{matrix} \right] \tag{1}
+\]</span></p>
+
+<p>其中A为第一级评价权重，A<sub>1</sub>,A<sub>2</sub>,A<sub>3</sub>为第二级评价权重。权重矩阵与因素矩阵相对应。</p>
+
+<ol start="4">
+<li><strong>确定权重评价矩阵R</strong></li>
+</ol>
+
+<p>若因素集u中第i个元素对评价集V中第1个元素的隶属度为r<sub>i1</sub>，则对第i个元素的单因素评价结果用模糊集合表示为：R<sub>i</sub>={r<sub>i1</sub>,r<sub>i2</sub>,...,r<sub>in</sub>}，以m个单因素评价集R<sub>1</sub>,R<sub>2</sub>,...R<sub>m</sub>为行组成矩阵R<sub>m×n</sub>，得到权重评价矩阵。</p>
+
+<p><span  class="math">\[
+R=\left[ \begin{matrix} R_1 \\ R_2 \\ R_3 \end{matrix} \right]=\left[ \begin{matrix} r_1 \\ r_2 \\ r_3 \\ r_4 \\ r_5 \\ r_6 \\ r_7 \\ r_8 \\ r_9 \end{matrix}\right]= \left[ \begin{matrix}0.3 & 0.4 & 0.2 & 0.1 \\0.5 & 0.3 & 0.1 & 0.1 \\0.6 & 0.2 & 0.1 & 0.1\\ 0.4 & 0.3 & 0.1 & 0.2\\0.2 & 0.3 & 0.3 & 0.2\\0.1 & 0.2 & 0.3 & 0.4\\0.3 & 0.2 & 0.3 & 0.2\\0.3 & 0.4 & 0.2 & 0.1\\0.6 & 0.1 & 0.1 & 0.2 \end{matrix}\right] \tag{2}
+\]</span></p>
+
+<p>综合评价矩阵的行为评价集的长度，列为因素集（指标集）的长度。每一行成为各因素的单因素模糊评价。例如因素集中第1个因素的评价集：r<sub>1</sub>={0.3, 0.4, 0.2, 0.1}</p>
+
+<p>进行该评价时即进行隶属度的分配，以最优程度为1，相对地给每个因素评价。总和等于1。</p>
+
+<ol start="5">
+<li><strong>建立模糊综合评价矩阵B（综合评价模型）</strong></li>
+</ol>
+
+<p>将单因素评价矩阵R和权重矩阵A进行矩阵乘法，得到综合评价模型B：</p>
+
+<p><span  class="math">\[
+B=A·R
+\]</span></p>
+
+<p>根据（1）式和（2）式很容易得到：</p>
+
+<p><span  class="math">\[
+B=\left[ \begin{matrix}A*R\\A_1*R_1\\A_2*R_2\\A_3*R_3 \end{matrix} \right]=\left[ \begin{matrix}0.505 & 0.238 & 0.138 & 0.134\\0.537 & 0.257 & 0.106 & 0.1\\0.255 & 0.257 & 0.3 & 0.286\\0.492 & 0.188 & 0.172 & 0.174 \end{matrix} \right]\tag{3}
+\]</span></p>
+
+<p>B为综合评判，B<sub>1</sub>,B<sub>2</sub>,B<sub>3</sub>为第二级评价。显然，最终的评价结果为优。</p>
+
+<ol start="6">
+<li><strong>确定系统总得分</strong></li>
+</ol>
+
+<p>综合评价模型确定后，由下式得到系统总得分F：</p>
+
+<p><span  class="math">\[
+F=B_{1×n}*S^T_{1×n}
+\]</span></p>
+
+<p>B为综合评价矩阵，S为V中相应因素的级分。评价集V中给出了优良中差四种表述，将其对应为级分S={100,75,50,25}，计算得最终得分F=78.6。</p>
+
+<h3 id="12-灰色评价">1.2 灰色评价</h3>
+
+<h3 id="13层次分析法">1.3层次分析法</h3>
+
+<h3 id="14-网络分析法">1.4 网络分析法</h3>
+
+<h3 id="15-数据包络分析法">1.5 数据包络分析法、</h3>
+
+<h3 id="16-主成分分析">1.6 主成分分析</h3>
+
+<h3 id="17-理想解方法">1.7 理想解方法</h3>
+
+<h3 id="18-加权积">1.8 加权积</h3>
+
+<h3 id="19-熵权法">1.9 熵权法</h3>
+
+<h3 id="110-信息熵法">1.10 信息熵法</h3>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_SVG"></script><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>更新于 2021-06-28</span>
+            </div>
+            <div class="post-info-license"></div>
+        </div>
+        <div class="post-info-line">
+            <div class="post-info-md"></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="分享到 Twitter" data-sharer="twitter" data-url="https://orangesodahub.github.io/zh-cn/evaluation-moduel/" data-title="Evaluation Moduel" data-via="https://twitter.com/6k6u7dglok4U1SG"><i class="fab fa-twitter fa-fw"></i></a><a href="javascript:void(0);" title="分享到 Facebook" data-sharer="facebook" data-url="https://orangesodahub.github.io/zh-cn/evaluation-moduel/"><i class="fab fa-facebook-square fa-fw"></i></a><a href="javascript:void(0);" title="分享到 Hacker News" data-sharer="hackernews" data-url="https://orangesodahub.github.io/zh-cn/evaluation-moduel/" data-title="Evaluation Moduel"><i class="fab fa-hacker-news fa-fw"></i></a><a href="javascript:void(0);" title="分享到 Reddit" data-sharer="reddit" data-url="https://orangesodahub.github.io/zh-cn/evaluation-moduel/"><i class="fab fa-reddit fa-fw"></i></a><a href="javascript:void(0);" title="分享到 Line" data-sharer="line" data-url="https://orangesodahub.github.io/zh-cn/evaluation-moduel/" data-title="Evaluation Moduel"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@2.14.0/icons/line.svg"></i></a><a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="https://orangesodahub.github.io/zh-cn/evaluation-moduel/" data-title="Evaluation Moduel"><i class="fab fa-weibo fa-fw"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/zh-cn/">主页</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/zh-cn/project-induction-automatic-water-dispenser/" class="prev" rel="prev" title="Project Induction Automatic Water Dispenser"><i class="fas fa-angle-left fa-fw"></i>Project Induction Automatic Water Dispenser</a></div>
+</div>
+</article></div>
+            </main><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
+<footer class="footer">
+        <div class="footer-container"><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2019 - 2021</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/zh-cn/" target="_blank">ZonLin</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span><div><span class="icp-splitter"></span><br class="icp-br"/>
+                        <span class="icp"><a href="https://beian.miit.gov.cn/#/Integrated/index">黔ICP备2021002279号-1</a>&nbsp;|&nbsp;</span><span>
+                            </a><img src="/images/备案图标.png"/><a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=52032102000640" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;">贵公网安备 52032102000640号</a>
+                        </span>
+                </div>
+            </div>
+            <span id="busuanzi_container_site_pv">
+                Total Visits:<span id="busuanzi_value_site_pv"></span>
+            </span>
+
+            <span id="busuanzi_container_site_uv">
+                Total Visitors:<span id="busuanzi_value_site_uv"></span>
+            </span>
+            <script type="text/javascript">document.write(unescape("%3Cspan id='cnzz_stat_icon_1279743727'%3E%3C/span%3E%3Cscript src='https://v1.cnzz.com/z_stat.php%3Fid%3D1279743727%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="回到顶部">
+                <i class="fas fa-arrow-up fa-fw"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="查看评论">
+                <i class="fas fa-comment fa-fw"></i>
+            </a>
+        </div><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/smooth-scroll@16.1.3/dist/smooth-scroll.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/autocomplete.js@0.37.1/dist/autocomplete.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/algoliasearch@4.2.0/dist/algoliasearch-lite.umd.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.2.2/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sharer.js@0.4.0/sharer.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"复制到剪贴板","maxShownLines":10},"comment":{},"search":{"algoliaAppID":"PASDMWALPK","algoliaIndex":"index.zh-cn","algoliaSearchKey":"b42948e51daaa93df92381c8e2ac0f93","highlightTag":"em","maxResultLength":10,"noResultsFound":"没有找到结果","snippetLength":50,"type":"algolia"}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+</html>

@@ -4,7 +4,21 @@
         <link>https://orangesodahub.github.io/posts/</link>
         <description>All Posts | ZonLin</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>gzzyyxy@gmail.com (ZonLin)</managingEditor>
-            <webMaster>gzzyyxy@gmail.com (ZonLin)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 28 Jun 2021 13:33:43 &#43;0800</lastBuildDate><atom:link href="https://orangesodahub.github.io/posts/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>gzzyyxy@gmail.com (ZonLin)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 28 Jun 2021 17:29:37 &#43;0800</lastBuildDate><atom:link href="https://orangesodahub.github.io/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>Evaluation Moduel</title>
+    <link>https://orangesodahub.github.io/evaluation-moduel/</link>
+    <pubDate>Mon, 28 Jun 2021 17:29:37 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>https://orangesodahub.github.io/evaluation-moduel/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>Project Induction Automatic Water Dispenser</title>
+    <link>https://orangesodahub.github.io/project-induction-automatic-water-dispenser/</link>
+    <pubDate>Mon, 28 Jun 2021 16:43:17 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>https://orangesodahub.github.io/project-induction-automatic-water-dispenser/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
     <title>FRESHMAN YEAE</title>
     <link>https://orangesodahub.github.io/freshman-yeae/</link>
     <pubDate>Mon, 28 Jun 2021 13:33:43 &#43;0800</pubDate>
@@ -73,19 +87,5 @@ Install the scirpt(Required) To use busuanzi you must input the busuanzi.js to y
     <author>Author</author>
     <guid>https://orangesodahub.github.io/search-with-algolia/</guid>
     <description><![CDATA[INTRODUCTION What makes Aloglia great?  The goal of the JAMStack is eliminate server dependencies. Although Algolia is a bussiness solution, it offers a very generous free plan and performs up to 200 faster than open-source solutions like ElasticSearch.  How Algolia works? Algolia provides a REST API to query and update your search indices. All input and output is provided in JSON, making it extremely easy to use in frontend Javascript.]]></description>
-</item><item>
-    <title>FFMPEG</title>
-    <link>https://orangesodahub.github.io/ffmpeg/</link>
-    <pubDate>Mon, 08 Mar 2021 23:36:20 &#43;0800</pubDate>
-    <author>Author</author>
-    <guid>https://orangesodahub.github.io/ffmpeg/</guid>
-    <description><![CDATA[6416513]]></description>
-</item><item>
-    <title>DOWNLOAD VIDEO FROM WEBSITE</title>
-    <link>https://orangesodahub.github.io/download-video-from-website/</link>
-    <pubDate>Sun, 07 Mar 2021 14:34:58 &#43;0800</pubDate>
-    <author>Author</author>
-    <guid>https://orangesodahub.github.io/download-video-from-website/</guid>
-    <description><![CDATA[https://zhuanlan.zhihu.com/p/142349349]]></description>
 </item></channel>
 </rss>
