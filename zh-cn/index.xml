@@ -4,22 +4,9 @@
         <link>https://orangesodahub.github.io/zh-cn/</link>
         <description>关于作者</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>gzzyyxy@gmail.com (ZonLin)</managingEditor>
-<<<<<<< HEAD
-            <webMaster>gzzyyxy@gmail.com (ZonLin)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 08 Mar 2021 23:36:41 &#43;0800</lastBuildDate>
-            <atom:link href="https://orangesodahub.github.io/zh-cn/index.xml" rel="self" type="application/rss+xml" />
-        <item>
-    <title>FFMPEG</title>
-    <link>https://orangesodahub.github.io/zh-cn/ffmpeg/</link>
-    <pubDate>Mon, 08 Mar 2021 23:36:41 &#43;0800</pubDate>
-    <author>作者</author>
-    <guid>https://orangesodahub.github.io/zh-cn/ffmpeg/</guid>
-    <description><![CDATA[]]></description>
-</item><item>
-=======
             <webMaster>gzzyyxy@gmail.com (ZonLin)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 17 Feb 2021 11:32:39 &#43;0800</lastBuildDate>
             <atom:link href="https://orangesodahub.github.io/zh-cn/index.xml" rel="self" type="application/rss+xml" />
         <item>
->>>>>>> a814aebf1f8de7ac7f38f2d0fda4dfd9c519fbd0
     <title>HTML</title>
     <link>https://orangesodahub.github.io/zh-cn/html/</link>
     <pubDate>Wed, 17 Feb 2021 11:32:39 &#43;0800</pubDate>
