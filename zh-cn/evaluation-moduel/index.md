@@ -165,70 +165,71 @@ B为综合评价矩阵，S为V中相应因素的级分。评价集V中给出了�
 
    (1)矩形与半矩形分布（偏小型、偏大型、中间型）
 
-   
+
    $$
    A_1(x)=\begin{cases} 1 & x\leqslant a\\0 & x\gt a\end{cases};A_2(x)=\begin{cases} 1 & x\lt a\\0 & x\geqslant a\end{cases};A_3(x)=\begin{cases} 0&x\lt a\\1 & a\leqslant x\lt b\\0 & x\geqslant b\end{cases}
    $$
-   
+
 
    (2)梯形与半梯形分布（偏小型、偏大型、中间型）
 
-   
+
    $$
    A_1(x)=\begin{cases} 1&x\lt a\\b-x \over b-a & a\leqslant x\lt b\\0 & x\geqslant b\end{cases};A_2(x)=\begin{cases} 0&x\lt a\\x-a \over b-a & a\leqslant x\lt b\\1 & x\geqslant b\end{cases};A_3(x)=\begin{cases} 0&x\lt a\\x-a \over b-a & a\leqslant x\lt b\\1 & b\leqslant x\lt c\\d-x \over d-c & c\leqslant x\lt d\\0 & x\geqslant d\end{cases}
    $$
-   
 
    
+
 
    (3)抛物型分布（偏小型、偏大型、中间型）
 
-   
+
    $$
    A_1(x)=\begin{cases} 1&x\lt a\\{({b-x \over b-a})}^k & a\leqslant x\lt b\\0 & x\geqslant b\end{cases};A_2(x)=\begin{cases} 0&x\lt a\\{({x-a \over b-a})}^k & a\leqslant x\lt b\\1 & x\geqslant b\end{cases};A_3(x)=\begin{cases} 0&x\lt a\\{({x-a \over b-a})}^k & a\leqslant x\lt b\\1 & b\leqslant x\lt c\\ {({d-x \over d-c})}^k & c\leqslant x\lt d\\0 & x\geqslant d\end{cases};
    $$
-   
+
 
    (4)正态分布（偏小型、偏大型、中间型）
 
-   
+
    $$
    A_1(x)=\begin{cases}1&x\leqslant a\\ e^{-{({x-a \over \sigma})}^2} & x\gt a\end{cases};A_2(x)=\begin{cases}0&x\leqslant a\\ 1-e^{-{({x-a \over \sigma})}^2}& x\gt a \end{cases};A_3(x)=e^{-{({x-a \over \sigma})}^2} -\small{\infty} \lt x \gt +\small{\infty}
    $$
-   
+
 
    (5)柯西分布（偏小型、偏大型、中间型）
 
-   
+
    $$
    A_1(x)_{\alpha\gt 0,\beta\gt0}=\begin{cases}1&x\leqslant a\\ 1 \over {1+\alpha(x-a)^{\beta}} & x\gt a\end{cases};A_2(x)_{\alpha\gt 0,\beta\gt0}=\begin{cases}0&x\leqslant a\\ 1 \over {1+\alpha(x-a)^{-\beta}} & x\gt a\end{cases};A_3(x)_{\alpha\gt 0,\beta正偶数}={1 \over {1+\alpha(x-a)^{\beta}}}， x\gt a
    $$
-   
+
 
    (6)岭型分布
 
    i.偏小型
 
-   
+
    $$
-   A_1(x)=\begin{cases} 1&x\lt a_1\\{1 \over2}-{1 \over2}\sin{{\pi \over{a_2-a_1}}{({x-{{a_1+a_2}\over 2}})}}  & a_1\lt x\leqslant a_2\\0 & x\gt a_2\end{cases}
+   A_1(x)=\begin{cases} 1&x\lt a_1\\{1 \over2}-{1 \over2}\sin{\pi \over a_2-a_1}(x-{a_1+a_2\over 2})  & a_1\lt x\leqslant a_2\\0 & x\gt a_2\end{cases}
    $$
-   
+
 
    ii.偏大型
 
-   
+
    $$
    A_2(x)=\begin{cases} 0&x\lt a_1\\{1 \over2}+{1 \over2}\sin{{\pi \over{a_2-a_1}}{({x-{{a_1+a_2}\over 2}})}}  & a_1\lt x\leqslant a_2\\1 & x\gt a_2\end{cases}
    $$
-   
+
 
    iii.中间型
 
-   
+
    $$
    A_3(x)=\begin{cases} 0&x\lt -a_2\\{1 \over2}+{1 \over2}\sin{{\pi \over{a_2-a_1}}{({x-{{a_1+a_2}\over 2}})}}  & -a_2\lt x\leqslant -a_1\\1&-a_1\lt x\leqslant a_1\\{1 \over2}-{1 \over2}\sin{{\pi \over{a_2-a_1}}{({x-{{a_1+a_2}\over 2}})}}  & a_1\lt x\leqslant a_2\\1 & x\gt a_2\end{cases}
    $$
+
 
 
 #### 1.1.4 应用实例
