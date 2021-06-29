@@ -8,6 +8,8 @@
     })();
     </script>
     
+    <script async src="https://cdn.staticfile.org/mermaid/8.6.4/mermaid.min.js"></script>
+
 <!DOCTYPE html>
 <html lang="zh-CN">
     <head>
@@ -39,7 +41,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/orangesodahub.github.io\/zh-cn\/latex%E7%AC%94%E8%AE%B0\/"
-        },"image": ["https:\/\/orangesodahub.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","wordcount":  1951 ,
+        },"image": ["https:\/\/orangesodahub.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","wordcount":  4022 ,
         "url": "https:\/\/orangesodahub.github.io\/zh-cn\/latex%E7%AC%94%E8%AE%B0\/","datePublished": "2021-06-28T14:15:53+08:00","dateModified": "2021-06-28T14:15:53+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
             "@type": "Organization",
             "name": "ZonLin","logo": "https:\/\/orangesodahub.github.io\/images\/%E4%B8%8B%E8%BD%BD.jpg"},"author": {
@@ -49,6 +51,20 @@
     }
     </script></head>
     <body header-desktop="fixed" header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <script>
+            
+            Array.from(document.getElementsByClassName('language-mermaid')).forEach(el => {
+                el.parentElement.outerHTML = `<div class="mermaid">${el.innerText}</div>`
+            })
+        </script>
+        <style>
+         
+        .mermaid svg {
+            display: block;
+            margin: auto;
+        }
+        </style>
 
         <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
     <div class="header-wrapper">
@@ -120,8 +136,8 @@
             <div class="toc-content" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animated flipInX">LATEX笔记</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="/zh-cn/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>ZonLin</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-06-28">2021-06-28</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 1951 字&nbsp;
-                <i class="far fa-clock fa-fw"></i>&nbsp;预计阅读 4 分钟&nbsp;</div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-06-28">2021-06-28</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 4022 字&nbsp;
+                <i class="far fa-clock fa-fw"></i>&nbsp;预计阅读 9 分钟&nbsp;</div>
         </div><div class="details toc" id="toc-static"  kept="">
                 <div class="details-summary toc-title">
                     <span>目录</span>
@@ -146,7 +162,43 @@
         <li><a href="#13-文件组织">1.3 文件组织</a></li>
       </ul>
     </li>
-    <li><a href="#2-文字">2. 文字</a></li>
+    <li><a href="#2-文字">2. 文字</a>
+      <ul>
+        <li><a href="#21语言文字和编码">2.1语言文字和编码</a>
+          <ul>
+            <li><a href="#211-ascii编码">2.1.1 ASCII编码</a></li>
+            <li><a href="#212-扩展编码">2.1.2 扩展编码</a></li>
+            <li><a href="#213-utf-8编码">2.1.3 UTF-8编码</a></li>
+          </ul>
+        </li>
+        <li><a href="#22-中文">2.2 中文</a>
+          <ul>
+            <li><a href="#221-xecjk宏包">2.2.1 xeCJK宏包</a></li>
+          </ul>
+        </li>
+        <li><a href="#23-字符">2.3 字符</a>
+          <ul>
+            <li><a href="#231-空格和分段">2.3.1 空格和分段</a></li>
+            <li><a href="#232-注释">2.3.2 注释</a></li>
+            <li><a href="#233-特殊字符">2.3.3 特殊字符</a></li>
+            <li><a href="#234-连字">2.3.4 连字</a></li>
+            <li><a href="#235-标点符号">2.3.5 标点符号</a></li>
+            <li><a href="#236-特殊西文符号及重音">2.3.6 特殊西文符号及重音</a></li>
+            <li><a href="#237-其他符号">2.3.7 其他符号</a></li>
+            <li><a href="#238-latex标志">2.3.8 LATEX标志</a></li>
+          </ul>
+        </li>
+        <li><a href="#24-文字强调">2.4 文字强调</a></li>
+        <li><a href="#26-断行和断页">2.6 断行和断页</a>
+          <ul>
+            <li><a href="#261-单词间距和断行">2.6.1 单词间距和断行</a></li>
+            <li><a href="#262-手动断行断页">2.6.2 手动断行断页</a></li>
+            <li><a href="#263-断词">2.6.3 断词</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><a href="#3文档元素">3.文档元素</a></li>
   </ul>
 </nav></div>
             </div><div class="content" id="content"><blockquote>
@@ -291,6 +343,244 @@
 </div>
 </div><p>使用后，正文中不在其列举范围内的include内容不会生效。</p>
 <h2 id="2-文字">2. 文字</h2>
+<h3 id="21语言文字和编码">2.1语言文字和编码</h3>
+<h4 id="211-ascii编码">2.1.1 ASCII编码</h4>
+<p>ASCII（美国通用信息交换码）使用0x00-0x7F对文字编码（7-bit），能够表示键盘上能够输入的拉丁字母、数字和符号。ASCII码即可满足对于TEX面向英文文档排版。</p>
+<h4 id="212-扩展编码">2.1.2 扩展编码</h4>
+<p>例如西欧语言的Latin-1，日本的Shift-JIS，中国大陆的GB2312-80和GBK等。</p>
+<p>单字节（8-bit）字符如西欧拉丁字母、俄语系西里尔字母等处于0x80-0xFF范围，TEX从3.0版本之后可调用宏包 <strong>inputenc</strong> 进行编码，如将源代码保存为Latin-1编码，并在导言区调用宏包：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">\usepackage[latin1] {inputenc}
+</code></pre></td></tr></table>
+</div>
+</div><p>多字节编码如GBK等需借助宏包进行较复杂的判断和处理，<strong>CJK</strong> 宏包用于处理中日韩等多字节编码的语言文字。</p>
+<h4 id="213-utf-8编码">2.1.3 UTF-8编码</h4>
+<p>Unicode 是一个多国字符的集合，覆盖了几乎全球范围内的语言文字。UTF-8 是Unicode
+的一套编码方案，一个字符可以由一个到四个字节编码，其中单字节字符兼容ASCII 编码。</p>
+<p>latex 命令及pdflatex 命令下可以使用 <strong>inputenc</strong> 宏包支持UTF-8 编码：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">\usepackage[utf8]{inputenc}
+</code></pre></td></tr></table>
+</div>
+</div><p>xelatex 和lualatex 命令原生支持UTF-8 编码，而且也不适用inputenc 宏包。将.tex
+源代码保存为UTF-8 编码，并借助 fontspec 宏包调用适当的字体，就可以在
+源代码中输入任意语言的文字。但各个语言（印地语、阿拉伯语等）的特殊排版要求需要更多的
+宏包支持，如babel、polyglossia 等。</p>
+<h3 id="22-中文">2.2 中文</h3>
+<h4 id="221-xecjk宏包">2.2.1 xeCJK宏包</h4>
+<p>旧式中文排版方案如CJK等处理中文字符过于复杂。xelatex命令支持直接使用系统安装的 TrueType(.ttf) / OpenType(.otf) 等格式字体。加上对UTF-8 编码的原生支持，免去了预处理字体的麻烦。在此基础上的xeCJK 宏包更进一步完善了排版中文的一些细节，比如中英文之间插入空隙、中文行尾的回车不引入空格、标点符号不出现在行首等。</p>
+<h3 id="23-字符">2.3 字符</h3>
+<h4 id="231-空格和分段">2.3.1 空格和分段</h4>
+<p>LATEX 源代码中，空格键和Tab 键输入的空白字符视为“空格”。连续的若干个空白字符视
+为一个空格。一行开头的空格忽略不计。</p>
+<p>行末的回车视为一个空格；但连续两个回车，也就是空行，会将文字分段。多个空行被视为
+一个空行。也可以在行末使用 <strong>\par</strong> 命令分段。</p>
+<h4 id="232-注释">2.3.2 注释</h4>
+<p>LATEX 用 <strong>%</strong> 字符作为注释。在这个字符之后直到行末，所有的字符都被忽略，行末的回车也
+不引入空格。</p>
+<h4 id="233-特殊字符">2.3.3 特殊字符</h4>
+<p>以下字符在LATEX 里有特殊用途，如 % 表示注释，$、^、_ 等用于排版数学公式，&amp; 用于排
+版表格，等等。直接输入这些字符得不到对应的符号，还往往会出错：</p>
+<p><strong>#</strong>   <strong>$</strong>   <strong>%</strong>   <strong>&amp;</strong>   <strong>{ }</strong>   <strong>_</strong>   <strong>^</strong>   <strong>~</strong>   <strong>\</strong></p>
+<p>如果想要输入以上符号，需要使用带反斜线的形式输入：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">\#  \$  \%  \&amp;  \{  \}  \_  \^{}  \~{}  \textbackslash
+</code></pre></td></tr></table>
+</div>
+</div><p>^和~两个命令需要带参数，参数写在花括号内。若没有花括号，将后面第一个字符作为参数，形成重音效果。<strong>\\</strong> 被定义成了手动换行的命令，不用做输入反斜杠。</p>
+<h4 id="234-连字">2.3.4 连字</h4>
+<h4 id="235-标点符号">2.3.5 标点符号</h4>
+<p>中文的标点符号（绝大多数为非ASCII 字符）使用中文输入法输入即可。对于英文标点符号：</p>
+<ol>
+<li>引号：LATEX 的单引号  ’ 用 <strong>`</strong> 和 <strong>'</strong> 输入；双引号 “ ” 用 <strong>``</strong> 和 <strong>''</strong> 输入。</li>
+<li>连字号和破折号：连字号(hyphen)用单个短线 <strong>-</strong> 表示；短破折号(en-dash)用两个短线 <strong>- -</strong> 表示；长破折号(em-dash)用三个短线 <strong>- - -</strong> 表示。 连字号-用来组成复合词；短破折号–用来连接数字表示
+范围；长破折号—用来连接单词。</li>
+<li>省略号：输入命令 <strong>\ldots</strong> 或者 <strong>\dots</strong> 生成三个点的省略号。</li>
+<li>波浪号：输入命令 <strong>\~</strong> 生成顶端的波浪号，主要用作重音。</li>
+</ol>
+<h4 id="236-特殊西文符号及重音">2.3.6 特殊西文符号及重音</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">显示</th>
+<th style="text-align:center">输入</th>
+<th style="text-align:center">显示</th>
+<th style="text-align:center">输入</th>
+<th style="text-align:center">显示</th>
+<th style="text-align:center">输入</th>
+<th style="text-align:center">显示</th>
+<th style="text-align:center">输入</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">ò</td>
+<td style="text-align:center">\`o</td>
+<td style="text-align:center">ó</td>
+<td style="text-align:center">\&lsquo;o</td>
+<td style="text-align:center">ô</td>
+<td style="text-align:center">\^o</td>
+<td style="text-align:center">õ</td>
+<td style="text-align:center">~o</td>
+</tr>
+<tr>
+<td style="text-align:center">ō</td>
+<td style="text-align:center">=o</td>
+<td style="text-align:center">ȯ</td>
+<td style="text-align:center">.o</td>
+<td style="text-align:center">ö</td>
+<td style="text-align:center">&quot;o</td>
+<td style="text-align:center">o</td>
+<td style="text-align:center">\r o</td>
+</tr>
+<tr>
+<td style="text-align:center">ŏ</td>
+<td style="text-align:center">\u o</td>
+<td style="text-align:center">ǒ</td>
+<td style="text-align:center">\v o</td>
+<td style="text-align:center">ő</td>
+<td style="text-align:center">\H o</td>
+<td style="text-align:center">o̧</td>
+<td style="text-align:center">\c o</td>
+</tr>
+<tr>
+<td style="text-align:center">ọ</td>
+<td style="text-align:center">\d o</td>
+<td style="text-align:center">o</td>
+<td style="text-align:center">\b o</td>
+<td style="text-align:center">oo</td>
+<td style="text-align:center">\t{oo}</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center">oe</td>
+<td style="text-align:center">\oe</td>
+<td style="text-align:center">OE</td>
+<td style="text-align:center">\OE</td>
+<td style="text-align:center">æ</td>
+<td style="text-align:center">\ae</td>
+<td style="text-align:center">Æ</td>
+<td style="text-align:center">\AE</td>
+</tr>
+<tr>
+<td style="text-align:center">å</td>
+<td style="text-align:center">\aa</td>
+<td style="text-align:center">Å</td>
+<td style="text-align:center">\AA</td>
+<td style="text-align:center">ß</td>
+<td style="text-align:center">\ss</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center">ø</td>
+<td style="text-align:center">\o</td>
+<td style="text-align:center">Ø</td>
+<td style="text-align:center">\O</td>
+<td style="text-align:center">ł</td>
+<td style="text-align:center">\l</td>
+<td style="text-align:center">Ł</td>
+<td style="text-align:center">\L</td>
+</tr>
+<tr>
+<td style="text-align:center">ı</td>
+<td style="text-align:center">\i</td>
+<td style="text-align:center">ȷ</td>
+<td style="text-align:center">\j</td>
+<td style="text-align:center">¡</td>
+<td style="text-align:center">!`</td>
+<td style="text-align:center">¿</td>
+<td style="text-align:center">?`</td>
+</tr>
+</tbody>
+</table>
+<h4 id="237-其他符号">2.3.7 其他符号</h4>
+<h4 id="238-latex标志">2.3.8 LATEX标志</h4>
+<p>通过命令 <strong>\TeX</strong> , <strong>\LaTeX</strong> , <strong>\LaTeXe</strong> 生成LATEX标志。</p>
+<h3 id="24-文字强调">2.4 文字强调</h3>
+<p>通过命令 <strong>\underline</strong> 为文字添加下划线：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">An \underline{underlined} text.
+</code></pre></td></tr></table>
+</div>
+</div><p>被添加下划线的文字需包括在命令后的参数中。该命令生成的下划线样式不统一，并且无法换行，调用宏包 <strong>ulem</strong> 并使用其提供的命令 <strong>\uline</strong> 解决这一问题。用法同\underline。</p>
+<p>通过使用命令 <strong>\emph</strong> 将文字转变为斜体，用法同上。多次嵌套使用则在竖体和斜体之间转换。</p>
+<h3 id="26-断行和断页">2.6 断行和断页</h3>
+<h4 id="261-单词间距和断行">2.6.1 单词间距和断行</h4>
+<p>西文排版中断行的位置多发生在单词之间的空格。</p>
+<p>使用字符 <strong>~</strong> 插入一个不会断行的空格，可用于人名等。</p>
+<h4 id="262-手动断行断页">2.6.2 手动断行断页</h4>
+<p>（1）两个断行命令：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">\\[&lt;length&gt;]
+\\newline
+</code></pre></td></tr></table>
+</div>
+</div><p>区别：1.\\ 可带可选参数&lt;length&gt;，用于在换行处向下增加垂直间距，而 \newline 不带可选参数；2. \ 也在表格、公式等地方用于分行，而\newline只用于文本段落中。</p>
+<p>（2）两个断页命令：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">\newpage
+\clearpage
+</code></pre></td></tr></table>
+</div>
+</div><p>区别：1. 在双栏排版中 \newpage 只起到另起一栏的作用；2. 涉及到浮动体的排版上行为不同。</p>
+<p>（3）人为设定自动断行断页的位置</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">\linebreak[&lt;n&gt;]
+\nolinebreak[&lt;n&gt;]
+\pagebreak[&lt;n&gt;]
+\nopagebreak[&lt;n&gt;]
+</code></pre></td></tr></table>
+</div>
+</div><p>可选参数 n 表示优先级，取值0-4，不带参数时缺省为4。例如 \linebreak[3] 表示优先断行，\nopagebreak 表示禁止断页。</p>
+<blockquote>
+<p>\newline 和\newpage 会在断行/断页位置正确添加空白，但\linebreak 和\pagebreak 不能，它们的强行断行/断页会导致LATEX 报Underfull \hbox 等警告。</p>
+</blockquote>
+<h4 id="263-断词">2.6.3 断词</h4>
+<p>当单词太长时，需要从单词内部断开。LATEX自行寻找合适的断词位置，也可以使用 <strong>\-</strong> 命令指定断词位置：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">I think this is: su\-per\-cal\-i\-frag\-i\-lis\-tic\-ex\-pi\-al\-i\-do\-cious.
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="3文档元素">3.文档元素</h2>
 </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_SVG"></script><div class="post-footer" id="post-footer">
     <div class="post-info">
@@ -321,6 +611,7 @@
 </article></div>
             </main><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js">
 </script>
+<script src="/lib/mermaid/mermaid.min.js"  crossorigin="anonymous"></script>
 <footer class="footer">
         <div class="footer-container"><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2019 - 2021</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/zh-cn/" target="_blank">ZonLin</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span><div><span class="icp-splitter"></span><br class="icp-br"/>
                         <span class="icp"><a href="https://beian.miit.gov.cn/#/Integrated/index">黔ICP备2021002279号-1</a>&nbsp;|&nbsp;</span><span>
