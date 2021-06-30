@@ -41,7 +41,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/orangesodahub.github.io\/zh-cn\/latex%E7%AC%94%E8%AE%B0\/"
-        },"image": ["https:\/\/orangesodahub.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","wordcount":  4022 ,
+        },"image": ["https:\/\/orangesodahub.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","wordcount":  7161 ,
         "url": "https:\/\/orangesodahub.github.io\/zh-cn\/latex%E7%AC%94%E8%AE%B0\/","datePublished": "2021-06-28T14:15:53+08:00","dateModified": "2021-06-28T14:15:53+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
             "@type": "Organization",
             "name": "ZonLin","logo": "https:\/\/orangesodahub.github.io\/images\/%E4%B8%8B%E8%BD%BD.jpg"},"author": {
@@ -136,8 +136,8 @@
             <div class="toc-content" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animated flipInX">LATEX笔记</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="/zh-cn/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>ZonLin</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-06-28">2021-06-28</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 4022 字&nbsp;
-                <i class="far fa-clock fa-fw"></i>&nbsp;预计阅读 9 分钟&nbsp;</div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-06-28">2021-06-28</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 7161 字&nbsp;
+                <i class="far fa-clock fa-fw"></i>&nbsp;预计阅读 15 分钟&nbsp;</div>
         </div><div class="details toc" id="toc-static"  kept="">
                 <div class="details-summary toc-title">
                     <span>目录</span>
@@ -198,7 +198,31 @@
         </li>
       </ul>
     </li>
-    <li><a href="#3文档元素">3.文档元素</a></li>
+    <li><a href="#3文档元素">3.文档元素</a>
+      <ul>
+        <li><a href="#31-章节和目录">3.1 章节和目录</a>
+          <ul>
+            <li><a href="#311-章节标题">3.1.1 章节标题</a></li>
+            <li><a href="#312-目录">3.1.2 目录</a></li>
+            <li><a href="#313-文档结构划分">3.1.3 文档结构划分</a></li>
+          </ul>
+        </li>
+        <li><a href="#32-标题页">3.2 标题页</a></li>
+        <li><a href="#33-交叉引用">3.3 交叉引用</a></li>
+        <li><a href="#34-脚注和边注">3.4 脚注和边注</a></li>
+        <li><a href="#35-特殊环境">3.5 特殊环境</a>
+          <ul>
+            <li><a href="#351-列表">3.5.1 列表</a></li>
+            <li><a href="#352-关键字环境">3.5.2 关键字环境</a></li>
+            <li><a href="#353-对齐环境">3.5.3 对齐环境</a></li>
+            <li><a href="#354-引用环境">3.5.4 引用环境</a></li>
+            <li><a href="#355-摘要环境">3.5.5 摘要环境</a></li>
+            <li><a href="#356-代码环境">3.5.6 代码环境</a></li>
+          </ul>
+        </li>
+        <li><a href="#36-表格">3.6 表格</a></li>
+      </ul>
+    </li>
   </ul>
 </nav></div>
             </div><div class="content" id="content"><blockquote>
@@ -207,16 +231,16 @@
 <h2 id="1-简述">1. 简述</h2>
 <h3 id="11-latex命令和代码结构">1.1 LATEX命令和代码结构</h3>
 <h4 id="111-latex命令和环境">1.1.1 LATEX命令和环境</h4>
-<p>LATEX中<strong>命令</strong>以 <strong>反斜线\</strong> 开头，有两种形式：</p>
+<p>LATEX中<strong>命令</strong>以反斜线 <strong><code>\</code></strong> 开头，有两种形式：</p>
 <ol>
-<li>反斜杠+一串字母。如 \ LATEX，当遇到任意非字母符号（空格、数字、标点等）结束；该种形式会忽略其后的连续空格，若要须引入空格，在命令后面加一对<strong>花括号</strong>阻止其忽略空格。</li>
-<li>反斜杠+单个非字母符号。如 \$ 。</li>
+<li><u>反斜杠+一串字母</u>。如 \ LATEX，当遇到任意非字母符号（空格、数字、标点等）结束；该种形式会忽略其后的连续空格，若要须引入空格，在命令后面加一对<u>花括号</u>阻止其忽略空格。</li>
+<li><u>反斜杠+单个非字母符号</u>。如 \$ 。</li>
 </ol>
 <blockquote>
 <p>注意：LATEX对大小写敏感，如输入 \LATEX 生成LATEX字母，而输入 \Latex 或 \LaTeX 则不会生成任何东西。</p>
 </blockquote>
-<p>某些LATEX可以接收一些参数，参数内容会影响命令效果。LATEX参数分为可选参数和必选参数，前者以 <strong>方括号[]</strong> 包裹，后者以 <strong>花括号{}</strong> 包裹。某些命令可带星号 *。</p>
-<p>LATEX中<strong>环境</strong>用以令一些效果在局部生效，或是生成特殊的文档元素。用法为一对命令 <strong>\begin</strong> 和 <strong>\end</strong>：</p>
+<p>某些LATEX可以接收一些参数，参数内容会影响命令效果。LATEX参数分为可选参数和必选参数，前者以方括号 <strong><code>[]</code></strong> 包裹，后者以花括号 <strong><code>{}</code></strong> 包裹。某些命令可带星号 <code>*</code>。</p>
+<p>LATEX中<strong>环境</strong>用以令一些效果在局部生效，或是生成特殊的文档元素。用法为一对命令 <strong><code>\begin</code></strong> 和 <strong><code>\end</code></strong>：</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
@@ -224,14 +248,14 @@
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">\begin{&lt;environment name&gt;} [&lt;optional arguments&gt;] {&lt;mandatory arguments&gt;}
+<pre class="chroma"><code class="language-latex" data-lang="latex"><span class="k">\begin</span><span class="nb">{</span>&lt;environment name&gt;<span class="nb">}</span> [&lt;optional arguments&gt;] <span class="nb">{</span>&lt;mandatory arguments&gt;<span class="nb">}</span>
 ...
-\end{&lt;environment name&gt;}
+<span class="k">\end</span><span class="nb">{</span>&lt;environment name&gt;<span class="nb">}</span>
 </code></pre></td></tr></table>
 </div>
 </div><p>其中&lt;environment name&gt;为环境名， \begin 和 \end 中的环境名需保持一致。后面跟环境所需的必选参数和可选参数，类似命令。参数数量可能一个或多个，也可能为零。</p>
 <h4 id="112-latex源代码结构">1.1.2 LATEX源代码结构</h4>
-<p>LATEX源代码以一个 <strong>\documentclass</strong> 命令开头，其指定了文档使用的文档类。</p>
+<p>LATEX源代码以一个 <strong><code>\documentclass</code></strong> 命令开头，其指定了文档使用的文档类。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
@@ -242,24 +266,24 @@
 </span><span class="lnt">6
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">\documentclass{...} //documentclass命令有一个可选参数，其传递给相应的文档类，作为文档类的参数
-				    //document环境中的内容是文档正文
-\begin{document}
-\section{...}
-......              //正文
-\end{document}
+<pre class="chroma"><code class="language-latex" data-lang="latex"><span class="k">\documentclass</span><span class="nb">{</span>...<span class="nb">}</span> <span class="c">%documentclass命令有一个可选参数，其传递给相应的文档类，作为文档类的参数
+</span><span class="c"></span>				    <span class="c">%document环境中的内容是文档正文
+</span><span class="c"></span><span class="k">\begin</span><span class="nb">{</span>document<span class="nb">}</span>
+<span class="k">\section</span><span class="nb">{</span>...<span class="nb">}</span>
+......              <span class="c">%正文
+</span><span class="c"></span><span class="k">\end</span><span class="nb">{</span>document<span class="nb">}</span>
 </code></pre></td></tr></table>
 </div>
-</div><p>在 \docuemntclass 和 \begin{docuemnt} 之间的位置为导言区，一般会使用 <strong>\usepackage</strong> 调用宏包，以及进行对文档的全局设置。</p>
+</div><p>在 \docuemntclass 和 \begin{docuemnt} 之间的位置为导言区，一般会使用 <strong><code>\usepackage</code></strong> 调用宏包，以及进行对文档的全局设置。</p>
 <h3 id="12-latex宏包和文档类">1.2 LATEX宏包和文档类</h3>
 <h4 id="121-文档类">1.2.1 文档类</h4>
-<p>文档类规定了LATEX源代码生成的文档性质。源代码开头用 <strong>\documentclass</strong> 指明文档类。</p>
+<p>文档类规定了LATEX源代码生成的文档性质。源代码开头用 <strong><code>\documentclass</code></strong> 指明文档类。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">\documentclass[&lt;options&gt;] {&lt;class-name&gt;}
+<pre class="chroma"><code class="language-latex" data-lang="latex"><span class="k">\documentclass</span><span class="na">[&lt;options&gt;]</span> <span class="nb">{</span>&lt;class-name&gt;<span class="nb">}</span>
 </code></pre></td></tr></table>
 </div>
 </div><p>其中&lt;class-name&gt;为文档类的名称，如LATEX提供的article，book，report，或其他。某些文档类支持中文排版，前三个为“标准文档类”。</p>
@@ -276,13 +300,13 @@
 <li>minimal：一个极其精简的文档类，只设定了纸张大小和基本字号，用作代码测试的最小工作示例（Minimal Working Example）。</li>
 </ol>
 </blockquote>
-<p>可选参数&lt;options&gt;为文档类指定选项，<strong>全局</strong>规定排版参数，如字号、纸张大小、单双面等。</p>
+<p>可选参数&lt;options&gt;为文档类指定选项，<u>全局</u>规定排版参数，如字号、纸张大小、单双面等。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">\documentclass[11pt,twoside,a4paper] {article}
+<pre class="chroma"><code class="language-latex" data-lang="latex"><span class="k">\documentclass</span><span class="na">[11pt,twoside,a4paper]</span> <span class="nb">{</span>article<span class="nb">}</span>
 </code></pre></td></tr></table>
 </div>
 </div><p>规定了article文档类，纸张为A4大小，字号为11pt，双面排版。LATEX的三个标准文档类可指定的选项：</p>
@@ -305,7 +329,7 @@
 <pre class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">\usepackage[&lt;options&gt;] {&lt;package-name&gt;}
+<pre class="chroma"><code class="language-latex" data-lang="latex"><span class="k">\usepackage</span><span class="na">[&lt;options&gt;]</span> <span class="nb">{</span>&lt;package-name&gt;<span class="nb">}</span>
 </code></pre></td></tr></table>
 </div>
 </div><p>\usepackage 可以一次调用多个宏包，在 &lt;package-name&gt;中用逗号隔开。调用的宏包需确保安装在计算机中，否则会报错。</p>
@@ -313,13 +337,13 @@
 <p>注意：宏包（包括文档类）可能定义了许多命令环境，可能会修改LATEX已有的命令和环境。在Windows命令提示符或Linux中断下查阅帮助文档：<strong>texdoc&lt;pkg-name&gt;</strong></p>
 </blockquote>
 <h3 id="13-文件组织">1.3 文件组织</h3>
-<p>LATEX中使用命令 <strong>\include</strong> 在源代码中插入文件：</p>
+<p>LATEX中使用命令 <strong><code>\include</code></strong> 在源代码中插入文件：</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">\include{&lt;filename&gt;}
+<pre class="chroma"><code class="language-latex" data-lang="latex"><span class="k">\include</span><span class="nb">{</span>&lt;filename&gt;<span class="nb">}</span>
 </code></pre></td></tr></table>
 </div>
 </div><p>&lt;filename&gt;为文件名，若和要编译的主文件不在同一目录，则要加上相对或绝对路径。&lt;filename&gt;可不带扩展名，这个时候默认 <strong>.tex</strong> 。</p>
@@ -329,16 +353,16 @@
 <pre class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">\input{&lt;filename&gt;}
+<pre class="chroma"><code class="language-latex" data-lang="latex"><span class="k">\input</span><span class="nb">{</span>&lt;filename&gt;<span class="nb">}</span>
 </code></pre></td></tr></table>
 </div>
-</div><p>在导言区使用命令 <strong>\includeonly</strong> 指定全局只载入某些文件：</p>
+</div><p>在导言区使用命令 <code><strong>\includeonly</strong></code> 指定全局只载入某些文件：</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">\includeonly{&lt;filename1&gt;,&lt;filename2&gt;,...}
+<pre class="chroma"><code class="language-latex" data-lang="latex"><span class="k">\includeonly</span><span class="nb">{</span>&lt;filename1&gt;,&lt;filename2&gt;,...<span class="nb">}</span>
 </code></pre></td></tr></table>
 </div>
 </div><p>使用后，正文中不在其列举范围内的include内容不会生效。</p>
@@ -354,7 +378,7 @@
 <pre class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">\usepackage[latin1] {inputenc}
+<pre class="chroma"><code class="language-latex" data-lang="latex"><span class="k">\usepackage</span><span class="na">[latin1]</span> <span class="nb">{</span>inputenc<span class="nb">}</span>
 </code></pre></td></tr></table>
 </div>
 </div><p>多字节编码如GBK等需借助宏包进行较复杂的判断和处理，<strong>CJK</strong> 宏包用于处理中日韩等多字节编码的语言文字。</p>
@@ -367,7 +391,7 @@
 <pre class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">\usepackage[utf8]{inputenc}
+<pre class="chroma"><code class="language-latex" data-lang="latex"><span class="k">\usepackage</span><span class="na">[utf8]</span><span class="nb">{</span>inputenc<span class="nb">}</span>
 </code></pre></td></tr></table>
 </div>
 </div><p>xelatex 和lualatex 命令原生支持UTF-8 编码，而且也不适用inputenc 宏包。将.tex
@@ -382,7 +406,7 @@
 <p>LATEX 源代码中，空格键和Tab 键输入的空白字符视为“空格”。连续的若干个空白字符视
 为一个空格。一行开头的空格忽略不计。</p>
 <p>行末的回车视为一个空格；但连续两个回车，也就是空行，会将文字分段。多个空行被视为
-一个空行。也可以在行末使用 <strong>\par</strong> 命令分段。</p>
+一个空行。也可以在行末使用 <strong><code>\par</code></strong> 命令分段。</p>
 <h4 id="232-注释">2.3.2 注释</h4>
 <p>LATEX 用 <strong>%</strong> 字符作为注释。在这个字符之后直到行末，所有的字符都被忽略，行末的回车也
 不引入空格。</p>
@@ -396,19 +420,19 @@
 <pre class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">\#  \$  \%  \&amp;  \{  \}  \_  \^{}  \~{}  \textbackslash
+<pre class="chroma"><code class="language-latex" data-lang="latex"><span class="k">\#</span>  <span class="k">\$</span>  <span class="k">\%</span>  <span class="k">\&amp;</span>  <span class="k">\{</span>  <span class="k">\}</span>  <span class="k">\_</span>  <span class="k">\^</span><span class="nb">{}</span>  <span class="k">\~</span><span class="nb">{}</span>  <span class="k">\textbackslash</span>
 </code></pre></td></tr></table>
 </div>
-</div><p>^和~两个命令需要带参数，参数写在花括号内。若没有花括号，将后面第一个字符作为参数，形成重音效果。<strong>\\</strong> 被定义成了手动换行的命令，不用做输入反斜杠。</p>
+</div><p>^和~两个命令需要带参数，参数写在花括号内。若没有花括号，将后面第一个字符作为参数，形成重音效果。<strong><code>\\</code></strong> 被定义成了手动换行的命令，不用做输入反斜杠。</p>
 <h4 id="234-连字">2.3.4 连字</h4>
 <h4 id="235-标点符号">2.3.5 标点符号</h4>
 <p>中文的标点符号（绝大多数为非ASCII 字符）使用中文输入法输入即可。对于英文标点符号：</p>
 <ol>
-<li>引号：LATEX 的单引号  ’ 用 <strong>`</strong> 和 <strong>'</strong> 输入；双引号 “ ” 用 <strong>``</strong> 和 <strong>''</strong> 输入。</li>
+<li>引号：LATEX 的单引号  ’ 用 <code><strong>`</strong></code> 和 <code><strong>'</strong></code> 输入；双引号 “ ” 用 <code><strong>``</strong></code> 和 <code><strong>''</strong></code> 输入。</li>
 <li>连字号和破折号：连字号(hyphen)用单个短线 <strong>-</strong> 表示；短破折号(en-dash)用两个短线 <strong>- -</strong> 表示；长破折号(em-dash)用三个短线 <strong>- - -</strong> 表示。 连字号-用来组成复合词；短破折号–用来连接数字表示
 范围；长破折号—用来连接单词。</li>
-<li>省略号：输入命令 <strong>\ldots</strong> 或者 <strong>\dots</strong> 生成三个点的省略号。</li>
-<li>波浪号：输入命令 <strong>\~</strong> 生成顶端的波浪号，主要用作重音。</li>
+<li>省略号：输入命令 <strong><code>\ldots</code></strong> 或者 <strong><code>\dots</code></strong> 生成三个点的省略号。</li>
+<li>波浪号：输入命令 <strong><code>\~</code></strong> 生成顶端的波浪号，主要用作重音。</li>
 </ol>
 <h4 id="236-特殊西文符号及重音">2.3.6 特殊西文符号及重音</h4>
 <table>
@@ -509,23 +533,24 @@
 </table>
 <h4 id="237-其他符号">2.3.7 其他符号</h4>
 <h4 id="238-latex标志">2.3.8 LATEX标志</h4>
-<p>通过命令 <strong>\TeX</strong> , <strong>\LaTeX</strong> , <strong>\LaTeXe</strong> 生成LATEX标志。</p>
+<p>通过命令 <strong><code>\TeX</code></strong> , <strong><code>\LaTeX</code></strong> , <strong><code>\LaTeXe</code></strong> 生成LATEX标志。</p>
 <h3 id="24-文字强调">2.4 文字强调</h3>
-<p>通过命令 <strong>\underline</strong> 为文字添加下划线：</p>
+<p>通过命令 <strong><code>\underline</code></strong> 为文字添加下划线：</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">An \underline{underlined} text.
+<pre class="chroma"><code class="language-latex" data-lang="latex">An <span class="k">\underline</span><span class="nb">{</span>underlined<span class="nb">}</span> text.
 </code></pre></td></tr></table>
 </div>
-</div><p>被添加下划线的文字需包括在命令后的参数中。该命令生成的下划线样式不统一，并且无法换行，调用宏包 <strong>ulem</strong> 并使用其提供的命令 <strong>\uline</strong> 解决这一问题。用法同\underline。</p>
-<p>通过使用命令 <strong>\emph</strong> 将文字转变为斜体，用法同上。多次嵌套使用则在竖体和斜体之间转换。</p>
+</div><p>被添加下划线的文字需包括在命令后的参数中。该命令生成的下划线样式不统一，并且无法换行，调用宏包 <strong>ulem</strong> 并使用其提供的命令 <strong><code>\uline</code></strong> 解决这一问题。用法同\underline。</p>
+<p>类似地，命令 <strong><code>\overline</code></strong> 为文字添加上划线。</p>
+<p>通过使用命令 <strong><code>\emph</code></strong> 将文字转变为斜体，用法同上。多次嵌套使用则在竖体和斜体之间转换。</p>
 <h3 id="26-断行和断页">2.6 断行和断页</h3>
 <h4 id="261-单词间距和断行">2.6.1 单词间距和断行</h4>
 <p>西文排版中断行的位置多发生在单词之间的空格。</p>
-<p>使用字符 <strong>~</strong> 插入一个不会断行的空格，可用于人名等。</p>
+<p>使用字符 <strong><code>~</code></strong> 插入一个不会断行的空格，可用于人名等。</p>
 <h4 id="262-手动断行断页">2.6.2 手动断行断页</h4>
 <p>（1）两个断行命令：</p>
 <div class="highlight"><div class="chroma">
@@ -534,8 +559,8 @@
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">\\[&lt;length&gt;]
-\\newline
+<pre class="chroma"><code class="language-latex" data-lang="latex"><span class="k">\\</span><span class="na">[&lt;length&gt;]</span>
+<span class="k">\\</span>newline
 </code></pre></td></tr></table>
 </div>
 </div><p>区别：1.\\ 可带可选参数&lt;length&gt;，用于在换行处向下增加垂直间距，而 \newline 不带可选参数；2. \ 也在表格、公式等地方用于分行，而\newline只用于文本段落中。</p>
@@ -546,8 +571,8 @@
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">\newpage
-\clearpage
+<pre class="chroma"><code class="language-latex" data-lang="latex"><span class="k">\newpage</span>
+<span class="k">\clearpage</span>
 </code></pre></td></tr></table>
 </div>
 </div><p>区别：1. 在双栏排版中 \newpage 只起到另起一栏的作用；2. 涉及到浮动体的排版上行为不同。</p>
@@ -560,10 +585,10 @@
 </span><span class="lnt">4
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">\linebreak[&lt;n&gt;]
-\nolinebreak[&lt;n&gt;]
-\pagebreak[&lt;n&gt;]
-\nopagebreak[&lt;n&gt;]
+<pre class="chroma"><code class="language-latex" data-lang="latex"><span class="k">\linebreak</span><span class="na">[&lt;n&gt;]</span>
+<span class="k">\nolinebreak</span><span class="na">[&lt;n&gt;]</span>
+<span class="k">\pagebreak</span><span class="na">[&lt;n&gt;]</span>
+<span class="k">\nopagebreak</span><span class="na">[&lt;n&gt;]</span>
 </code></pre></td></tr></table>
 </div>
 </div><p>可选参数 n 表示优先级，取值0-4，不带参数时缺省为4。例如 \linebreak[3] 表示优先断行，\nopagebreak 表示禁止断页。</p>
@@ -571,16 +596,450 @@
 <p>\newline 和\newpage 会在断行/断页位置正确添加空白，但\linebreak 和\pagebreak 不能，它们的强行断行/断页会导致LATEX 报Underfull \hbox 等警告。</p>
 </blockquote>
 <h4 id="263-断词">2.6.3 断词</h4>
-<p>当单词太长时，需要从单词内部断开。LATEX自行寻找合适的断词位置，也可以使用 <strong>\-</strong> 命令指定断词位置：</p>
+<p>当单词太长时，需要从单词内部断开。LATEX自行寻找合适的断词位置，也可以使用 <code><strong>\-</strong></code> 命令指定断词位置：</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">I think this is: su\-per\-cal\-i\-frag\-i\-lis\-tic\-ex\-pi\-al\-i\-do\-cious.
+<pre class="chroma"><code class="language-latex" data-lang="latex">I think this is: su<span class="k">\-</span>per<span class="k">\-</span>cal<span class="k">\-</span>i<span class="k">\-</span>frag<span class="k">\-</span>i<span class="k">\-</span>lis<span class="k">\-</span>tic<span class="k">\-</span>ex<span class="k">\-</span>pi<span class="k">\-</span>al<span class="k">\-</span>i<span class="k">\-</span>do<span class="k">\-</span>cious.
 </code></pre></td></tr></table>
 </div>
 </div><h2 id="3文档元素">3.文档元素</h2>
+<h3 id="31-章节和目录">3.1 章节和目录</h3>
+<h4 id="311-章节标题">3.1.1 章节标题</h4>
+<p>三个<u>标准文档类</u>article、report、book提供以下命令划分章节：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-latex" data-lang="latex"><span class="k">\chapter</span><span class="nb">{</span>&lt;title&gt;<span class="nb">}</span>   <span class="k">\section</span><span class="nb">{</span>&lt;title&gt;<span class="nb">}</span>   <span class="k">\subsection</span><span class="nb">{</span>&lt;title&gt;<span class="nb">}</span>   <span class="k">\subsubsection</span><span class="nb">{</span>&lt;title&gt;<span class="nb">}</span>   <span class="k">\paragraph</span><span class="nb">{</span>&lt;title&gt;<span class="nb">}</span>   <span class="k">\subparagraph</span><span class="nb">{</span>&lt;title&gt;<span class="nb">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>\chapter 只在<strong>book</strong> 和<strong>report</strong> 文档类有定义。这些命令生成章节标题，并能够自动编号。
+使用**<code>\part</code>** 命令，将整个文档分割为大的分块，不影响\chapter 或\section 等的编号。</p>
+<p>上述命令除了生成带编号的标题之外，还向目录中添加条目，并影响页眉页脚的内容。每个命令有两种变体：</p>
+<ol>
+<li>带可选参数的变体：<strong><code>\section[⟨short title⟩]{⟨title⟩}</code></strong>：标题使用⟨title⟩ 参数，在目录和页眉页脚中使用⟨short title⟩ 参数；</li>
+<li>带星号的变体：<strong><code>\section*{⟨title⟩}</code></strong>：标题不带编号，也不生成目录项和页眉页脚。</li>
+</ol>
+<p>能够编号的层级：</p>
+<ol>
+<li>article文档类：\section, \subsection, \subsubsection；</li>
+<li>report/book文档类：\chapter, \section, \subsection；</li>
+</ol>
+<p>若要为章节命令定制格式，需借助宏包 <strong>titlesec</strong>。</p>
+<h4 id="312-目录">3.1.2 目录</h4>
+<p>通过命令 <strong><code>\tableofcontents</code></strong> 生成目录。</p>
+<p>使用该命令后会生成单独的一章（book/report）或一节（article），标题默认为“Contents”，可另行定制标题。生成的章节默认不写入目录（类似\section*和\chapter*），使用宏包 **tocbibind** 以更改设置。</p>
+<blockquote>
+<p>正确生成目录项，一般需要编译两次源代码。</p>
+</blockquote>
+<p>若要将\chapter*或\section*手动添加进目录项，需在标题后使用命令：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-latex" data-lang="latex"><span class="k">\addcontentsline</span><span class="nb">{</span>toc<span class="nb">}{</span>&lt;level&gt;<span class="nb">}{</span>&lt;title&gt;<span class="nb">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>&lt;level&gt;为章节层次chapter或section等等，&lt;title&gt;为出现于目录项的章节标题。</p>
+<p><strong>titletoc</strong>、<strong>tocloft</strong> 等宏包提供了具体定制目录项格式的功能。</p>
+<h4 id="313-文档结构划分">3.1.3 文档结构划分</h4>
+<p><u>所有标准文档类</u>都可使用 <strong><code>\appendix</code></strong> 命令将正文和附录分开，使用\appendix 后，最
+高一级章节改为使用拉丁字母编号，从A 开始。</p>
+<p>特别地，book文档类提供了前言、正文、后记结构的划分命令：</p>
+<ol>
+<li><strong><code>\frontmatter</code></strong>：前言，页码为小写罗马字母格式；其后的\chapter 不编号。</li>
+<li><strong><code>\mainmatter</code></strong>：正文，页码为阿拉伯数字格式，从1 开始计数；其后的章节编号正常。</li>
+<li><strong><code>\backmatter</code></strong>：后记，页码格式不变，继续正常计数；其后的\chapter 不编号。</li>
+<li>加上\appendix命令，book可生成四部分结构。</li>
+</ol>
+<p>就如：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-latex" data-lang="latex"><span class="k">\documentclass</span><span class="na">[...]</span><span class="nb">{</span>book<span class="nb">}</span>
+<span class="c">% 导言区，加载宏包和各项设置，包括参考文献、索引等
+</span><span class="c"></span>	<span class="k">\usepackage</span><span class="nb">{</span>...<span class="nb">}</span>
+	<span class="k">\usepackage</span><span class="nb">{</span>makeidx<span class="nb">}</span>
+	<span class="k">\makeindex</span>
+	<span class="k">\bibliographystyle</span><span class="nb">{</span>...<span class="nb">}</span>
+	<span class="k">\begin</span><span class="nb">{</span>document<span class="nb">}</span>
+		<span class="k">\frontmatter</span>
+		<span class="k">\maketitle</span> <span class="c">% 标题页
+</span><span class="c"></span>			<span class="k">\include</span><span class="nb">{</span>preface<span class="nb">}</span> <span class="c">% 前言章节preface.tex
+</span><span class="c"></span>			<span class="k">\tableofcontents</span>
+		<span class="k">\mainmatter</span>
+			<span class="k">\include</span><span class="nb">{</span>chapter1<span class="nb">}</span> <span class="c">% 第一章chapter1.tex
+</span><span class="c"></span>			<span class="k">\include</span><span class="nb">{</span>chapter2<span class="nb">}</span> <span class="c">% 第二章chapter2.tex
+</span><span class="c"></span>			...
+		<span class="k">\appendix</span>
+			<span class="k">\include</span><span class="nb">{</span>appendixA<span class="nb">}</span> <span class="c">% 附录A appendixA.tex
+</span><span class="c"></span>			...
+		<span class="k">\backmatter</span>
+			<span class="k">\include</span><span class="nb">{</span>prologue<span class="nb">}</span> <span class="c">% 后记prologue.tex
+</span><span class="c"></span>		<span class="k">\bibliography</span><span class="nb">{</span>...<span class="nb">}</span> <span class="c">% 利用BibTeX 工具生成参考文献
+</span><span class="c"></span>		<span class="k">\printindex</span> <span class="c">% 利用makeindex工具生成索引
+</span><span class="c"></span>	<span class="k">\end</span><span class="nb">{</span>document<span class="nb">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="32-标题页">3.2 标题页</h3>
+<p>标题页通过以下命令给定相关信息：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-latex" data-lang="latex"><span class="k">\title</span><span class="nb">{</span>&lt;title&gt;<span class="nb">}</span>   <span class="k">\author</span><span class="nb">{</span>&lt;author&gt;<span class="nb">}</span>   <span class="k">\date</span><span class="nb">{</span>&lt;date&gt;<span class="nb">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><ol>
+<li>三个命令分别给出标题、作者、日期；</li>
+<li>前两个命令是必要的，若缺失\title 则会报错，若缺失\author 则会警告，\date命令可选；</li>
+<li>\date不带参数则默认当前日期，相当于使用命令 <strong><code>\today</code></strong> ；</li>
+<li>在\title、\author等命令内部使用 <strong><code>\thanks</code></strong> 以生成标题页的脚注；</li>
+<li>多个人名使用命令 <strong><code>\and</code></strong> 隔开。</li>
+<li>article文档类的标题默认不单独成页，report和book默认单独成页。在用\doucementclass命令调用文档类时刻指定 <strong><code>titlepage </code></strong> 或 <strong><code>notitlepage</code></strong> 选项自定义。</li>
+</ol>
+<p>就如：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-latex" data-lang="latex"><span class="k">\title</span><span class="nb">{</span>Test title<span class="nb">}</span>
+<span class="k">\author</span><span class="nb">{</span> Marry<span class="k">\thanks</span><span class="nb">{</span>E-mail:gzzyyxy@gmail.com<span class="nb">}</span>
+	<span class="k">\and</span> Ted<span class="k">\thanks</span><span class="nb">{</span>Corresponding author<span class="nb">}</span>
+	<span class="k">\and</span> Louis<span class="nb">}</span>
+<span class="k">\date</span><span class="nb">{</span><span class="k">\today</span><span class="nb">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><blockquote>
+<p>Δ保持有条理的代码排版，利于理解和修改。</p>
+</blockquote>
+<p>LATEX 标准类还提供了一个简单的titlepage 环境，生成不带页眉页脚的一页。用户可以在这个环境中使用各种排版元素自由发挥，生成自定义的标题页以替代\maketitle 命令。甚至可以利用titlepage 环境重新定义\maketitle：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-latex" data-lang="latex"><span class="k">\renewcommand</span><span class="nb">{</span><span class="k">\maketitle</span><span class="nb">}{</span><span class="k">\begin</span><span class="nb">{</span>titlepage<span class="nb">}</span>
+... <span class="c">% 用户自定义命令
+</span><span class="c"></span><span class="k">\end</span><span class="nb">{</span>titlepage<span class="nb">}}</span>
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="33-交叉引用">3.3 交叉引用</h3>
+<p>在能够被交叉引用的地方，如章节、公式、图表、定理等位置使用 <strong><code>\lable</code></strong> 命令，然后在引用的位置使用 <strong><code>\ref</code></strong> 或 <strong><code>\pageref</code></strong> 命令：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-latex" data-lang="latex"><span class="k">\lable</span><span class="nb">{</span>&lt;lable-name&gt;<span class="nb">}</span>
+<span class="k">\ref</span><span class="nb">{</span>&lt;label-name&gt;<span class="nb">}</span> <span class="c">%引用（正确的交叉引用，一般也需要多次编译源代码）
+</span><span class="c"></span><span class="k">\pageref</span><span class="nb">{</span>&lt;label-name&gt;<span class="nb">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>\label命令的使用位置：</p>
+<ol>
+<li>章节标题：在章节标题命令\section 等之后紧接着使用；</li>
+<li>行间公式：单行公式在公式内任意位置使用；多行公式在每一行公式的任意位置使用；</li>
+<li>有序列表：在enumerate 环境的每个\item 命令之后、下一个\item 命令之前任意位置使用；</li>
+<li>图表标题：在图表标题命令\caption 之后紧接着使用；</li>
+<li>定理环境：在定理环境内部任意位置使用。</li>
+</ol>
+<blockquote>
+<p>在使用不记编号的命令形式（\section*、\caption*、带可选参数的\item 命令等）时不
+要使用\label 命令，否则生成的引用编号不正确。</p>
+</blockquote>
+<h3 id="34-脚注和边注">3.4 脚注和边注</h3>
+<p>使用命令在页面底部生成脚注：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-latex" data-lang="latex"><span class="k">\footnote</span><span class="nb">{</span>&lt;footnote&gt;<span class="nb">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><ol>
+<li>&lt;footnote&gt;中的内容即为脚注内容；</li>
+<li>该命令会自动编号，编译后在使用该命令处显示一个数字，指向页脚。</li>
+<li>某些情况下（如表格环境、盒子等）使用\footnote不能正常生成脚注，可先使用**<code>\footmark</code>**命令为脚注标记，再在合适位置用**<code>\footnotetext</code>**命令生成脚注。</li>
+</ol>
+<p>使用命令在边栏位置生成边注：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-latex" data-lang="latex"><span class="k">\marginpar</span><span class="na">[&lt;left-margin&gt;]</span><span class="nb">{</span>&lt;right-margin&gt;<span class="nb">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>若只给定&lt;right-margin&gt;则奇偶数页使用相同边注，若同时给定&lt;left-margin&gt;则偶数页使用&lt;left-margin&gt;内的文字。</p>
+<h3 id="35-特殊环境">3.5 特殊环境</h3>
+<h4 id="351-列表">3.5.1 列表</h4>
+<p>两种列表环境：enumerate 和 itemize，均用 <strong><code>\item</code></strong> 标项：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-latex" data-lang="latex"><span class="k">\begin</span><span class="nb">{</span>enumerate/itemize<span class="nb">}</span>
+<span class="k">\item</span>...
+<span class="k">\end</span><span class="nb">{</span>enumerate/itemize<span class="nb">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><ol>
+<li>
+<p>enumerate会自动编号，itemize带有符号；</p>
+</li>
+<li>
+<p>\item 可带一个可选参数，将有序列表的计数或者无序列表的符号替换成自定义的符号；</p>
+</li>
+<li>
+<p>可以嵌套使用，最多嵌套四层。</p>
+<p>就如：</p>
+<p>（有序列表）</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span><span class="lnt">9
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-latex" data-lang="latex"><span class="k">\begin</span><span class="nb">{</span>enumerate<span class="nb">}</span>
+ <span class="k">\item</span> item A.
+ <span class="k">\begin</span><span class="nb">{</span>enumerate<span class="nb">}</span>
+     <span class="k">\item</span> item Aa.<span class="k">\label</span><span class="nb">{</span>itref<span class="nb">}</span>
+     <span class="k">\item</span><span class="na">[*]</span> item Ab.
+ <span class="k">\end</span><span class="nb">{</span>enumerate<span class="nb">}</span>
+ <span class="k">\item</span> item B
+ <span class="k">\item</span> Reference(<span class="k">\ref</span><span class="nb">{</span>itref<span class="nb">}</span>) <span class="c">%如代码所示，列表的项之间可交叉引用
+</span><span class="c"></span><span class="k">\end</span><span class="nb">{</span>enumerate<span class="nb">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>（无序列表）</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-latex" data-lang="latex"><span class="k">\begin</span><span class="nb">{</span>itemize<span class="nb">}</span>
+ <span class="k">\item</span> item A.
+ <span class="k">\begin</span><span class="nb">{</span>itemize<span class="nb">}</span>
+     <span class="k">\item</span> item Aa.
+     <span class="k">\item</span><span class="na">[+]</span> item Ab.
+ <span class="k">\end</span><span class="nb">{</span>itemize<span class="nb">}</span>
+ <span class="k">\item</span> item B.
+<span class="k">\end</span><span class="nb">{</span>itemize<span class="nb">}</span>
+</code></pre></td></tr></table>
+</div>
+</div></li>
+<li>
+<p>各级无序列表的符号由命令 <strong><code>\labelitemi</code></strong> 到 <strong><code>\labelitemiv</code></strong> 定义，可以简单地重新定义它们：(如\labelitemi代表第一级符号，\labelitemii代表第二级，以此类推)</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-latex" data-lang="latex"><span class="k">\renewcommand</span><span class="nb">{</span><span class="k">\labelitemi</span><span class="nb">}{</span><span class="k">\ddag</span><span class="nb">}</span>
+<span class="k">\renewcommand</span><span class="nb">{</span><span class="k">\labelitemii</span><span class="nb">}{</span><span class="k">\dag</span><span class="nb">}</span>
+...<span class="c">%重新定义后即生效
+</span></code></pre></td></tr></table>
+</div>
+</div></li>
+<li>
+<p>有序列表的符号由命令 <strong><code>\labelenumi</code></strong> 到 <strong><code>\labelenumiv</code></strong> 定义，重新定义这些命令需要用到计数器相关命令：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-latex" data-lang="latex"><span class="k">\renewcommand</span><span class="nb">{</span><span class="k">\labelenumi</span><span class="nb">}</span> <span class="c">%{\Alph{enumi}&gt;}
+</span><span class="c"></span><span class="k">\begin</span><span class="nb">{</span>enumerate<span class="nb">}</span>
+ <span class="k">\item</span> First item
+ <span class="k">\item</span> Second item
+<span class="k">\end</span><span class="nb">{</span>enumerate<span class="nb">}</span>
+</code></pre></td></tr></table>
+</div>
+</div></li>
+<li>
+<p>使用 <strong>enumitem</strong> 宏包定制各种列表间距、列表标签、引用等。</p>
+</li>
+</ol>
+<h4 id="352-关键字环境">3.5.2 关键字环境</h4>
+<p>关键字环境：description，用法与列表类似：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-latex" data-lang="latex"><span class="k">\begin</span><span class="nb">{</span>description<span class="nb">}</span>
+	<span class="k">\item</span><span class="na">[&lt;item title&gt;]</span>
+	...
+<span class="k">\end</span><span class="nb">{</span>description<span class="nb">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>\item 后的可选参数用于写关键字，以粗体显示，必填。</p>
+<h4 id="353-对齐环境">3.5.3 对齐环境</h4>
+<p>center、flushleft 和 flushright 环境分别用于生成居中、左对齐和右对齐的文本环境：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-latex" data-lang="latex"><span class="k">\begin</span><span class="nb">{</span>center<span class="nb">}</span> … <span class="k">\end</span><span class="nb">{</span>center<span class="nb">}</span>
+<span class="k">\begin</span><span class="nb">{</span>flushleft<span class="nb">}</span> … <span class="k">\end</span><span class="nb">{</span>flushleft<span class="nb">}</span>
+<span class="k">\begin</span><span class="nb">{</span>flushright<span class="nb">}</span> … <span class="k">\end</span><span class="nb">{</span>flushright<span class="nb">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>除构造环境外，可直接用命令改变对齐方式：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-latex" data-lang="latex"><span class="k">\centering</span>
+...				<span class="c">%居中内容
+</span><span class="c"></span><span class="k">\raggedright</span>
+...				<span class="c">%右对齐内容
+</span><span class="c"></span><span class="k">\raggedleft</span>
+...				<span class="c">%左对齐内容
+</span></code></pre></td></tr></table>
+</div>
+</div><blockquote>
+<p>构建环境通常在上下文之间产生额外间距，而命令直接改变对齐方式。</p>
+</blockquote>
+<h4 id="354-引用环境">3.5.4 引用环境</h4>
+<ol>
+<li>quote：引用较短文字，首行不缩进；</li>
+<li>quotation：引用若干段文字，首行缩进；</li>
+<li>verse：排版诗歌，首行悬挂缩进；</li>
+<li>引用环境有额外的左右缩进。</li>
+</ol>
+<p>就如：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-latex" data-lang="latex">...
+<span class="k">\begin</span><span class="nb">{</span>quote/quotation/verse<span class="nb">}</span>
+	...
+<span class="k">\end</span><span class="nb">{</span>quote/quotation/verse<span class="nb">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><h4 id="355-摘要环境">3.5.5 摘要环境</h4>
+<ol>
+<li>摘要环境abstract 默认只在标准文档类中的 article 和 report 文档类可用，一般用于紧跟\maketitle 命令之后介绍文档的摘要;</li>
+<li>如果文档类指定了 titlepage 选项，则单独成页；</li>
+<li>如果文档类没有指定 titlepage 选项，则单栏排版时相当于一个居中的小标题加一个quotation 环境，双栏排版时相当于 \section* 定义的一节。</li>
+</ol>
+<h4 id="356-代码环境">3.5.6 代码环境</h4>
+<ol>
+<li>
+<p>用 verbatim 构建代码环境，代码环境中回车和空格分别起到换行和空位作用；使用 verbatim* 将空格显示为 ␣ ；</p>
+<p>就如：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-latex" data-lang="latex"><span class="k">\begin</span><span class="nb">{</span>verbatim<span class="nb">}</span>
+#include &lt;iostream&gt;
+using namespace std;
+int main() <span class="nb">{</span>
+    ...
+    return 0;
+<span class="nb">}</span>
+<span class="k">\end</span><span class="nb">{</span>verbatim<span class="nb">}</span>
+</code></pre></td></tr></table>
+</div>
+</div></li>
+<li>
+<p>简短的代码或关键字，使用命令 <strong><code>\verb</code></strong> ；就如： <strong><code>\verb&lt;delim&gt;&lt;code&gt;&lt;delim&gt;</code></strong></p>
+<p>其中 &lt;delim&gt; 表明代码的界限，除字母、空格、星号外任选，习惯上使用 <strong><code>|</code></strong> ；</p>
+<p>\verb 命令对符号的处理比较复杂，一般<u>不能用在其它命令的参数</u>里。</p>
+</li>
+</ol>
+<h3 id="36-表格">3.6 表格</h3>
 </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_SVG"></script><div class="post-footer" id="post-footer">
     <div class="post-info">
