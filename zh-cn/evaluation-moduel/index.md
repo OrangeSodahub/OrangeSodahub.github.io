@@ -293,7 +293,7 @@ iii.区间值化：
 
 
 $$
-x_{ij}={y_{ij}-\underset{j}{min}(y_{ij})\over{\underset{j}{max}(y_{ij})-\underset{j}{min}(y_{ij})}},i=0,1,2,\cdots,m;j=0,1,2,\cdots,n
+x_{ij}={y_{ij}-{\underset{j}{min}}(y_{ij})\over\underset{j}{max}(y_{ij})-\underset{j}{min}(y_{ij})},i=0,1,2,\cdots,m;j=0,1,2,\cdots,n
 $$
 
 
@@ -301,7 +301,7 @@ $$
 
 
 $$
-r_{ij}={{\underset{i}{min}\underset{j}{min}|x_{0j}-x_{ij}|+\theta\underset{i}{max}\underset{j}{max}|x_{0j}-x_{ij}|}\over|x_{0j}-x_{ij}|+\theta\underset{i}{max}\underset{j}{max}|x_{0j}-x_{ij}|}\quad i=1,2,\cdots,m
+r_{ij}={\underset{i}{min}\underset{j}{min}|x_{0j}-x_{ij}|+\theta\underset{i}{max}\underset{j}{max}|x_{0j}-x_{ij}|\over|x_{0j}-x_{ij}|+\theta\underset{i}{max}\underset{j}{max}|x_{0j}-x_{ij}|}\quad i=1,2,\cdots,m
 $$
 
 
