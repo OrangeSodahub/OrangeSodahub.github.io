@@ -41,7 +41,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/orangesodahub.github.io\/zh-cn\/evaluation-moduel\/"
-        },"image": ["https:\/\/orangesodahub.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","wordcount":  4287 ,
+        },"image": ["https:\/\/orangesodahub.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","wordcount":  6487 ,
         "url": "https:\/\/orangesodahub.github.io\/zh-cn\/evaluation-moduel\/","datePublished": "2021-06-28T17:29:48+08:00","dateModified": "2021-06-28T17:29:48+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
             "@type": "Organization",
             "name": "ZonLin","logo": "https:\/\/orangesodahub.github.io\/images\/%E4%B8%8B%E8%BD%BD.jpg"},"author": {
@@ -136,8 +136,8 @@
             <div class="toc-content" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animated flipInX">Evaluation Moduel</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="/zh-cn/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>ZonLin</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-06-28">2021-06-28</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 4287 字&nbsp;
-                <i class="far fa-clock fa-fw"></i>&nbsp;预计阅读 9 分钟&nbsp;</div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-06-28">2021-06-28</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 6487 字&nbsp;
+                <i class="far fa-clock fa-fw"></i>&nbsp;预计阅读 13 分钟&nbsp;</div>
         </div><div class="details toc" id="toc-static"  kept="">
                 <div class="details-summary toc-title">
                     <span>目录</span>
@@ -324,8 +324,22 @@ F=B_{1×n}*S^T_{1×n}
 
 <p>(5)柯西分布（偏小型、偏大型、中间型）</p>
 
+<p>i.偏小型</p>
+
 <p><span  class="math">\[
-   A_1(x)_{\alpha\gt 0,\beta\gt0}=\begin{cases}1&x\leqslant a\\ 1 \over {1+\alpha(x-a)^{\beta}} & x\gt a\end{cases};A_2(x)_{\alpha\gt 0,\beta\gt0}=\begin{cases}0&x\leqslant a\\ 1 \over {1+\alpha(x-a)^{-\beta}} & x\gt a\end{cases};A_3(x)_{\alpha\gt 0,\beta正偶数}={1 \over {1+\alpha(x-a)^{\beta}}}， x\gt a
+A_1(x)_{\alpha\gt 0,\beta\gt0}=\begin{cases}1&x\leqslant a\\ 1 \over {1+\alpha(x-a)^{\beta}} & x\gt a\end{cases}
+\]</span></p>
+
+<p>ii.偏大型</p>
+
+<p><span  class="math">\[
+A_2(x)_{\alpha\gt 0,\beta\gt0}=\begin{cases}0&x\leqslant a\\ 1 \over {1+\alpha(x-a)^{-\beta}} & x\gt a\end{cases}
+\]</span></p>
+
+<p>iii.中间型</p>
+
+<p><span  class="math">\[
+A_3(x)_{\alpha\gt 0,\beta正偶数}={1 \over {1+\alpha(x-a)^{\beta}}}， x\gt a
 \]</span></p>
 
 <p>(6)岭型分布</p>
@@ -423,9 +437,91 @@ R=\left( \begin{matrix} r_{01}\\r_{02}\\\vdots\\r_{0m}\end{matrix} \right)
 
 <h4 id="123-系统分析">1.2.3 系统分析</h4>
 
+<p><strong>(1)建立原始数据矩阵</strong></p>
+
+<p>确定母序列和子序列，母序列为反映系统整体行为特征或发展的数据序列，子序列为影响系统发展的因素组成的数据序列。</p>
+
+<p><strong>(2)数据无量纲化处理</strong></p>
+
+<p><strong>(3)建立评价矩阵</strong></p>
+
+<p>以母序列为参考序列，子序列各评价对象的指标为比较序列，计算第i个评价对象与母序列第j个指标的灰色关联系数。从而可以得到各评价对象与最优指标之间的<u>关联系数</u><span  class="math">\(r_{ij}\)</span>组成的评价矩阵：</p>
+
+<p><span  class="math">\[
+R=\left( \begin{matrix}r_{11}&r_ {02}&\cdots&r_{1n}\\r_{21}&r_{22}&\cdots&r_{2n}\\\vdots&\vdots&\ddots&\vdots\\r_{m1}&r_{m2}&\cdots&r_{mn}\end{matrix} \right)
+\]</span></p>
+
+<p><strong>(4)建立灰色关联矩阵</strong></p>
+
+<h5 id="实例">实例：</h5>
+
+<p>根据某国内生产总值数据（百万元）判断2000年到2005年哪一种产业对GDP总量影响最大：</p>
+
+<table>
+<thead>
+<tr>
+<th align="center">年份</th>
+<th align="center">GDP</th>
+<th align="center">第一产业</th>
+<th align="center">第二产业</th>
+<th align="center">第三产业</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="center">2000</td>
+<td align="center">1988</td>
+<td align="center">386</td>
+<td align="center">839</td>
+<td align="center">763</td>
+</tr>
+
+<tr>
+<td align="center">2001</td>
+<td align="center">2062</td>
+<td align="center">408</td>
+<td align="center">846</td>
+<td align="center">808</td>
+</tr>
+
+<tr>
+<td align="center">2002</td>
+<td align="center">2335</td>
+<td align="center">422</td>
+<td align="center">960</td>
+<td align="center">953</td>
+</tr>
+
+<tr>
+<td align="center">2003</td>
+<td align="center">2750</td>
+<td align="center">482</td>
+<td align="center">1258</td>
+<td align="center">1010</td>
+</tr>
+
+<tr>
+<td align="center">2004</td>
+<td align="center">3356</td>
+<td align="center">511</td>
+<td align="center">1577</td>
+<td align="center">1268</td>
+</tr>
+
+<tr>
+<td align="center">2005</td>
+<td align="center">3806</td>
+<td align="center">561</td>
+<td align="center">1893</td>
+<td align="center">1352</td>
+</tr>
+</tbody>
+</table>
+
 <h4 id="124-综合评价">1.2.4 综合评价</h4>
 
-<h5 id="1建立原始数据矩阵-1">（1）建立原始数据矩阵</h5>
+<p><strong>（1）建立原始数据矩阵</strong></p>
 
 <p>在灰色综合评价模型中，需要用最优指标集替代参考序列。最优指标值可以是某种确定的标准，也可以是评估者公认的最优值，还可以简单地采用：</p>
 
@@ -435,17 +531,13 @@ y_{0j}=Optimum(y_{ij}) \quad (i=1,2,\cdots,m)
 
 <p>来确定最优指标集。即如果某项指标值越大越好，那么就以该指标在各方案中的最大值为最优标准；如果某项指标越小越好，那么就以该指标在各方案中的最小值为最优标准。替代后按照灰色关联分析相同的方法构造原始数据矩阵。</p>
 
-<h5 id="2数据无量纲化处理">(2)数据无量纲化处理</h5>
+<p><strong>(2)数据无量纲化处理</strong></p>
 
-<h5 id="3建立评价矩阵">（3）建立评价矩阵</h5>
+<p><strong>(3)建立评价矩阵</strong></p>
 
-<p>以最优指标集为参考序列，各评价对象的指标为比较序列，计算第i个评价对象与第j个最优指标集的灰色关联系数。从而可以得到各评价对象与最优指标之间的关联系数<span  class="math">\(r_{ij}\)</span>组成的评价矩阵。</p>
+<p>以最优指标集为参考序列，各评价对象的指标为比较序列，计算第i个评价对象与最优指标集第j个指标的灰色关联系数。从而可以得到各评价对象与最优指标之间的<u>关联系数</u><span  class="math">\(r_{ij}\)</span>组成的评价矩阵。</p>
 
-<p><span  class="math">\[
-R=\left( \begin{matrix}r_{11}&r_ {02}&\cdots&r_{1n}\\r_{21}&r_{22}&\cdots&r_{2n}\\\vdots&\vdots&\ddots&\vdots\\r_{m1}&r_{m2}&\cdots&r_{mn}\end{matrix} \right)
-\]</span></p>
-
-<h5 id="4建立灰色关联度矩阵-1">(4)建立灰色关联度矩阵</h5>
+<p><strong>(4)建立灰色关联度矩阵</strong></p>
 
 <p>和灰色关联度分析不同，此处各指标之间不再等权，视各指标的重要程度为其赋权，得到权重矩阵：</p>
 
@@ -467,7 +559,225 @@ a_i=\sum_{j=1}^nw_j\times{(r_{ij})}^T\quad i=1,2,\cdots,m
 
 <p>比较灰色关联度大小排序。</p>
 
-<h3 id="13层次分析法">1.3层次分析法</h3>
+<h5 id="实例-1">实例：</h5>
+
+<p>A、B、C三家建筑公司参加一体育馆建筑工程项目投标，各公司投标方案的技术经济指标见下表：</p>
+
+<table>
+<thead>
+<tr>
+<th align="center">指标</th>
+<th align="center">范围</th>
+<th align="center">公司A</th>
+<th align="center">公司B</th>
+<th align="center">公司C</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="center">报价（万元）</td>
+<td align="center">1064.94-1177.03</td>
+<td align="center">1061</td>
+<td align="center">1015</td>
+<td align="center">1125</td>
+</tr>
+
+<tr>
+<td align="center">工期（月）</td>
+<td align="center">21.6-25.2</td>
+<td align="center">22</td>
+<td align="center">22</td>
+<td align="center">23</td>
+</tr>
+
+<tr>
+<td align="center">钢材用量（吨）</td>
+<td align="center">1300-1477.03</td>
+<td align="center">1349</td>
+<td align="center">1402</td>
+<td align="center">1234</td>
+</tr>
+
+<tr>
+<td align="center">木材用量（吨）</td>
+<td align="center">1001-1061</td>
+<td align="center">1074</td>
+<td align="center">968</td>
+<td align="center">1010</td>
+</tr>
+
+<tr>
+<td align="center">水泥用量（吨）</td>
+<td align="center">3880-4120</td>
+<td align="center">4016</td>
+<td align="center">4022</td>
+<td align="center">4362</td>
+</tr>
+
+<tr>
+<td align="center">技术水平</td>
+<td align="center">0-15</td>
+<td align="center">12.8</td>
+<td align="center">11.2</td>
+<td align="center">11.0</td>
+</tr>
+
+<tr>
+<td align="center">社会信誉</td>
+<td align="center">0-5</td>
+<td align="center">5.0</td>
+<td align="center">4.8</td>
+<td align="center">4.7</td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="13层次分析法ahp">1.3层次分析法（AHP）</h3>
+
+<h4 id="131-简述">1.3.1 简述</h4>
+
+<p>层次分析法是一种定性和定量相结合的、系统的、层次化的分析方法。特点在于对复杂决策问题的本质、影响因素及其内在关系等进行深入研究的基础上，利用较少的定量信息使决策的思维过程数学化，从而为多目标、多准则或无结构特性的复杂决策问题提供简便的<u>决策</u>方法。</p>
+
+<p>其将决策问题按总目标、各层子目标、评价准则直至具体的备投方案的顺序分解为不同的层次结构，然后用求解判断矩阵特征向量的办法，求得每一层次的各元素对上一层次某元素的优先权重，最后再加权和的方法递阶归并各备择方案对总目标的最终权重，此最终权重最大者即为最优方案。</p>
+
+<p>层次分析法比较适合于具有分层交错评价指标的目标系统，而且目标值又难于定量描述的<u>决策</u>问题。</p>
+
+<h4 id="132-评价步骤">1.3.2 评价步骤</h4>
+
+<p><strong>(1)建立层次结构模型</strong></p>
+
+<p>将决策的目标、考虑的因素（决策准则）和决策对象按它们之间的相互关系分为最高层、中间层和最低层，绘出层次结构图。 最高层是指决策的目的、要解决的问题。 最低层是指决策时的备选方案。 中间层是指考虑的因素、决策的准则。对于相邻的两层，称高层为目标层，低层为因素层。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">graph TD
+
+Z(Z) --- A(A1)
+Z(Z) --- B(A2)
+Z(Z) --- C(A3)
+Z(Z) --- D(...)
+Z(Z) --- E(Am)
+A(A1) --- F(B1)
+A(A1) --- G(...)
+A(A1) --- H(Bn)
+B(A2) --- F(B1)
+B(A2) --- G(...)
+B(A2) --- H(Bn)
+C(A3) --- F(B1)
+C(A3) --- G(...)
+C(A3) --- H(Bn)
+D(...) --- F(B1)
+D(...) --- G(B2)
+D(...) --- H(Bn)
+E(Am) --- F(B1)
+E(Am) --- G(...)
+E(Am) --- H(Bn)</code></pre></td></tr></table>
+</div>
+</div>
+<p>图中Z为目标层，A为因素层，B为备择方案层。因素层包含m项，方案层包含n项。</p>
+
+<p><strong>(2)建立判断矩阵（成对比较矩阵）</strong></p>
+
+<p>(为什么建立？)在确定各层次各因素之间的权重时，如果只是定性的结果，则常常不容易被别人接受，因此采用<u>一致矩阵法</u>： 不把所有因素放在一起比较，而是两两相互比较，对比时采用相对尺度，以尽可能减少性质不同的诸因素相互比较的困难，以提高准确度。</p>
+
+<p>(怎么建立？)对相邻两层（目标层和因素层），取定目标层第j项，因素层遍历所有项，进行两两对比，按其对于目标（此时为目标层第j项）的重要性程度评定等级，写为<span  class="math">\(a_{ij}\)</span>(即要素i与要素j对于目标的重要性比较结果)。重要性等级的赋值按照Santy给出的<u>1-9比例标度法</u>给出：</p>
+
+<table>
+<thead>
+<tr>
+<th align="center">要素i比要素j</th>
+<th align="center">量化值</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="center">同等重要</td>
+<td align="center">1</td>
+</tr>
+
+<tr>
+<td align="center">稍微重要</td>
+<td align="center">3</td>
+</tr>
+
+<tr>
+<td align="center">较强重要</td>
+<td align="center">5</td>
+</tr>
+
+<tr>
+<td align="center">强烈重要</td>
+<td align="center">7</td>
+</tr>
+
+<tr>
+<td align="center">极端重要</td>
+<td align="center">9</td>
+</tr>
+
+<tr>
+<td align="center">两相邻判断的中间值</td>
+<td align="center">2,4,6,8</td>
+</tr>
+</tbody>
+</table>
+
+<p>对于给定的目标Z，因素层（位于目标所在层的下一层）的所有项两两比较的比较结果构成判断矩阵。设上述模型中A层对于总目标Z的判断矩阵为A<sub>1</sub>:</p>
+
+<p><span  class="math">\[
+A=\left( \begin{matrix}1&a_{12}&a_{13}&\cdots&a_{1m}\\a_{21}&1&a_{23}&\cdots&a_{2m}\\a_{31}&a_{32}&1&\cdots&a_{3m}\\\vdots&\vdots&\vdots&\ddots&\vdots\\a_{m1}&a_{m2}&a_{m3}&\cdots&1 \end{matrix} \right),\quad其中a_{ij}={1\over a_{ji}}
+\]</span></p>
+
+<p><strong>(3)进行层次单排序及一致性检验</strong></p>
+
+<p>i.层次单排序：对应于判断矩阵最大特征根的特征向量，经归一化（使向量中各元素之和等于1）后记为W。W的元素为同一层次因素对于上一层次因素某因素（即目标）相对重要性的排序权值，这一过程称为层次单排序。</p>
+
+<p>ii.一致阵：能否确认层次单排序，则需要进行一致性检验：对A确定不一致的允许范围。 一致阵具有以下性质：</p>
+
+<ol>
+<li><span  class="math">\(a_{ij}={1\over a_{ji}},a_{ii}=1(i,j=1,2,\cdots,m)\)</span>；</li>
+<li><span  class="math">\(A^T\)</span>也是一致阵；</li>
+<li><span  class="math">\(A\)</span>的最大特征根为<span  class="math">\(\lambda=n\)</span>，其余的<span  class="math">\(n-1\)</span>个特征根均为0；</li>
+<li><span  class="math">\(A\)</span>的任一行（列）都是对应于非零特征根的特征向量，即<span  class="math">\(AW=nW\)</span>。</li>
+</ol>
+
+<p>判断矩阵存在一致和非一致的情况：</p>
+
+<ol>
+<li>若判断矩阵是一致阵，则取其对应于特征根n的归一化特征向量<span  class="math">\(W=(w_1,w_2,\cdots,w_m)(\sum_{i=i}^mw_i=1)\)</span>作为其单层权向量。<span  class="math">\(w_i\)</span>表示该层第<span  class="math">\(i\)</span>个要素对上层某要素（目标）的重要度（影响程度）权值。</li>
+<li>若判断矩阵非一致阵，则取其最大特征根<span  class="math">\(\lambda\)</span>对应的归一化特征向量<span  class="math">\(W\)</span>作为权向量，即<span  class="math">\(AW=\lambda W\)</span>（特征根法）。</li>
+</ol>
+
+<p>对于一个判断矩阵A（m阶正互反阵），其一致性未知时，计算得到其最大特征根<span  class="math">\(\lambda\)</span>，<span  class="math">\(\lambda \geqslant m\)</span>，当且仅当<span  class="math">\(\lambda =m\)</span>时，A为一致阵。</p>
+
+<p>iii.一致性检验：由于<span  class="math">\(\lambda\)</span>连续地依赖于<span  class="math">\(a_{ij}\)</span>，则<span  class="math">\(\lambda\)</span>比<span  class="math">\(n\)</span>大得越多，<span  class="math">\(A\)</span>的不一致性越严重。用最大特征根对应的特征向量作为被比较因素对上层某因素影响程度的权向量的不一致程度就越大，引起的判断误差就越大。用<span  class="math">\(\lambda-n\)</span>的数值大小来衡量<span  class="math">\(A\)</span>的不一致程度。</p>
+
+<p>定义一致性指标：</p>
 
 <h3 id="14-网络分析法">1.4 网络分析法</h3>
 
