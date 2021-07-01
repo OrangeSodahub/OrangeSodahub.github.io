@@ -41,7 +41,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/orangesodahub.github.io\/zh-cn\/evaluation-moduel\/"
-        },"image": ["https:\/\/orangesodahub.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","wordcount":  6487 ,
+        },"image": ["https:\/\/orangesodahub.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","wordcount":  8956 ,
         "url": "https:\/\/orangesodahub.github.io\/zh-cn\/evaluation-moduel\/","datePublished": "2021-06-28T17:29:48+08:00","dateModified": "2021-06-28T17:29:48+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
             "@type": "Organization",
             "name": "ZonLin","logo": "https:\/\/orangesodahub.github.io\/images\/%E4%B8%8B%E8%BD%BD.jpg"},"author": {
@@ -136,8 +136,8 @@
             <div class="toc-content" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animated flipInX">Evaluation Moduel</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="/zh-cn/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>ZonLin</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-06-28">2021-06-28</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 6487 字&nbsp;
-                <i class="far fa-clock fa-fw"></i>&nbsp;预计阅读 13 分钟&nbsp;</div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-06-28">2021-06-28</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 8956 字&nbsp;
+                <i class="far fa-clock fa-fw"></i>&nbsp;预计阅读 18 分钟&nbsp;</div>
         </div><div class="details toc" id="toc-static"  kept="">
                 <div class="details-summary toc-title">
                     <span>目录</span>
@@ -747,7 +747,7 @@ E(Am) --- H(Bn)</code></pre></td></tr></table>
 </tbody>
 </table>
 
-<p>对于给定的目标Z，因素层（位于目标所在层的下一层）的所有项两两比较的比较结果构成判断矩阵。设上述模型中A层对于总目标Z的判断矩阵为A<sub>1</sub>:</p>
+<p>对于给定的目标Z，因素层（位于目标所在层的下一层）的所有项两两比较的比较结果构成判断矩阵。设上述模型中A层对于总目标Z的判断矩阵为<span  class="math">\(A\)</span>:</p>
 
 <p><span  class="math">\[
 A=\left( \begin{matrix}1&a_{12}&a_{13}&\cdots&a_{1m}\\a_{21}&1&a_{23}&\cdots&a_{2m}\\a_{31}&a_{32}&1&\cdots&a_{3m}\\\vdots&\vdots&\vdots&\ddots&\vdots\\a_{m1}&a_{m2}&a_{m3}&\cdots&1 \end{matrix} \right),\quad其中a_{ij}={1\over a_{ji}}
@@ -755,7 +755,7 @@ A=\left( \begin{matrix}1&a_{12}&a_{13}&\cdots&a_{1m}\\a_{21}&1&a_{23}&\cdots&a_{
 
 <p><strong>(3)进行层次单排序及一致性检验</strong></p>
 
-<p>i.层次单排序：对应于判断矩阵最大特征根的特征向量，经归一化（使向量中各元素之和等于1）后记为W。W的元素为同一层次因素对于上一层次因素某因素（即目标）相对重要性的排序权值，这一过程称为层次单排序。</p>
+<p>i.层次单排序：对应于判断矩阵最大特征根的特征向量，经归一化（使向量中各元素之和等于1）后记为<span  class="math">\(W\)</span>。<span  class="math">\(W\)</span>的元素为同一层次因素对于<u>上一层次因素某因素（即目标）</u>相对重要性的排序权值，这一过程称为层次单排序。</p>
 
 <p>ii.一致阵：能否确认层次单排序，则需要进行一致性检验：对A确定不一致的允许范围。 一致阵具有以下性质：</p>
 
@@ -773,13 +773,196 @@ A=\left( \begin{matrix}1&a_{12}&a_{13}&\cdots&a_{1m}\\a_{21}&1&a_{23}&\cdots&a_{
 <li>若判断矩阵非一致阵，则取其最大特征根<span  class="math">\(\lambda\)</span>对应的归一化特征向量<span  class="math">\(W\)</span>作为权向量，即<span  class="math">\(AW=\lambda W\)</span>（特征根法）。</li>
 </ol>
 
-<p>对于一个判断矩阵A（m阶正互反阵），其一致性未知时，计算得到其最大特征根<span  class="math">\(\lambda\)</span>，<span  class="math">\(\lambda \geqslant m\)</span>，当且仅当<span  class="math">\(\lambda =m\)</span>时，A为一致阵。</p>
+<p>对于一个判断矩阵<span  class="math">\(A\)</span>（m阶正互反阵），其一致性未知时，计算得到其最大特征根<span  class="math">\(\lambda\)</span>，<span  class="math">\(\lambda \geqslant m\)</span>，当且仅当<span  class="math">\(\lambda =m\)</span>时，<span  class="math">\(A\)</span>为一致阵。</p>
 
 <p>iii.一致性检验：由于<span  class="math">\(\lambda\)</span>连续地依赖于<span  class="math">\(a_{ij}\)</span>，则<span  class="math">\(\lambda\)</span>比<span  class="math">\(n\)</span>大得越多，<span  class="math">\(A\)</span>的不一致性越严重。用最大特征根对应的特征向量作为被比较因素对上层某因素影响程度的权向量的不一致程度就越大，引起的判断误差就越大。用<span  class="math">\(\lambda-n\)</span>的数值大小来衡量<span  class="math">\(A\)</span>的不一致程度。</p>
 
 <p>定义一致性指标：</p>
 
-<h3 id="14-网络分析法">1.4 网络分析法</h3>
+<p><span  class="math">\[
+CI={\lambda-m \over m-1}
+\]</span></p>
+
+<p>其中<span  class="math">\(\lambda\)</span>为判断矩阵的最大特征根，<span  class="math">\(m\)</span>为判断矩阵的秩，则：</p>
+
+<ol>
+<li>当<span  class="math">\(CI=0\)</span>时，有完全的一致性；</li>
+<li>当<span  class="math">\(CI\)</span>接近于0时，有满意的一致性；</li>
+<li>当<span  class="math">\(CI\)</span>越大，不一致性越显著。</li>
+</ol>
+
+<p>其中第2条对于<span  class="math">\(CI\)</span>的具体大小还需进一步衡量，用以表述当达到什么程度时，为“满意”程度。为此引入随机一致性指标<span  class="math">\(RI\)</span>：</p>
+
+<p>随机构造500个成对比较矩阵<span  class="math">\(A_1,A_2,\cdots,A_{500}\)</span>，分别有其一致性指标<span  class="math">\(CI_1,CI_2,\cdots,CI_{500}\)</span>，则：</p>
+
+<p><span  class="math">\[
+RI={CI_1+CI_2+\cdots+CI_{500}\over500}={{{\lambda_1+\lambda_2+\cdots+\lambda_{500}\over500}-n}\over n-1}
+\]</span></p>
+
+<p>经计算得到平均随机一致性指标<span  class="math">\(RI\)</span>标准值：</p>
+
+<table>
+<thead>
+<tr>
+<th align="center">矩阵阶数m</th>
+<th align="center">1</th>
+<th align="center">2</th>
+<th align="center">3</th>
+<th align="center">4</th>
+<th align="center">5</th>
+<th align="center">6</th>
+<th align="center">7</th>
+<th align="center">8</th>
+<th align="center">9</th>
+<th align="center">10</th>
+<th align="center">11</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="center">RI</td>
+<td align="center">0</td>
+<td align="center">0</td>
+<td align="center">0.58</td>
+<td align="center">0.90</td>
+<td align="center">1.12</td>
+<td align="center">1.24</td>
+<td align="center">1.32</td>
+<td align="center">1.41</td>
+<td align="center">1.45</td>
+<td align="center">1.49</td>
+<td align="center">1.51</td>
+</tr>
+</tbody>
+</table>
+
+<p>为检验判断矩阵是否有满意的一致性，定义一致性比率（或检验系数）：</p>
+
+<p><span  class="math">\[
+CR={CI\over RI}
+\]</span></p>
+
+<p>则当<span  class="math">\(CR\lt 0.1\)</span>时，认为<span  class="math">\(A\)</span>的不一致性程度在容许范围内，有满意的一致性。可以将其归一化特征向量作为权向量，否则需重构判断矩阵。</p>
+
+<blockquote>
+<p>正互反阵的归一化特征向量的简化计算：</p>
+
+<p>由一致阵的性质得知一致性尚好的正互反阵的任一列向量都近似与特征向量，可作为特征向量的近似计算，就如：</p>
+
+<p><span  class="math">\[
+A=\left( \begin{matrix}a_{11}&a_{12}&a_{13}\\a_{21}&a_{22}&a_{23}\\a_{31}&a_{32}&a_{33} \end{matrix} \right)\rightarrow\left( \begin{matrix}{a_{11}\over \sum_{i=1}^3a_{i1}}&{a_{12}\over \sum_{i=1}^3a_{i2}}&{a_{13}\over \sum_{i=1}^3a_{i3}}\\{a_{21}\over \sum_{i=1}^3a_{i1}}&{a_{22}\over \sum_{i=1}^3a_{i2}}&{a_{23}\over \sum_{i=1}^3a_{i3}}\\{a_{31}\over \sum_{i=1}^3a_{i1}}&{a_{32}\over \sum_{i=1}^3a_{i2}}&{a_{33}\over \sum_{i=1}^3a_{i3}} \end{matrix} \right)\rightarrow{1\over3}\left( \begin{matrix} \sum_{j=1}^3{a_{1j}\over \sum_{i=1}^3a_{ij}}\\\sum_{j=1}^3{a_{2j}\over \sum_{i=1}^3a_{ij}}\\\sum_{j=1}^3{a_{3j}\over \sum_{i=1}^3a_{ij}}\end{matrix} \right)\approx W
+\]</span></p>
+</blockquote>
+
+<p>最终（通过了一致性检验）的单层次排序权重，其各项代表了该层各要素对于上一层某要素（目标）的相对重要性的排序权值。</p>
+
+<p><strong>(4)进行层次总排序及其一致性检验</strong></p>
+
+<p>计算某一层次所有因素对于<u>最高层（即总目标）</u>相对重要性的权值，称为层次总排序。 这一过程需从最高层次到最低层次依次进行。</p>
+
+<p>i.<span  class="math">\(A\)</span>层<span  class="math">\(m\)</span>个要素<span  class="math">\(A_1,A_2,\cdots,A_m\)</span>对上一层（此时为最高层）（总）目标<span  class="math">\(Z\)</span>的排序为：</p>
+
+<p><span  class="math">\[
+a_1,a_2,\cdots,a_m
+\]</span></p>
+
+<p>ii.<span  class="math">\(B\)</span>层<span  class="math">\(n\)</span>个要素对上一层（此时为<span  class="math">\(A\)</span>层）目标<span  class="math">\(A_j(j=1,2,\cdots,m)\)</span>的单排序为：</p>
+
+<p><span  class="math">\[
+b_{1j},b_{2j},\cdots,b_{nj}
+\]</span></p>
+
+<p>组成B层对A层的层次单排序矩阵：</p>
+
+<p><span  class="math">\[
+B_A=\left( \begin{matrix} b_{11}&b_{12}&\cdots&b_{1m}\\b_{21}&b_{22}&\cdots&b_{2m}\\\vdots&\vdots&\ddots&\vdots\\b_{n1}&b_{n2}&\cdots&b_{nm}\end{matrix} \right)
+\]</span></p>
+
+<p>iii.<span  class="math">\(B\)</span>层的层次总排序（对总目标<span  class="math">\(Z\)</span>）记为<span  class="math">\(B_Z=(b_{1z},b_{2z},\cdots,b_{nz})\)</span>：</p>
+
+<p><span  class="math">\[
+b_{1z}=\sum_{i=1}^ma_ib_{1i}=a_1b_{11}+a_2b_{12}+\cdots+a_mb_{1m}\\
+b_{2z}=\sum_{i=1}^ma_ib_{2i}=a_1b_{21}+a_2b_{22}+\cdots+a_mb_{2m}\\
+\vdots\\
+b_{nz}=\sum_{i=1}^ma_ib_{ni}=a_1b_{n1}+a_2b_{n2}+\cdots+a_mb_{nm}
+\]</span></p>
+
+<p>iiii.层次总排序的一致性检验</p>
+
+<p>设<span  class="math">\(B\)</span>层各要素对上一层（<span  class="math">\(A\)</span>层）中要素<span  class="math">\(A_j(j=1,2,\cdots,m)\)</span>的层次单排序的一致性指标为<span  class="math">\(CI_j\)</span>，随机一致性指标为<span  class="math">\(RI_j\)</span>，则层次总排序的一致性比率为：</p>
+
+<p><span  class="math">\[
+CR={{a_1CI_1+a}_2CI_2+\cdots+a_mCI_m\over a_1RI_1+a_2RI_2+\cdots+a_mRI_m}
+\]</span></p>
+
+<p>当<span  class="math">\(CR\lt 0.1\)</span>时，认为层次总排序通过一致性检验，否则需重构部分一致性比率较高的判断矩阵。</p>
+
+<p>通过总排序的一致性检验后，则可根据最下层（方案层）的层次总排序<span  class="math">\(B_Z=(b_{1z},b_{2z},\cdots,b_{nz})\)</span>作出决策。</p>
+
+<h4 id="133-实例">1.3.3 实例</h4>
+
+<p>旅游问题：如何根据景色、费用等因素在三个地点中选择合适方案。</p>
+
+<p>(1)建立层次结构模型</p>
+
+<p>总目标Z层：选择目的地；</p>
+
+<p>影响因素A层：<span  class="math">\(A_1,A_2,A_3,A_4,A_5\)</span>分别为景色、费用、居住、饮食、旅途；</p>
+
+<p>方案B层：<span  class="math">\(B_1,B_2,B_3\)</span>分别为苏杭、北戴河、桂林。</p>
+
+<p>(2)建立判断矩阵</p>
+
+<p><span  class="math">\[
+A=\left[\begin{matrix}1&1\over2&4&3&3\\2&1&7&5&5\\1\over4&1\over7&1&1\over2&1\over3\\1\over3&1\over5&2&1&1\\1\over3&1\over5&3&1&1\end{matrix}\right];B_1=\left[\begin{matrix}1&2&5\\1\over2&1&2\\1\over5&1\over2&1\end{matrix}\right];B_2=\left[\begin{matrix}1&1\over3&1\over8\\3&1&1\over3\\8&3&1\end{matrix}\right]
+\]</span></p>
+
+<p><span  class="math">\[
+B_3=\left[\begin{matrix}1&1&3\\1&1&3\\1\over3&1\over3&1\end{matrix}\right];B_4=\left[\begin{matrix}1&3&4\\1\over3&1&1\\1\over4&1&1\end{matrix}\right];B_1=\left[\begin{matrix}1&1&1\over4\\1&1&1\over4\\4&4&1\end{matrix}\right]
+\]</span></p>
+
+<p>(3)层次单排序及一致性检验</p>
+
+<p>矩阵<span  class="math">\(A\)</span>的最大特征根<span  class="math">\(\lambda=5.072\)</span>，一致性比率<span  class="math">\(CR={CI\over RI}={{5.072-5\over5-1}\over1.12}=0.016\lt0.1\)</span>，通过一致性检验，<span  class="math">\(A_1A_2A_3A_4A_5\)</span>对<span  class="math">\(Z\)</span>的权重（对应的归一化特征向量）为<span  class="math">\(A=(0.2636,0.0.4758,0.0538,0.0981,0.1087)\)</span>；</p>
+
+<p>矩阵<span  class="math">\(B_1\)</span>的最大特征根<span  class="math">\(\lambda=3.006\)</span>，一致性比率<span  class="math">\(CR={CI\over RI}={{3.006-3\over3-1}\over0.58}=0.00174\lt0.1\)</span>，通过一致性检验，<span  class="math">\(B_1B_2B_3\)</span>对<span  class="math">\(A_1\)</span>的权重（对应的归一化特征向量）为<span  class="math">\(b_1=(0.5953,0.2764,0.1283)\)</span>；</p>
+
+<p>矩阵<span  class="math">\(B_2\)</span>的最大特征根<span  class="math">\(\lambda=3.0015\)</span>，一致性比率<span  class="math">\(CR={CI\over RI}={{3.0015-3\over3-1}\over0.58}=0.000435\lt0.1\)</span>，通过一致性检验，<span  class="math">\(B_1B_2B_3\)</span>对<span  class="math">\(A_2\)</span>的权重（对应的归一化特征向量）<span  class="math">\(b_2=(0.0819,0.2364,0.6817)\)</span>；</p>
+
+<p>矩阵<span  class="math">\(B_3\)</span>的最大特征根<span  class="math">\(\lambda=3\)</span>，一致性比率<span  class="math">\(CR={CI\over RI}={{3-3\over3-1}\over0.58}=0\)</span>，通过一致性检验，<span  class="math">\(B_1B_2B_3\)</span>对<span  class="math">\(A_3\)</span>的权重（对应的归一化特征向量）<span  class="math">\(b_2=(0.4286,0.4286,0.1428)\)</span>；</p>
+
+<p>矩阵<span  class="math">\(B_4\)</span>的最大特征根<span  class="math">\(\lambda=3.0092\)</span>，一致性比率<span  class="math">\(CR={CI\over RI}={{3.0092-3\over3-1}\over0.58}=0.00267\lt0.1\)</span>，通过一致性检验，<span  class="math">\(B_1B_2B_3\)</span>对<span  class="math">\(A_4\)</span>的权重（对应的归一化特征向量）<span  class="math">\(b_2=(0.6337,0.1919,0.1744)\)</span>；</p>
+
+<p>矩阵<span  class="math">\(B_5\)</span>的最大特征根<span  class="math">\(\lambda=3\)</span>，一致性比率<span  class="math">\(CR={CI\over RI}={{3-3\over3-1}\over0.58}=0\)</span>，通过一致性检验，<span  class="math">\(B_1B_2B_3\)</span>对<span  class="math">\(A_5\)</span>的权重（对应的归一化特征向量）<span  class="math">\(b_2=(0.1667,0.1667,0.6667)\)</span>；</p>
+
+<p>则B对A的单排序矩阵：</p>
+
+<p><span  class="math">\[
+B_A=\left[\begin{matrix}0.5953&0.0819&0.4286&0.6337&0.1667\\0.2764&0.2364&0.4286&0.1919&0.1667\\0.1283&0.6817&0.1428&0.1744&0.6667\end{matrix}\right]
+\]</span></p>
+
+<p>(4)层次总排序及一致性检验</p>
+
+<p>B对总目标的总排序权向量：</p>
+
+<p><span  class="math">\[
+\begin{aligned}W=B_A\times A^T&=\left[\begin{matrix}0.5953&0.0819&0.4286&0.6337&0.1667\\0.2764&0.2364&0.4286&0.1919&0.1667\\0.1283&0.6817&0.1428&0.1744&0.6667\end{matrix}\right] \left[\begin{matrix}0.2636\\0.4758\\0.0538\\0.0981\\0.1087\end{matrix}\right]\\&=\left[\begin{matrix}0.2992&0.2453&0.4554\end{matrix}\right]\end{aligned}
+\]</span></p>
+
+<p>总排序的一致性比率：</p>
+
+<p><span  class="math">\[
+\begin{aligned}CR &={0.2636\times{3.006-3\over3-1}+0.4758\times{3.0015-3\over3-1}+0.0538\times{3.-3\over3-1}+0.0981\times{3.0092-3\over3-1}+0.1087\times{3-3\over3-1}\over0.2636\times1.12+0.4758\times0.58+0.0538\times0.58+0.0981\times0.58+0.1087\times0.58}\\\\&=0.0022135\lt0.1\end{aligned}
+\]</span></p>
+
+<p>则方案层对总目标的权重为(0.2992,0.2453,0.4554)，根据排序进行决策，选取方案三即“桂林”作为做种决策。</p>
+
+<h3 id="14-网络分析法anp">1.4 网络分析法（ANP）</h3>
+
+<h4 id="141简述">1.4.1简述</h4>
+
+<h4 id="142分析步骤">1.4.2分析步骤</h4>
 
 <h3 id="15-数据包络分析法">1.5 数据包络分析法、</h3>
 
