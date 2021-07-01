@@ -618,7 +618,7 @@ iiii.层次总排序的一致性检验
 
 
 $$
-CR={{a_1CI_1+a}_2CI_2+\cdots+a_mCI_m\over a_1RI_1+a_2RI_2+\cdots+a_mRI_m}
+CR={ {a_1CI_1+a}_2CI_2+\cdots+a_mCI_m\over a_1RI_1+a_2RI_2+\cdots+a_mRI_m}
 $$
 
 
