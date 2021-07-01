@@ -541,7 +541,7 @@ $$
 
 
 $$
-RI={CI_1+CI_2+\cdots+CI_{500}\over500}={{{\lambda_1+\lambda_2+\cdots+\lambda_{500}\over500}-n}\over n-1}
+RI={CI_1+CI_2+\cdots+CI_{500}\over500}={{\lambda_1+\lambda_2+\cdots+\lambda_{500}\over500}-n\over n-1}
 $$
 
 
