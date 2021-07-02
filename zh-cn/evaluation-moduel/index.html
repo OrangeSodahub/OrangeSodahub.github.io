@@ -18,7 +18,7 @@
         <meta name="robots" content="noodp" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
         <title>Evaluation Moduel - ZonLin</title><meta name="Description" content="关于作者"><meta property="og:title" content="Evaluation Moduel" />
-<meta property="og:description" content="1. 打分式评价 1.1 模糊综合评价（Fuzzy Comprehension Evaluation Method） 1.1.1 简述 模糊综合评价法是一种基于模糊数学的综合评价方法。该综合评价法根据模糊数学的隶属" />
+<meta property="og:description" content="1. 打分式评价 1.1 模糊综合评价（FCE） 1.1.1 简述 模糊综合评价法是一种基于模糊数学的综合评价方法。该综合评价法根据模糊数学的隶属度理论把定性评价转化" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://orangesodahub.github.io/zh-cn/evaluation-moduel/" />
 <meta property="og:image" content="https://orangesodahub.github.io/logo.png"/>
@@ -28,7 +28,7 @@
 <meta name="twitter:image" content="https://orangesodahub.github.io/logo.png"/>
 
 <meta name="twitter:title" content="Evaluation Moduel"/>
-<meta name="twitter:description" content="1. 打分式评价 1.1 模糊综合评价（Fuzzy Comprehension Evaluation Method） 1.1.1 简述 模糊综合评价法是一种基于模糊数学的综合评价方法。该综合评价法根据模糊数学的隶属"/>
+<meta name="twitter:description" content="1. 打分式评价 1.1 模糊综合评价（FCE） 1.1.1 简述 模糊综合评价法是一种基于模糊数学的综合评价方法。该综合评价法根据模糊数学的隶属度理论把定性评价转化"/>
 <meta name="application-name" content="ZonLin">
 <meta name="apple-mobile-web-app-title" content="ZonLin"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -41,7 +41,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/orangesodahub.github.io\/zh-cn\/evaluation-moduel\/"
-        },"image": ["https:\/\/orangesodahub.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "数学建模, 运筹学","wordcount":  8987 ,
+        },"image": ["https:\/\/orangesodahub.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "数学建模, 运筹学","wordcount":  9671 ,
         "url": "https:\/\/orangesodahub.github.io\/zh-cn\/evaluation-moduel\/","datePublished": "2021-06-28T17:29:48+08:00","dateModified": "2021-06-28T17:29:48+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
             "@type": "Organization",
             "name": "ZonLin","logo": "https:\/\/orangesodahub.github.io\/images\/%E4%B8%8B%E8%BD%BD.jpg"},"author": {
@@ -136,8 +136,8 @@
             <div class="toc-content" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animated flipInX">Evaluation Moduel</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="/zh-cn/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>记录</a></span>&nbsp;<span class="post-category">收录于 <a href="/zh-cn/categories/%E6%95%B0%E7%90%86%E7%BB%9F%E8%AE%A1/"><i class="far fa-folder fa-fw"></i>数理统计</a>&nbsp;<a href="/zh-cn/categories/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1/"><i class="far fa-folder fa-fw"></i>数学建模</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-06-28">2021-06-28</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 8987 字&nbsp;
-                <i class="far fa-clock fa-fw"></i>&nbsp;预计阅读 18 分钟&nbsp;</div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-06-28">2021-06-28</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 9671 字&nbsp;
+                <i class="far fa-clock fa-fw"></i>&nbsp;预计阅读 20 分钟&nbsp;</div>
         </div><div class="details toc" id="toc-static"  kept="">
                 <div class="details-summary toc-title">
                     <span>目录</span>
@@ -146,7 +146,7 @@
                 <div class="details-content toc-content" id="toc-content-static"></div>
             </div><div class="content" id="content"><h2 id="1-打分式评价">1. 打分式评价</h2>
 
-<h3 id="11-模糊综合评价fuzzy-comprehension-evaluation-method">1.1 模糊综合评价（Fuzzy Comprehension Evaluation Method）</h3>
+<h3 id="11-模糊综合评价fce">1.1 模糊综合评价（FCE）</h3>
 
 <h4 id="111-简述">1.1.1 简述</h4>
 
@@ -949,9 +949,37 @@ B_A=\left[\begin{matrix}0.5953&0.0819&0.4286&0.6337&0.1667\\0.2764&0.2364&0.4286
 
 <p>则方案层对总目标的权重为(0.2992,0.2453,0.4554)，根据排序进行决策，选取方案三即“桂林”作为最终决策。</p>
 
+<h4 id="134-优缺点">1.3.4 优缺点</h4>
+
+<p>(1)优点</p>
+
+<p>系统性：系统的思想在于不割断各个因素对结果的影响，而层次分析法中每一层的权重设置最后都会直接或间接影响到结果，而且在每个层次中的每个因素对结果的影响程度都是量化的，非常清晰明确。</p>
+
+<p>所需定量数据信息少：层次分析法主要是从评价者对评价问题的本质、要素的理解出发，比一般的定量方法更讲求定性的分析和判断。</p>
+
+<p>(2)缺点</p>
+
+<ol>
+<li>不能为决策提供新方案；</li>
+<li>定性成分较多；</li>
+<li>指标过多时权重难以确定；</li>
+<li>指标过多时特征值和特征向量难以精确求得。</li>
+</ol>
+
 <h3 id="14-网络分析法anp">1.4 网络分析法（ANP）</h3>
 
 <h4 id="141简述">1.4.1简述</h4>
+
+<p>ANP为AHP的衍生方法，比AHP更进一步。主要在于AHP未能考虑到不同决策层或同一层次之间的相互影响，AHP模型只是强调各决策层之间的单向层次关系，即下一层对上一层的影响。但在实际工作中对总目标层进行逐层分解时，时常会遇到各因素交叉作用的情况。而ANP在AHP的基础上考虑了各因素或相邻层次之间的相互影响，取消了同层元素之间相互独立且元素之间不存在反馈关系的假设，以扁平化、网络化的方式表示元素间的相互关系，利用超矩阵对各相互影响的因素进行综合分析得出其权重。用于解决复杂的非线性系统问题，更加符合现实的问题决策。</p>
+
+<p>ANP将系统元素划分为两大部分：第一部分称为控制元素层包括问题目标及决策准则。所有的决策准则均被认为是彼此独立的且只受目标支配。控制元素中可以没有决策准则但至少有一个目标。控制层中每个准则的权重均可用传统AHP方法获得。第二部分为网络层它是由所有受控制层支配的元素组成的元素之间互相依存、互相支配元素和层次间内部不独立递阶层次结构中的每个准则支配的不是一个简单的内部独立的元素而是一个互相依存反馈的网络结构。</p>
+
+<figure>
+    <img src="/images/07.png"/> <figcaption>
+            <h4>（网络分析法结构模型）</h4>
+        </figcaption>
+</figure>
+
 
 <h4 id="142分析步骤">1.4.2分析步骤</h4>
 
