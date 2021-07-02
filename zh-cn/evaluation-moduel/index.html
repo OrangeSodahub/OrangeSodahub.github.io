@@ -41,7 +41,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/orangesodahub.github.io\/zh-cn\/evaluation-moduel\/"
-        },"image": ["https:\/\/orangesodahub.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "数学建模, 运筹学","wordcount":  8940 ,
+        },"image": ["https:\/\/orangesodahub.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "数学建模, 运筹学","wordcount":  8987 ,
         "url": "https:\/\/orangesodahub.github.io\/zh-cn\/evaluation-moduel\/","datePublished": "2021-06-28T17:29:48+08:00","dateModified": "2021-06-28T17:29:48+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
             "@type": "Organization",
             "name": "ZonLin","logo": "https:\/\/orangesodahub.github.io\/images\/%E4%B8%8B%E8%BD%BD.jpg"},"author": {
@@ -136,7 +136,7 @@
             <div class="toc-content" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animated flipInX">Evaluation Moduel</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="/zh-cn/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>记录</a></span>&nbsp;<span class="post-category">收录于 <a href="/zh-cn/categories/%E6%95%B0%E7%90%86%E7%BB%9F%E8%AE%A1/"><i class="far fa-folder fa-fw"></i>数理统计</a>&nbsp;<a href="/zh-cn/categories/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1/"><i class="far fa-folder fa-fw"></i>数学建模</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-06-28">2021-06-28</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 8940 字&nbsp;
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-06-28">2021-06-28</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 8987 字&nbsp;
                 <i class="far fa-clock fa-fw"></i>&nbsp;预计阅读 18 分钟&nbsp;</div>
         </div><div class="details toc" id="toc-static"  kept="">
                 <div class="details-summary toc-title">
@@ -653,56 +653,42 @@ a_i=\sum_{j=1}^nw_j\times{(r_{ij})}^T\quad i=1,2,\cdots,m
 <p><strong>(1)建立层次结构模型</strong></p>
 
 <p>将决策的目标、考虑的因素（决策准则）和决策对象按它们之间的相互关系分为最高层、中间层和最低层，绘出层次结构图。 最高层是指决策的目的、要解决的问题。 最低层是指决策时的备选方案。 中间层是指考虑的因素、决策的准则。对于相邻的两层，称高层为目标层，低层为因素层。</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
-</span><span class="lnt">11
-</span><span class="lnt">12
-</span><span class="lnt">13
-</span><span class="lnt">14
-</span><span class="lnt">15
-</span><span class="lnt">16
-</span><span class="lnt">17
-</span><span class="lnt">18
-</span><span class="lnt">19
-</span><span class="lnt">20
-</span><span class="lnt">21
-</span><span class="lnt">22
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">graph TD
 
-Z(Z) --- A(A1)
-Z(Z) --- B(A2)
-Z(Z) --- C(A3)
-Z(Z) --- D(...)
-Z(Z) --- E(Am)
-A(A1) --- F(B1)
-A(A1) --- G(...)
-A(A1) --- H(Bn)
-B(A2) --- F(B1)
-B(A2) --- G(...)
-B(A2) --- H(Bn)
-C(A3) --- F(B1)
-C(A3) --- G(...)
-C(A3) --- H(Bn)
-D(...) --- F(B1)
-D(...) --- G(B2)
-D(...) --- H(Bn)
-E(Am) --- F(B1)
-E(Am) --- G(...)
-E(Am) --- H(Bn)</code></pre></td></tr></table>
+<div class="mermaid" id="id-1"></div>
+<div class="mermaid" align="center">
+graph TD;
+	Z(总目标Z) --- B(因素A1)
+	Z --- C(因素A2)
+	Z --- D(因素A3)
+	Z --- E(...)
+	Z --- F(因素Am)
+	B --- G(方案B1)
+	B --- H(...)
+	B --- I(方案Bn)
+	C --- G
+	C --- H
+	C --- I
+	D --- G
+	D --- H
+	D --- I
+	E --- G
+	E --- H
+	E --- I
+	F --- G
+	F --- H
+	F --- I
+style Z fill:#fff,stroke:#333,stroke-width:3px
+style B fill:#fff,stroke:#333,stroke-width:3px
+style C fill:#fff,stroke:#333,stroke-width:3px
+style D fill:#fff,stroke:#333,stroke-width:3px
+style E fill:#fff,stroke:#333,stroke-width:3px
+style F fill:#fff,stroke:#333,stroke-width:3px
+style G fill:#fff,stroke:#333,stroke-width:3px
+style H fill:#fff,stroke:#333,stroke-width:3px
+style I fill:#fff,stroke:#333,stroke-width:3px
 </div>
-</div>
+
+
 <p>图中Z为目标层，A为因素层，B为备择方案层。因素层包含m项，方案层包含n项。</p>
 
 <p><strong>(2)建立判断矩阵（成对比较矩阵）</strong></p>
@@ -1009,7 +995,6 @@ B_A=\left[\begin{matrix}0.5953&0.0819&0.4286&0.6337&0.1667\\0.2764&0.2364&0.4286
 </article></div>
             </main><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js">
 </script>
-<script src="/lib/mermaid/mermaid.min.js"  crossorigin="anonymous"></script>
 <footer class="footer">
         <div class="footer-container"><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2019 - 2021</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/zh-cn/" target="_blank">ZonLin</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span><div><span class="icp-splitter"></span><br class="icp-br"/>
                         <span class="icp"><a href="https://beian.miit.gov.cn/#/Integrated/index">黔ICP备2021002279号-1</a>&nbsp;|&nbsp;</span><span>
@@ -1033,5 +1018,5 @@ B_A=\left[\begin{matrix}0.5953&0.0819&0.4286&0.6337&0.1667\\0.2764&0.2364&0.4286
             </a><a href="#" id="view-comments" class="fixed-button" title="查看评论">
                 <i class="fas fa-comment fa-fw"></i>
             </a>
-        </div><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/smooth-scroll@16.1.3/dist/smooth-scroll.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/autocomplete.js@0.37.1/dist/autocomplete.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/algoliasearch@4.2.0/dist/algoliasearch-lite.umd.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.2.2/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sharer.js@0.4.0/sharer.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"复制到剪贴板","maxShownLines":10},"comment":{},"search":{"algoliaAppID":"PASDMWALPK","algoliaIndex":"index.zh-cn","algoliaSearchKey":"b42948e51daaa93df92381c8e2ac0f93","highlightTag":"em","maxResultLength":10,"noResultsFound":"没有找到结果","snippetLength":50,"type":"algolia"}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+        </div><link rel="stylesheet" href="/lib/mermaid/mermaid.min.css"><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/smooth-scroll@16.1.3/dist/smooth-scroll.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/autocomplete.js@0.37.1/dist/autocomplete.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/algoliasearch@4.2.0/dist/algoliasearch-lite.umd.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.2.2/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sharer.js@0.4.0/sharer.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/mermaid@8.5.1/dist/mermaid.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"复制到剪贴板","maxShownLines":10},"comment":{},"data":{"id-1":"graph TD;\n\tZ(总目标Z) --- B(因素A1)\n\tZ --- C(因素A2)\n\tZ --- D(因素A3)\n\tZ --- E(...)\n\tZ --- F(因素Am)\n\tB --- G(方案B1)\n\tB --- H(...)\n\tB --- I(方案Bn)\n\tC --- G\n\tC --- H\n\tC --- I\n\tD --- G\n\tD --- H\n\tD --- I\n\tE --- G\n\tE --- H\n\tE --- I\n\tF --- G\n\tF --- H\n\tF --- I\nstyle Z fill:#fff,stroke:#333,stroke-width:3px\nstyle B fill:#fff,stroke:#333,stroke-width:3px\nstyle C fill:#fff,stroke:#333,stroke-width:3px\nstyle D fill:#fff,stroke:#333,stroke-width:3px\nstyle E fill:#fff,stroke:#333,stroke-width:3px\nstyle F fill:#fff,stroke:#333,stroke-width:3px\nstyle G fill:#fff,stroke:#333,stroke-width:3px\nstyle H fill:#fff,stroke:#333,stroke-width:3px\nstyle I fill:#fff,stroke:#333,stroke-width:3px"},"search":{"algoliaAppID":"PASDMWALPK","algoliaIndex":"index.zh-cn","algoliaSearchKey":"b42948e51daaa93df92381c8e2ac0f93","highlightTag":"em","maxResultLength":10,"noResultsFound":"没有找到结果","snippetLength":50,"type":"algolia"}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
 </html>

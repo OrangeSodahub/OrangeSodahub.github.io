@@ -449,31 +449,40 @@ A、B、C三家建筑公司参加一体育馆建筑工程项目投标，各公�
 
 将决策的目标、考虑的因素（决策准则）和决策对象按它们之间的相互关系分为最高层、中间层和最低层，绘出层次结构图。 最高层是指决策的目的、要解决的问题。 最低层是指决策时的备选方案。 中间层是指考虑的因素、决策的准则。对于相邻的两层，称高层为目标层，低层为因素层。 
 
-```mermaid
-graph TD
 
-Z(Z) --- A(A1)
-Z(Z) --- B(A2)
-Z(Z) --- C(A3)
-Z(Z) --- D(...)
-Z(Z) --- E(Am)
-A(A1) --- F(B1)
-A(A1) --- G(...)
-A(A1) --- H(Bn)
-B(A2) --- F(B1)
-B(A2) --- G(...)
-B(A2) --- H(Bn)
-C(A3) --- F(B1)
-C(A3) --- G(...)
-C(A3) --- H(Bn)
-D(...) --- F(B1)
-D(...) --- G(B2)
-D(...) --- H(Bn)
-E(Am) --- F(B1)
-E(Am) --- G(...)
-E(Am) --- H(Bn)
+{{< mermaid >}}
+graph TD;
+	Z(总目标Z) --- B(因素A1)
+	Z --- C(因素A2)
+	Z --- D(因素A3)
+	Z --- E(...)
+	Z --- F(因素Am)
+	B --- G(方案B1)
+	B --- H(...)
+	B --- I(方案Bn)
+	C --- G
+	C --- H
+	C --- I
+	D --- G
+	D --- H
+	D --- I
+	E --- G
+	E --- H
+	E --- I
+	F --- G
+	F --- H
+	F --- I
+style Z fill:#fff,stroke:#333,stroke-width:3px
+style B fill:#fff,stroke:#333,stroke-width:3px
+style C fill:#fff,stroke:#333,stroke-width:3px
+style D fill:#fff,stroke:#333,stroke-width:3px
+style E fill:#fff,stroke:#333,stroke-width:3px
+style F fill:#fff,stroke:#333,stroke-width:3px
+style G fill:#fff,stroke:#333,stroke-width:3px
+style H fill:#fff,stroke:#333,stroke-width:3px
+style I fill:#fff,stroke:#333,stroke-width:3px
+{{< /mermaid >}}
 
-```
 
 图中Z为目标层，A为因素层，B为备择方案层。因素层包含m项，方案层包含n项。
 
