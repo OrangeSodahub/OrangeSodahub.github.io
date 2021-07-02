@@ -33,8 +33,7 @@
 
 因素集是以影响评价对象的各种因素为元素组成的集合，即U={u<sub>1</sub>,u<sub>2</sub>,...,u<sub>m</sub>},其中u<sub>i</sub>表示影响评价因素的第i个因素，通常均具有不同程度的模糊性。
 
-![](F:\ZonLinSurviveRecords\ZonLinyy\content\posts\EVALUATION-MODUEL\01.png)
-
+{{<figure src="/images/05.png" title="（以该模型为例）">}}
 
 该评价层分为两层：
 
@@ -42,7 +41,7 @@
 
 第二层：u<sub>1</sub>=\{...}; u<sub>2</sub>=\{...} ...不再赘述
 
-##### (2)建立综合评价的评价集V**
+##### (2)建立综合评价的评价集V
 
 评价集是评价者对评价对象作出的各种结果组成的集合，即V={v<sub>1</sub>,v<sub>2</sub>,...,v<sub>n</sub>}，其中v<sub>j</sub>表示第j种评价结果。这里设定评价集为V={优,良,中,差}。
 

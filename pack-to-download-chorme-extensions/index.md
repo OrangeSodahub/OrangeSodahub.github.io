@@ -9,13 +9,13 @@ Here are steps:
 
 2. Choose the "manage the extension" option then popuo a new page.
 
-   ![0](F:\ZonLinSurviveRecords\ZonLinyy\static\images\03.png)
+   {{<figure src="/images/03.png" title="">}}
 
 3. Enable the developer mode. Upper right of the page.
 
 4. Button: Pack extension. Click it.
 
-   ![](F:\ZonLinSurviveRecords\ZonLinyy\static\images\02.png)
+   {{<figure src="/images/02.png" title="">}}
 
    In the first blank:Extension root directory. You ought to find where your extension is in your PC. Go to **C:\Users\Administrator\AppData\Local\Google\Chrome\User Data\Default\Extensions** and find one folder whose name is exactly the extension's ID. Get the ID in the extension manage page and that will be a string of letters.
 
