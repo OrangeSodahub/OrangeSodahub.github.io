@@ -4,15 +4,29 @@
         <link>https://orangesodahub.github.io/zh-cn/posts/</link>
         <description>所有文章 | ZonLin</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>gzzyyxy@gmail.com (ZonLin)</managingEditor>
-            <webMaster>gzzyyxy@gmail.com (ZonLin)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 28 Jun 2021 17:29:48 &#43;0800</lastBuildDate><atom:link href="https://orangesodahub.github.io/zh-cn/posts/" rel="self" type="application/rss+xml" /><item>
-    <title>评价模型</title>
+            <webMaster>gzzyyxy@gmail.com (ZonLin)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 07 Jul 2021 11:52:32 &#43;0800</lastBuildDate><atom:link href="https://orangesodahub.github.io/zh-cn/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>(续1)评价模型</title>
+    <link>https://orangesodahub.github.io/zh-cn/continued_1evalutaion-model/</link>
+    <pubDate>Wed, 07 Jul 2021 11:52:32 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://orangesodahub.github.io/zh-cn/continued_1evalutaion-model/</guid>
+    <description><![CDATA[这是一个提示 若(部分)数学公式、表达式或图表显示不完整、不正常，请保持网络流畅并刷新等待，加载时间可能较长~ 任何疑问请致邮：E-mail 1.5 数]]></description>
+</item><item>
+    <title>大二学年（2021-2022）</title>
+    <link>https://orangesodahub.github.io/zh-cn/sophomore-year/</link>
+    <pubDate>Fri, 02 Jul 2021 11:10:18 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://orangesodahub.github.io/zh-cn/sophomore-year/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>评价模型(FCE,GSEM,AHP,ANP)</title>
     <link>https://orangesodahub.github.io/zh-cn/evaluation-moduel/</link>
     <pubDate>Mon, 28 Jun 2021 17:29:48 &#43;0800</pubDate>
     <author>作者</author>
     <guid>https://orangesodahub.github.io/zh-cn/evaluation-moduel/</guid>
     <description><![CDATA[这是一个提示 若(部分)数学公式、表达式或图表显示不完整、不正常，请保持网络流畅并刷新等待，加载时间可能较长~ 任何疑问请致邮：E-mail 1. 打]]></description>
 </item><item>
-    <title>Project Induction Automatic Water Dispenser</title>
+    <title>工导项目：感应式自动饮水机（2021春）</title>
     <link>https://orangesodahub.github.io/zh-cn/project-induction-automatic-water-dispenser/</link>
     <pubDate>Mon, 28 Jun 2021 16:45:08 &#43;0800</pubDate>
     <author>作者</author>
@@ -43,22 +57,25 @@
 HTML HTML stands for Hpertext Markup Language and is the key to the world of Web technology. Click here to learn more about it.
 XHTML XHTML is more rigorous and clean version of HTML. There are the differences between HTML and XHTML, and the advantages of XHTML for you. And, how to upgrade your site to XHTML to help quickly deploy XHTML technology.]]></description>
 </item><item>
-    <title>MARKDOWN-USAGE</title>
+    <title>MARKDOWN语法</title>
     <link>https://orangesodahub.github.io/zh-cn/markdown-note/</link>
     <pubDate>Sun, 14 Feb 2021 19:59:50 &#43;0800</pubDate>
     <author>作者</author>
     <guid>https://orangesodahub.github.io/zh-cn/markdown-note/</guid>
-    <description><![CDATA[Markdown is a lightwight markup language with a compact typographical syntax that allows people to focus more on content than typography. It uses easy-to-read and easy-to-write plain text format to write documents, can be mixed with HTML, can export HTML, PDF and its own .md format files. Markdown is widely used on websites such as Github and Wikipedia, as well as on major blogging platforms like WordPress, Drupal and Short Book because of its simplicity, efficiency, ease of reading and writing.]]></description>
+    <description><![CDATA[Markdown is a lightwight markup language with a compact typographical syntax that allows people to focus more on content than typography. It uses easy-to-read and easy-to-write plain text format to write documents, can be mixed with HTML, can export HTML, PDF and its own .md format files. Markdown is widely used on websites such as Github and Wikipedia, as well as on major blogging platforms like WordPress, Drupal and Short]]></description>
 </item><item>
-    <title>BLOGSITE-CREAT-NOTE</title>
+    <title>HUGO建站</title>
     <link>https://orangesodahub.github.io/zh-cn/blogsite-creat-note/</link>
     <pubDate>Sun, 14 Feb 2021 19:28:24 &#43;0800</pubDate>
     <author>作者</author>
     <guid>https://orangesodahub.github.io/zh-cn/blogsite-creat-note/</guid>
-    <description><![CDATA[I&rsquo;ve jot down here the essentials of creating my first blog using Hugo for future reference.Even though there are a lot of resources and instructions on the Internet, it is still more convenient to view mine.
-[windows]
-INSTALL CHOCOLATE More info: https://chocolatey.org/
-  First, ensure that you are using an administrative shell - you can also install as a non-admin, check out Non-Administrative Installation.
-  Install with powershell.exe]]></description>
+    <description><![CDATA[I&rsquo;ve jot down here the essentials of creating my first blog using Hugo for future reference.Even though there are a lot of resources and instructions on the Internet, it is still more convenient to view mine. [windows] INSTALL CHOCOLATE More info: https://chocolatey.org/ First, ensure that you are using an administrative shell - you can also install as a non-admin, check out Non-Administrative Installation. Install with powershell.exe With PowerShell, you must]]></description>
+</item><item>
+    <title>在LA专业学习</title>
+    <link>https://orangesodahub.github.io/zh-cn/study-in-la/</link>
+    <pubDate>Wed, 28 Oct 2020 10:55:26 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://orangesodahub.github.io/zh-cn/study-in-la/</guid>
+    <description><![CDATA[]]></description>
 </item></channel>
 </rss>

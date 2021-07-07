@@ -1,0 +1,425 @@
+<script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?fe151ab3944fff51c4da312eeac4eb09";
+      var s = document.getElementsByTagName("script")[0]; 
+      s.parentNode.insertBefore(hm, s);
+    })();
+    </script>
+    
+    <script async src="https://cdn.staticfile.org/mermaid/8.6.4/mermaid.min.js"></script>
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+        <title>(续1)评价模型 - ZonLin</title><meta name="Description" content="关于作者"><meta property="og:title" content="(续1)评价模型" />
+<meta property="og:description" content="这是一个提示 若(部分)数学公式、表达式或图表显示不完整、不正常，请保持网络流畅并刷新等待，加载时间可能较长~ 任何疑问请致邮：E-mail 1.5 数" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://orangesodahub.github.io/zh-cn/continued_1evalutaion-model/" />
+<meta property="og:image" content="https://orangesodahub.github.io/logo.png"/>
+<meta property="article:published_time" content="2021-07-07T11:52:32+08:00" />
+<meta property="article:modified_time" content="2021-07-07T11:52:32+08:00" />
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://orangesodahub.github.io/logo.png"/>
+
+<meta name="twitter:title" content="(续1)评价模型"/>
+<meta name="twitter:description" content="这是一个提示 若(部分)数学公式、表达式或图表显示不完整、不正常，请保持网络流畅并刷新等待，加载时间可能较长~ 任何疑问请致邮：E-mail 1.5 数"/>
+<meta name="application-name" content="ZonLin">
+<meta name="apple-mobile-web-app-title" content="ZonLin"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="canonical" href="https://orangesodahub.github.io/zh-cn/continued_1evalutaion-model/" /><link rel="prev" href="https://orangesodahub.github.io/zh-cn/sophomore-year/" /><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.0/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css"><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "(续1)评价模型",
+        "inLanguage": "zh-CN",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/orangesodahub.github.io\/zh-cn\/continued_1evalutaion-model\/"
+        },"image": ["https:\/\/orangesodahub.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "数学建模, 运筹学","wordcount":  2911 ,
+        "url": "https:\/\/orangesodahub.github.io\/zh-cn\/continued_1evalutaion-model\/","datePublished": "2021-07-07T11:52:32+08:00","dateModified": "2021-07-07T11:52:32+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
+            "@type": "Organization",
+            "name": "ZonLin","logo": "https:\/\/orangesodahub.github.io\/images\/%E4%B8%8B%E8%BD%BD.jpg"},"author": {
+                "@type": "Person",
+                "name": "记录"
+            },"description": ""
+    }
+    </script></head>
+    <body header-desktop="fixed" header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <script>
+            
+            Array.from(document.getElementsByClassName('language-mermaid')).forEach(el => {
+                el.parentElement.outerHTML = `<div class="mermaid">${el.innerText}</div>`
+            })
+        </script>
+        <style>
+         
+        .mermaid svg {
+            display: block;
+            margin: auto;
+        }
+        </style>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/zh-cn/" title="ZonLin"><span class="header-title-pre"><i class='far fa-kiss-wink-heart fa-fw'></i></span>ZonLin</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/zh-cn/posts/"> 所有文章 </a><a class="menu-item" href="/zh-cn/tags/"> 标签 </a><a class="menu-item" href="/zh-cn/categories/"> 分类 </a><a class="menu-item" href="/zh-cn/categories/documentation/"> 文档 </a><a class="menu-item" href="/zh-cn/about/"> 关于 </a><a class="menu-item" href="https://github.com/OrangeSodahub" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw'></i>  </a><span class="menu-item delimiter"></span><a href="javascript:void(0);" class="menu-item language" title="选择语言">简体中文<i class="fas fa-chevron-right fa-fw"></i>
+                        <select class="language-select" id="language-select-desktop" onchange="location = this.value;"><option value="/continued_1evalutaion-model/">English</option><option value="/zh-cn/continued_1evalutaion-model/" selected>简体中文</option></select>
+                    </a><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="在此键入" id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="搜索">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="清空">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                    <i class="fas fa-adjust fa-fw"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/zh-cn/" title="ZonLin"><span class="header-title-pre"><i class='far fa-kiss-wink-heart fa-fw'></i></span>ZonLin</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="在此键入" id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="搜索">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="清空">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        取消
+                    </a>
+                </div><a class="menu-item" href="/zh-cn/posts/" title="">所有文章</a><a class="menu-item" href="/zh-cn/tags/" title="">标签</a><a class="menu-item" href="/zh-cn/categories/" title="">分类</a><a class="menu-item" href="/zh-cn/categories/documentation/" title="">文档</a><a class="menu-item" href="/zh-cn/about/" title="">关于</a><a class="menu-item" href="https://github.com/OrangeSodahub" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw'></i></a><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                <i class="fas fa-adjust fa-fw"></i>
+            </a><a href="javascript:void(0);" class="menu-item" title="选择语言">简体中文<i class="fas fa-chevron-right fa-fw"></i>
+                    <select class="language-select" onchange="location = this.value;"><option value="/continued_1evalutaion-model/">English</option><option value="/zh-cn/continued_1evalutaion-model/" selected>简体中文</option></select>
+                </a></div>
+    </div>
+</header>
+<div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+</div>
+<div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+</div>
+<main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">目录</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animated flipInX">(续1)评价模型</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="/zh-cn/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>记录</a></span>&nbsp;<span class="post-category">收录于 <a href="/zh-cn/categories/%E6%95%B0%E7%90%86%E7%BB%9F%E8%AE%A1/"><i class="far fa-folder fa-fw"></i>数理统计</a>&nbsp;<a href="/zh-cn/categories/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1/"><i class="far fa-folder fa-fw"></i>数学建模</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-07-07">2021-07-07</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 2911 字&nbsp;
+                <i class="far fa-clock fa-fw"></i>&nbsp;预计阅读 6 分钟&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  kept="">
+                <div class="details-summary toc-title">
+                    <span>目录</span>
+                    <span><i class="details-icon fas fa-angle-right"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"></div>
+            </div><div class="content" id="content"><div class="details admonition tip">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-lightbulb fa-fw"></i>这是一个提示<i class="details-icon fas fa-angle-right fa-fw"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content"><p>若(部分)数学公式、表达式或图表显示不完整、不正常，请保持网络流畅并刷新等待，加载时间可能较长~</p>
+
+<p><a href="mailto:gzzyyxy@gmail.com">任何疑问请致邮：E-mail</a></p>
+</div>
+        </div>
+    </div>
+
+<h3 id="15-数据包络分析法dea">1.5 数据包络分析法（DEA）</h3>
+
+<h4 id="151简述">1.5.1简述</h4>
+
+<p>数据包络分析方法(Data Envelopment Analysis,DEA)是运筹学、管理科学与数理经济学交叉研究的一个新领域。它是根据多项投入指标和多项产出指标，利用线性规划的方法，对具有可比性的同类型单位进行相对有效性评价的一种数量分析方法。</p>
+
+<p>DEA是以<u>相对效率概念</u>为基础，以<u>凸分析</u>和<u>线性规划</u>为工具，将评价决策单元的指标分成“输入类”指标和“输出类”指标（成本型和效益型），通过计算各单元的输入与输出之比，不预先设置权重，评价其决策单元相对有效性的多目标分析评价方法。</p>
+
+<p>DEA的基本思路是在保持决策单元间输入或输出不变的情况下，通过输入和输出数据和数据规划模型确定相对有效的生产前沿面，即Pareto最优解构成的面。并根据各<span  class="math">\(DMU\)</span>与生产前沿面的距离情况，确定各<span  class="math">\(DMU\)</span>是否为DEA有效。</p>
+
+<p>术语：</p>
+
+<ol>
+<li>技术效率（overall efficiency,OE）：指在保持决策单元投入不变的情况下，实际产出同理想产出的比值；</li>
+<li>纯技术效率（technical efficiency,TE）：</li>
+<li>规模效率（scale efficiency,SE）：</li>
+<li>规模报酬：规模报酬是要说明，当生产要素同时增加了一倍，如果产量的增加正好是一倍，称之为规模报酬不变（-），如果产量增加多于一倍，则称之为规模报酬递增（irs），进而，如果产量增加少于一倍，就称为规模报酬递减（drs）；</li>
+<li>技术有效：输出相对输入而言已达最大，即该决策单元位于生产函数的曲线上；</li>
+<li>规模有效：投入量既不偏大也不偏小，处于规模收益不变的状态；</li>
+<li>决策单元（DMU-&gt;Decision Making Unit）就是效率评价的对象，可以理解为一个将一定“投入”转化为一定“产出”的实体；</li>
+<li>DEA强有效：任何一项投入的数量都无法减少，除非减少产出的数量或者增加其他至少一种投入的数量；任何一项产出的数量都无法增加，除非增加投入的数量或减少其他至少一种产出的数量；</li>
+<li>DEA弱有效：无法等比例减少各项投入的数量，除非减少产出的数量；无法等比例增加各项产出的数量，除非增加投入的数量。这种情况下，虽然不能等比例减少投入或增加产出，但某一项或几项（但不是全部）投入可能减少，所以称为弱有效。</li>
+<li><span id="Production Front">生产前沿面</span>：对于给定的生产要素和产出价格，选择要素投入的最优组合和产出的最优组合，即投入成本最小、产出收益最大的组合。它所对应的生产函数所描述的生产可能性边界就是生产前沿面<sup class="footnote-ref" id="fnref:1"><a class="footnote" href="#fn:1">1</a></sup>：设<span  class="math">\(\omega\gt0,\mu\gt0,L=\{(X,Y)|\omega^TX-\mu^TY=0\},T\subset\{(X,Y)|\omega^TX-\mu^TY\geqslant0 \}\)</span>满足<span  class="math">\(L\bigcap T\not=∅\)</span>，则称<span  class="math">\(L\)</span>为生产可能集<span  class="math">\(T\)</span>的有效面，称<span  class="math">\(L\bigcap T\)</span>为生产前沿面。</li>
+</ol>
+
+<h4 id="152数学模型csup2supr规模报酬不变">1.5.2数学模型（C<sup>2</sup>R：规模报酬不变）</h4>
+
+<p>设有<span  class="math">\(n\)</span>个决策单元<span  class="math">\(DMU_i(1\leqslant i\leqslant n)\)</span>，对每个决策单元<span  class="math">\(DMU_i\)</span>，有<span  class="math">\(s\)</span>个输入指标<span  class="math">\(x_{1i},x_{2i},\cdots,x_{si}\)</span>和<span  class="math">\(t\)</span>个输出指标<span  class="math">\(y_{1i},y_{2i},\cdots,y_{ti}\)</span>，即：</p>
+
+<p><span  class="math">\[
+DMU_1=\left[\begin{array}{c|c}x_1&y_1 \end{array}\right]^T=\left[\begin{array}{c c c c|c c c c} x_{11}&x_{21}&\cdots&x_{s1}&y_{11}&y_{21}&\cdots&y_{t1} \end{array}\right]^T\\
+DMU_2=\left[\begin{array}{c|c}x_2&y_2 \end{array}\right]^T=\left[\begin{array}{c c c c|c c c c} x_{12}&x_{22}&\cdots&x_{s2}&y_{12}&y_{22}&\cdots&y_{t2} \end{array}\right]^T\\
+\vdots\\
+DMU_n=\left[\begin{array}{c|c}x_n&y_n \end{array}\right]^T=\left[\begin{array}{c c c c|c c c c} x_{1n}&x_{2n}&\cdots&x_{sn}&y_{1n}&y_{2n}&\cdots&y_{tn} \end{array}\right]^T
+\]</span></p>
+
+<p>记</p>
+
+<p><span  class="math">\[
+X=(x_1,x_2,\cdots,x_n)^T,Y=(y_1,y_2,\cdots,y_n)^T
+\]</span></p>
+
+<p>为n个决策单元的输入指标向量和输出指标向量。对单个决策单元<span  class="math">\(DMU_i\)</span>，设</p>
+
+<p><span  class="math">\[
+v=(v_1,v_2,\cdots,v_s)^T,u=(u_1,u_2,\cdots,u_t)^T\quad (v\gt 0,u\gt0)
+\]</span></p>
+
+<p>为输入指标和输出指标的权向量，则</p>
+
+<p><span  class="math">\[
+I_i=v^Tx_j=\sum_{j=1}^sx_{ji}v_j,i=1,2,\cdots,n\\
+O_i=u^Ty_j=\sum_{j=1}^ty_{ji}u_j,i=1,2,\cdots,n
+\]</span></p>
+
+<p>为第i决策单元的综合输入评价指标和综合输出评价指标。记</p>
+
+<p><span  class="math">\[
+E_i={O_i\over I_i}={u^Ty_j\over v^Tx_j}={\sum_{j=1}^sx_{ji}v_j\over \sum_{j=1}^ty_{ji}u_j}
+\]</span></p>
+
+<p>为<span  class="math">\(DMU_i\)</span>的效率评价指标。显然，输入越小，输出越大，则效率越高。在效率评价指标<span  class="math">\(E_i\leqslant1,v\gt0,u\gt0\)</span>的约束条件下，求出一组最优权向量使得第<span  class="math">\(i_0\)</span>个决策单元<span  class="math">\(DMU_{i_0}\)</span>效率<span  class="math">\(E\)</span>达到最大值，即：</p>
+
+<p><span  class="math">\[
+\begin{cases}E_{i_0}=max{u^Ty_{i_0}\over v^Tx_{i_0} }\\
+s.t.  {u^Ty_i\over v^Tx_i}\leqslant1(i=1,2.\cdots,n),u\gt0,v\gt0\end{cases}
+\]</span></p>
+
+<p>其中，权向量<span  class="math">\(v\)</span>和<span  class="math">\(u\)</span>待定。第一个约束条件中<span  class="math">\(i\in[1,n]\)</span>，即其数量为n个。</p>
+
+<p>将上述分式规划转化为等价的线性规划方程组，采用Charnes-Cooper变换，令：</p>
+
+<p><span  class="math">\[
+t={1\over v^Tx_i},\omega=tv,\mu=tu
+\]</span></p>
+
+<p>则</p>
+
+<p><span  class="math">\[
+\begin{cases}max\;\mu^Ty_{i_0}=E_{i_0}\\s.t.\mu^T y_i-\omega^T x_i\leqslant0 ,\omega ^Tx_{i_0}=1,\omega\gt0,\mu\gt0\end{cases}\tag{P}
+\]</span></p>
+
+<blockquote>
+<p>推导：<span  class="math">\(\mu=tu\Rightarrow\mu^T=tu^T\Rightarrow t={\mu^T\over u^T}\\max{u^Ty_i\over v^Tx_i}\Rightarrow max{tu^Ty_i\Rightarrow max{ {\mu^T\over u^T}u^Ty_i} }\Rightarrow max{\mu^Ty_i}\)</span></p>
+
+<p>&emsp;&emsp;&emsp;<span  class="math">\(\omega=tv\Rightarrow \omega^T=tv^T,\mu^T=tu^T\\{u^Ty_i\over v^Tx_i}\leqslant1\Rightarrow u^Ty_i-v^Tx_i\leqslant0\Rightarrow {\mu^T\over t}y_i-{\omega^T\over t}x_i\leqslant0\Rightarrow \mu^T y_i-\omega^T x_i\leqslant0\)</span></p>
+</blockquote>
+
+<p>线性规划的最优解<span  class="math">\(\omega^*,\mu^*\)</span>即为<span  class="math">\(DMU_i\)</span>的最优权向量，其使得<span  class="math">\(DMU_i\)</span>的效率值达到最大。另外，作为线性规划的解，<span  class="math">\(\omega^*,\mu^*\)</span>不唯一。最终有：</p>
+
+<ol>
+<li>若最优指标值<span  class="math">\(E_{i_0}=1\)</span>，则称<span  class="math">\(DMU_i\)</span>为DEA弱有效；</li>
+<li>若存在最优解<span  class="math">\(\omega^*,\mu^*\)</span>满足<span  class="math">\(\omega^*\gt0,\mu^*\gt0\)</span>，使得<span  class="math">\(E_i=E_{i_0}=1\)</span>，则称<span  class="math">\(DMU_i\)</span>为DEA有效。此时该生产单元<span  class="math">\(DMU_i\)</span>处在<a href="#Production Front" title="点击跳转">生产前沿面</a>上；</li>
+<li>若最优解<span  class="math">\(E_{i_0}\lt1\)</span>，则称该决策单元非DEA有效。</li>
+</ol>
+
+<p>将上述线性模型（P）取其对偶模型得到：</p>
+
+<p><span  class="math">\[
+\begin{aligned}
+\begin{cases}min\;OE_{i_0}\\s.t.&\sum_{i=1}^n\lambda_ix_i\leqslant\theta x_{i_0}\quad \\&\sum_{i=1}^n\lambda_iy_i\geqslant y_{i_0}\\&\lambda_i\geqslant0,\quad i=1,2,\cdots,n \end{cases}
+\end{aligned}\tag{D}
+\]</span></p>
+
+<p>其中<span  class="math">\(OE_{i_0}=\theta\)</span>，即第<span  class="math">\({i_0}\)</span>个决策单元的综合技术效率指标。<span  class="math">\(\lambda=(\lambda_1,\lambda_2,\cdots,\lambda_n)\)</span>是n个<span  class="math">\(DMU\)</span>的组合系数。值得说明的是，第一个和第二个约束条件中的<span  class="math">\(x_i=(x_{1i},x_{2i},\cdots x_{si} )\)</span>和<span  class="math">\(y_i=(y_{1i},y_{2i},\cdots y_{ti} )\)</span>，共有n个。</p>
+
+<blockquote>
+<p>这个模型可以直观地理解为将决策单元<span  class="math">\(DMU_i\)</span>的投入、产出表示为其他决策单元的线性组合。</p>
+
+<p>如果有某个 (或某些) 决策单元的产出量达到决策单元<span  class="math">\(DMU_i\)</span>的水平 (达到，不一定要超过，第二个约束的含义)，而投入量尽可能小 (第一个约束的含义)，那么会出现<span  class="math">\(OE_i\lt1\)</span>的情况, 此时说明该决策单元存在资源浪费。</p>
+
+<p>反之，如果该决策单元的效率已经是最高的了，那么任何的决策单元都不能使用比它还要少的投入获得同样 (甚至更多) 的产出，这时候<span  class="math">\(OE_i\gt1\)</span> <sup class="footnote-ref" id="fnref:2"><a class="footnote" href="#fn:2">2</a></sup>。</p>
+</blockquote>
+
+<div class="details admonition tip">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-lightbulb fa-fw"></i>转化推导<i class="details-icon fas fa-angle-right fa-fw"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content"><p>线性规划模型极其对偶模型的一般式：</p>
+
+<p><span  class="math">\[
+\begin{aligned}
+\begin{cases}max\;c^Tx'\\s.t.&Ax'\geqslant b\\&x'\geqslant 0\end{cases}\qquad \qquad
+\begin{cases}min\;b^Ty'\\s.t.&Ay'\leqslant c\\&y'\geqslant 0\end{cases}
+\end{aligned}
+\]</span></p>
+
+<p>则</p>
+
+<p><span  class="math">\[
+max\;\mu^Ty_{i_0}\Rightarrow min\,-\!\mu^Ty_{i_0}
+\]</span></p>
+
+<p>认为</p>
+
+<p><span  class="math">\[
+\begin{aligned}
+c&=[\underbrace{0,\cdots,0}_m,-y_{1{i_0} },\cdots,y_{t{i_0} }]^T\\
+x'&=[\omega_1,\cdots,\omega_s,\mu_1,\cdots,\mu_t]^T\\
+A&=\left[\begin{matrix}x_{11}&\cdots&x_{s1}&-y_{11}&\cdots&-y_{t1}\\\vdots&\ddots&\vdots&\vdots&\ddots&\vdots\\x_{1n}&\cdots&x_{sn}&-y_{1n}&\cdots&-y_{tn}\\-x_{1{i_0} }&\cdots&-x_{s{i_0} }&0&\cdots&0\end{matrix}\right]\\b&=[\underbrace{0,\cdots,0}_n,-1]^T\end{aligned}
+\]</span></p>
+
+<p>则目标函数</p>
+
+<p><span  class="math">\[
+max\;b^Ty'\Rightarrow max[\underbrace{0,\cdots,0}_n,-1][\lambda_1,\cdots,\lambda_n,\theta]^T\Rightarrow max\;-\!\theta\Rightarrow min\; \theta
+\]</span></p>
+
+<p>约束条件</p>
+
+<p><span  class="math">\[
+\begin{aligned}
+&A^Ty'\leqslant c\\
+&\Rightarrow \left[\begin{matrix}
+x_{11}&\cdots&x_{1n}&-x_{1{i_0} }\\
+\vdots&\ddots&\vdots&\vdots\\
+x_{s1}&\cdots&x_{sn}&-x_{s{i_0} }\\
+-y_{11}&\cdots&-y_{1n}&0\\
+\vdots&\ddots&\vdots&\vdots\\
+-y_{t1}&\cdots&-y_{tn}&0
+\end{matrix}\right]
+[\lambda_1,\cdots,\lambda_n,\theta]^T\leqslant[\underbrace{0,\cdots,0}_m，-y_{1{i_0} },\cdots,-y_{t{i_0} }]^T\\\\
+&\Rightarrow
+\begin{cases}
+\begin{aligned}
+\lambda_1x_{11}+\lambda_2x_{12}+\cdots+\lambda_nx_{1n}-\theta x_{1{i_0} }&\leqslant0\\
+\vdots\\
+\lambda_1x_{s1}+\lambda_2x_{s2}+\cdots+\lambda_nx_{sn}-\theta x_{s{i_0} }&\leqslant0\\
+\lambda_1y_{11}+\lambda_2y_{12}+\cdots+\lambda_ny_{1n}&\geqslant y_{1{i_0} }\\
+\vdots\\
+\lambda_1y_{t1}+\lambda_2y_{t2}+\cdots+\lambda_ny_{tn}&\geqslant y_{t{i_0} }\\
+\end{aligned}
+\end{cases}
+\end{aligned}
+\]</span></p>
+</div>
+        </div>
+    </div>
+
+<p>在上述模型（D）中引入松弛变量及非阿基米德无穷小<span  class="math">\(\epsilon\)</span>后，得到：</p>
+
+<p><span  class="math">\[
+\begin{aligned}
+\begin{cases}
+min\;\theta-\epsilon(\sum_{i=1}^ss_i^-+\sum_{i=1}^ts_i^+)\\
+s.t.\sum_{j=1}^n\lambda_ix_j+s_j^-
+\end{cases}
+\end{aligned}
+\]</span></p>
+
+<h4 id="153实例3">1.5.3实例<sup class="footnote-ref" id="fnref:3"><a class="footnote" href="#fn:3">3</a></sup></h4>
+
+<h3 id="16-主成分分析">1.6 主成分分析</h3>
+
+<h3 id="17-理想解方法">1.7 理想解方法</h3>
+
+<h3 id="18-加权积">1.8 加权积</h3>
+
+<h3 id="19-熵权法">1.9 熵权法</h3>
+
+<h3 id="110-信息熵法">1.10 信息熵法</h3>
+<div class="footnotes">
+
+<hr>
+
+<ol>
+<li id="fn:1">引自<a href="https://zhuanlan.zhihu.com/p/73096903">数据包络分析法（DEA）——CCR - 知乎 (zhihu.com)</a>
+ <a class="footnote-return" href="#fnref:1"><sup>[return]</sup></a></li>
+<li id="fn:2">引自<a href="https://zhuanlan.zhihu.com/p/60853027">DEA (数据包络分析)介绍及 python3 实现 - 知乎 (zhihu.com)</a>
+ <a class="footnote-return" href="#fnref:2"><sup>[return]</sup></a></li>
+<li id="fn:3">引自其他网站.
+ <a class="footnote-return" href="#fnref:3"><sup>[return]</sup></a></li>
+</ol>
+</div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_SVG"></script><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>更新于 2021-07-07</span>
+            </div>
+            <div class="post-info-license"></div>
+        </div>
+        <div class="post-info-line">
+            <div class="post-info-md"></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="分享到 Twitter" data-sharer="twitter" data-url="https://orangesodahub.github.io/zh-cn/continued_1evalutaion-model/" data-title="(续1)评价模型" data-via="https://twitter.com/6k6u7dglok4U1SG" data-hashtags="数学建模,运筹学"><i class="fab fa-twitter fa-fw"></i></a><a href="javascript:void(0);" title="分享到 Facebook" data-sharer="facebook" data-url="https://orangesodahub.github.io/zh-cn/continued_1evalutaion-model/" data-hashtag="数学建模"><i class="fab fa-facebook-square fa-fw"></i></a><a href="javascript:void(0);" title="分享到 Hacker News" data-sharer="hackernews" data-url="https://orangesodahub.github.io/zh-cn/continued_1evalutaion-model/" data-title="(续1)评价模型"><i class="fab fa-hacker-news fa-fw"></i></a><a href="javascript:void(0);" title="分享到 Reddit" data-sharer="reddit" data-url="https://orangesodahub.github.io/zh-cn/continued_1evalutaion-model/"><i class="fab fa-reddit fa-fw"></i></a><a href="javascript:void(0);" title="分享到 Line" data-sharer="line" data-url="https://orangesodahub.github.io/zh-cn/continued_1evalutaion-model/" data-title="(续1)评价模型"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@2.14.0/icons/line.svg"></i></a><a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="https://orangesodahub.github.io/zh-cn/continued_1evalutaion-model/" data-title="(续1)评价模型"><i class="fab fa-weibo fa-fw"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/zh-cn/tags/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1/">数学建模</a>,&nbsp;<a href="/zh-cn/tags/%E8%BF%90%E7%AD%B9%E5%AD%A6/">运筹学</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/zh-cn/">主页</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/zh-cn/sophomore-year/" class="prev" rel="prev" title="大二学年（2021-2022）"><i class="fas fa-angle-left fa-fw"></i>大二学年（2021-2022）</a></div>
+</div>
+</article></div>
+            </main><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
+<footer class="footer">
+        <div class="footer-container"><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2019 - 2021</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/zh-cn/" target="_blank">ZonLin</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span><div><span class="icp-splitter"></span><br class="icp-br"/>
+                        <span class="icp"><a href="https://beian.miit.gov.cn/#/Integrated/index">黔ICP备2021002279号-1</a>&nbsp;|&nbsp;</span><span>
+                            </a><img src="/images/备案图标.png"/><a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=52032102000640" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;">贵公网安备 52032102000640号</a>
+                        </span>
+                </div>
+            </div>
+            <span id="busuanzi_container_site_pv">
+                Total Visits:<span id="busuanzi_value_site_pv"></span>
+            </span>
+
+            <span id="busuanzi_container_site_uv">
+                Total Visitors:<span id="busuanzi_value_site_uv"></span>
+            </span>
+            <script type="text/javascript">document.write(unescape("%3Cspan id='cnzz_stat_icon_1279743727'%3E%3C/span%3E%3Cscript src='https://v1.cnzz.com/z_stat.php%3Fid%3D1279743727%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="回到顶部">
+                <i class="fas fa-arrow-up fa-fw"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="查看评论">
+                <i class="fas fa-comment fa-fw"></i>
+            </a>
+        </div><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/smooth-scroll@16.1.3/dist/smooth-scroll.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/autocomplete.js@0.37.1/dist/autocomplete.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/algoliasearch@4.2.0/dist/algoliasearch-lite.umd.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.2.2/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sharer.js@0.4.0/sharer.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"复制到剪贴板","maxShownLines":10},"comment":{},"search":{"algoliaAppID":"PASDMWALPK","algoliaIndex":"index.zh-cn","algoliaSearchKey":"b42948e51daaa93df92381c8e2ac0f93","highlightTag":"em","maxResultLength":10,"noResultsFound":"没有找到结果","snippetLength":50,"type":"algolia"}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+</html>

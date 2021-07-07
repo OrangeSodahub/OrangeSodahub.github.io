@@ -4,7 +4,23 @@
         <link>https://orangesodahub.github.io/posts/</link>
         <description>All Posts | ZonLin</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>gzzyyxy@gmail.com (ZonLin)</managingEditor>
-            <webMaster>gzzyyxy@gmail.com (ZonLin)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 28 Jun 2021 17:29:37 &#43;0800</lastBuildDate><atom:link href="https://orangesodahub.github.io/posts/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>gzzyyxy@gmail.com (ZonLin)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 07 Jul 2021 11:52:32 &#43;0800</lastBuildDate><atom:link href="https://orangesodahub.github.io/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>(Continued_1)Evalutaion Model</title>
+    <link>https://orangesodahub.github.io/continued_1evalutaion-model/</link>
+    <pubDate>Wed, 07 Jul 2021 11:52:32 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>https://orangesodahub.github.io/continued_1evalutaion-model/</guid>
+    <description><![CDATA[This is a tip  If (part of) the mathematical formula, expression or chart display is not complete or normal, please keep the network in good condition and refresh and wait, the load time may be long ~
+Any question please mail here：E-mail
+   ]]></description>
+</item><item>
+    <title>SOPHOMORE YEAR</title>
+    <link>https://orangesodahub.github.io/sophomore-year/</link>
+    <pubDate>Fri, 02 Jul 2021 11:10:18 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>https://orangesodahub.github.io/sophomore-year/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
     <title>Evaluation Moduel</title>
     <link>https://orangesodahub.github.io/evaluation-moduel/</link>
     <pubDate>Mon, 28 Jun 2021 17:29:37 &#43;0800</pubDate>
@@ -69,23 +85,5 @@ Here are steps:
 1 2 3 4 5 6  import math import matplotlib.pyplot as plt plt.rcParams[&#39;font.sans-serif&#39;] = [&#39;SimHei&#39;] r = np.arange(0, 1, 0.01) T_0 = pow(math.sqrt(1-pow(r,2)),-1) #error list L_0 = math.sqrt(1-pow(r,2)) #error list   And the Error message:
 1  TypeError: only size-1 arrays can be converted to Python scalars   SOLUTION:
 Change the &lsquo;math&rsquo; package to the &ldquo;numpy&rdquo; package. Here are the code:]]></description>
-</item><item>
-    <title>ADD WEBSITE STATISTICS</title>
-    <link>https://orangesodahub.github.io/add-website-statistics/</link>
-    <pubDate>Mon, 15 Mar 2021 15:05:48 &#43;0800</pubDate>
-    <author>Author</author>
-    <guid>https://orangesodahub.github.io/add-website-statistics/</guid>
-    <description><![CDATA[Choose anyone you prefer:
-Busuanzi Busuanzi is a plug-in which is designed by a technologist for the blog-statistic usage exclusively&mdash;individually, not officially. Anyway, its advantages are: simplicity, efficiency, convenience, minimalism and dependability.
-Here are the steps:
-Install the scirpt(Required) To use busuanzi you must input the busuanzi.js to your site. Current version:
-1 2  &lt;script async src=&#34;//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js&#34;&gt; &lt;/script&gt;   You can copy that and paste it to anywhere in the root of your site.]]></description>
-</item><item>
-    <title>SEARCH-WITH-ALGOLIA</title>
-    <link>https://orangesodahub.github.io/search-with-algolia/</link>
-    <pubDate>Wed, 10 Mar 2021 17:57:58 &#43;0800</pubDate>
-    <author>Author</author>
-    <guid>https://orangesodahub.github.io/search-with-algolia/</guid>
-    <description><![CDATA[INTRODUCTION What makes Aloglia great?  The goal of the JAMStack is eliminate server dependencies. Although Algolia is a bussiness solution, it offers a very generous free plan and performs up to 200 faster than open-source solutions like ElasticSearch.  How Algolia works? Algolia provides a REST API to query and update your search indices. All input and output is provided in JSON, making it extremely easy to use in frontend Javascript.]]></description>
 </item></channel>
 </rss>
