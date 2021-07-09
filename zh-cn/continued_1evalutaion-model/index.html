@@ -39,7 +39,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/orangesodahub.github.io\/zh-cn\/continued_1evalutaion-model\/"
-        },"image": ["https:\/\/orangesodahub.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "数学建模, 运筹学","wordcount":  2911 ,
+        },"image": ["https:\/\/orangesodahub.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "数学建模, 运筹学","wordcount":  6554 ,
         "url": "https:\/\/orangesodahub.github.io\/zh-cn\/continued_1evalutaion-model\/","datePublished": "2021-07-07T11:52:32+08:00","dateModified": "2021-07-07T11:52:32+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
             "@type": "Organization",
             "name": "ZonLin","logo": "https:\/\/orangesodahub.github.io\/images\/%E4%B8%8B%E8%BD%BD.jpg"},"author": {
@@ -134,8 +134,8 @@
             <div class="toc-content" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animated flipInX">(续1)评价模型</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="/zh-cn/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>记录</a></span>&nbsp;<span class="post-category">收录于 <a href="/zh-cn/categories/%E6%95%B0%E7%90%86%E7%BB%9F%E8%AE%A1/"><i class="far fa-folder fa-fw"></i>数理统计</a>&nbsp;<a href="/zh-cn/categories/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1/"><i class="far fa-folder fa-fw"></i>数学建模</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-07-07">2021-07-07</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 2911 字&nbsp;
-                <i class="far fa-clock fa-fw"></i>&nbsp;预计阅读 6 分钟&nbsp;</div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-07-07">2021-07-07</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 6554 字&nbsp;
+                <i class="far fa-clock fa-fw"></i>&nbsp;预计阅读 14 分钟&nbsp;</div>
         </div><div class="details toc" id="toc-static"  kept="">
                 <div class="details-summary toc-title">
                     <span>目录</span>
@@ -167,27 +167,40 @@
 <p>术语：</p>
 
 <ol>
-<li>技术效率（overall efficiency,OE）：指在保持决策单元投入不变的情况下，实际产出同理想产出的比值；</li>
-<li>纯技术效率（technical efficiency,TE）：</li>
-<li>规模效率（scale efficiency,SE）：</li>
-<li>规模报酬：规模报酬是要说明，当生产要素同时增加了一倍，如果产量的增加正好是一倍，称之为规模报酬不变（-），如果产量增加多于一倍，则称之为规模报酬递增（irs），进而，如果产量增加少于一倍，就称为规模报酬递减（drs）；</li>
+<li><span id="Overall Efficiency">(综合)技术效率（overall efficiency,OE）</span>：指在保持决策单元投入不变的情况下，实际产出同理想产出的比值。反映的是决策单元在一定( 最优规模时) 投入要素的生产效率，是对决策单元的资源配置能力、资源使用效率等多方面能力的综合衡量与评价；</li>
+<li>纯技术效率（technical efficiency,TE）：如企业由于管理和技术等因素影响的生产效率；</li>
+<li>规模效率（scale efficiency,SE）：如由于企业规模因素影响的生产效率；前三者之间满足关系式：<span  class="math">\(OE=TE\times SE\)</span>；</li>
+<li>规模报酬：当生产要素同时增加了一倍，如果产量的增加正好是一倍，称之为规模报酬不变（-），如果产量增加多于一倍，则称之为规模报酬递增（Increasing Returns to Scale, IRS），进而，如果产量增加少于一倍，就称为规模报酬递减（Decreasing Returns to Scale, DRS）；不同生产规模下，规模报酬随之改变。一般生产规模小时，投入产出比会随着规模增加而迅速提升，此时为IRS；当生产达到高峰期时，产出与规模成正比而达到最适规模，此时为规模报酬不变；当生产规模过于庞大时，产出增长速度减缓，此时为DRS。</li>
 <li>技术有效：输出相对输入而言已达最大，即该决策单元位于生产函数的曲线上；</li>
 <li>规模有效：投入量既不偏大也不偏小，处于规模收益不变的状态；</li>
 <li>决策单元（DMU-&gt;Decision Making Unit）就是效率评价的对象，可以理解为一个将一定“投入”转化为一定“产出”的实体；</li>
-<li>DEA强有效：任何一项投入的数量都无法减少，除非减少产出的数量或者增加其他至少一种投入的数量；任何一项产出的数量都无法增加，除非增加投入的数量或减少其他至少一种产出的数量；</li>
-<li>DEA弱有效：无法等比例减少各项投入的数量，除非减少产出的数量；无法等比例增加各项产出的数量，除非增加投入的数量。这种情况下，虽然不能等比例减少投入或增加产出，但某一项或几项（但不是全部）投入可能减少，所以称为弱有效。</li>
+<li><span id="Strongly effective">DEA强有效</span>：任何一项投入的数量都无法减少，除非减少产出的数量或者增加其他至少一种投入的数量；任何一项产出的数量都无法增加，除非增加投入的数量或减少其他至少一种产出的数量；此时同时达到技术有效和规模有效；</li>
+<li><span id="Weakly effective">DEA弱有效</span>：无法等比例减少各项投入的数量，除非减少产出的数量；无法等比例增加各项产出的数量，除非增加投入的数量。这种情况下，虽然不能等比例减少投入或增加产出，但某一项或几项（但不是全部）投入可能减少，所以称为弱有效。此时技术有效和规模有效只满足一个；</li>
 <li><span id="Production Front">生产前沿面</span>：对于给定的生产要素和产出价格，选择要素投入的最优组合和产出的最优组合，即投入成本最小、产出收益最大的组合。它所对应的生产函数所描述的生产可能性边界就是生产前沿面<sup class="footnote-ref" id="fnref:1"><a class="footnote" href="#fn:1">1</a></sup>：设<span  class="math">\(\omega\gt0,\mu\gt0,L=\{(X,Y)|\omega^TX-\mu^TY=0\},T\subset\{(X,Y)|\omega^TX-\mu^TY\geqslant0 \}\)</span>满足<span  class="math">\(L\bigcap T\not=∅\)</span>，则称<span  class="math">\(L\)</span>为生产可能集<span  class="math">\(T\)</span>的有效面，称<span  class="math">\(L\bigcap T\)</span>为生产前沿面。</li>
+<li>投入冗余率：<span  class="math">\(\eta_{ij}\)</span>为决策单元<span  class="math">\(i\)</span>的第<span  class="math">\(j\)</span>个指标的投入冗余率，则<span  class="math">\(\eta={s_j^-\over x_{ij} }\)</span></li>
+<li>产出不足率：<span  class="math">\(\rho_{ij}\)</span>为决策单元<span  class="math">\(i\)</span>的第<span  class="math">\(j\)</span>个指标的投入冗余率，则<span  class="math">\(\rho={s_j^+\over y_{ij} }\)</span></li>
+</ol>
+
+<p>说明几点：</p>
+
+<ol>
+<li>纯技术效率（TE）测度的是当规模报酬可变时，决策单元与生产前沿面的距离；</li>
+<li>规模效率（SE）测度的是当规模报酬可变时，生产前沿面与规模报酬不变时的生产前沿面的距离。</li>
 </ol>
 
 <h4 id="152数学模型csup2supr规模报酬不变">1.5.2数学模型（C<sup>2</sup>R：规模报酬不变）</h4>
 
+<blockquote>
+<p>CCR模式下得到的是综合技术效益，即OE。</p>
+</blockquote>
+
 <p>设有<span  class="math">\(n\)</span>个决策单元<span  class="math">\(DMU_i(1\leqslant i\leqslant n)\)</span>，对每个决策单元<span  class="math">\(DMU_i\)</span>，有<span  class="math">\(s\)</span>个输入指标<span  class="math">\(x_{1i},x_{2i},\cdots,x_{si}\)</span>和<span  class="math">\(t\)</span>个输出指标<span  class="math">\(y_{1i},y_{2i},\cdots,y_{ti}\)</span>，即：</p>
 
 <p><span  class="math">\[
-DMU_1=\left[\begin{array}{c|c}x_1&y_1 \end{array}\right]^T=\left[\begin{array}{c c c c|c c c c} x_{11}&x_{21}&\cdots&x_{s1}&y_{11}&y_{21}&\cdots&y_{t1} \end{array}\right]^T\\
-DMU_2=\left[\begin{array}{c|c}x_2&y_2 \end{array}\right]^T=\left[\begin{array}{c c c c|c c c c} x_{12}&x_{22}&\cdots&x_{s2}&y_{12}&y_{22}&\cdots&y_{t2} \end{array}\right]^T\\
+DMU_1=\left[\begin{array}{c|c}x_1&y_1 \end{array}\right]^T=\left[\begin{array}{c c c c|c c c c} x_{11}&x_{12}&\cdots&x_{1s}&y_{11}&y_{12}&\cdots&y_{1t} \end{array}\right]^T\\
+DMU_2=\left[\begin{array}{c|c}x_2&y_2 \end{array}\right]^T=\left[\begin{array}{c c c c|c c c c} x_{21}&x_{22}&\cdots&x_{2s}&y_{21}&y_{22}&\cdots&y_{2t} \end{array}\right]^T\\
 \vdots\\
-DMU_n=\left[\begin{array}{c|c}x_n&y_n \end{array}\right]^T=\left[\begin{array}{c c c c|c c c c} x_{1n}&x_{2n}&\cdots&x_{sn}&y_{1n}&y_{2n}&\cdots&y_{tn} \end{array}\right]^T
+DMU_n=\left[\begin{array}{c|c}x_n&y_n \end{array}\right]^T=\left[\begin{array}{c c c c|c c c c} x_{n1}&x_{n2}&\cdots&x_{ns}&y_{n1}&y_{n2}&\cdots&y_{nt} \end{array}\right]^T
 \]</span></p>
 
 <p>记</p>
@@ -205,17 +218,17 @@ v=(v_1,v_2,\cdots,v_s)^T,u=(u_1,u_2,\cdots,u_t)^T\quad (v\gt 0,u\gt0)
 <p>为输入指标和输出指标的权向量，则</p>
 
 <p><span  class="math">\[
-I_i=v^Tx_j=\sum_{j=1}^sx_{ji}v_j,i=1,2,\cdots,n\\
-O_i=u^Ty_j=\sum_{j=1}^ty_{ji}u_j,i=1,2,\cdots,n
+I_i=v^Tx_i=\sum_{j=1}^sv_jx_{ij},i=1,2,\cdots,n\\
+O_i=u^Ty_i=\sum_{j=1}^tu_jy_{ij},i=1,2,\cdots,n
 \]</span></p>
 
 <p>为第i决策单元的综合输入评价指标和综合输出评价指标。记</p>
 
 <p><span  class="math">\[
-E_i={O_i\over I_i}={u^Ty_j\over v^Tx_j}={\sum_{j=1}^sx_{ji}v_j\over \sum_{j=1}^ty_{ji}u_j}
+E_i={O_i\over I_i}={u^Ty_i\over v^Tx_i}={\sum_{j=1}^sv_jx_{ij}\over \sum_{j=1}^tu_jy_{ij}}
 \]</span></p>
 
-<p>为<span  class="math">\(DMU_i\)</span>的效率评价指标。显然，输入越小，输出越大，则效率越高。在效率评价指标<span  class="math">\(E_i\leqslant1,v\gt0,u\gt0\)</span>的约束条件下，求出一组最优权向量使得第<span  class="math">\(i_0\)</span>个决策单元<span  class="math">\(DMU_{i_0}\)</span>效率<span  class="math">\(E\)</span>达到最大值，即：</p>
+<p>为<span  class="math">\(DMU_i\)</span>的效率评价指标。显然，输入越小，输出越大，则效率越高。在效率评价指标<span  class="math">\(E_i\leqslant1,v\gt0,u\gt0\)</span>的约束条件下，求出一组最优权向量使得第<span  class="math">\(i_0\)</span>个决策单元<span  class="math">\(DMU_{i_0}\)</span>效率<span  class="math">\(E\)</span>达到最大值<span  class="math">\(E_{i_0}\)</span>，即：</p>
 
 <p><span  class="math">\[
 \begin{cases}E_{i_0}=max{u^Ty_{i_0}\over v^Tx_{i_0} }\\
@@ -233,16 +246,16 @@ t={1\over v^Tx_i},\omega=tv,\mu=tu
 <p>则</p>
 
 <p><span  class="math">\[
-\begin{cases}max\;\mu^Ty_{i_0}=E_{i_0}\\s.t.\mu^T y_i-\omega^T x_i\leqslant0 ,\omega ^Tx_{i_0}=1,\omega\gt0,\mu\gt0\end{cases}\tag{P}
+\begin{cases}max\;\mu^Ty_{i_0}=E_{i_0}\\s.t.\mu^T y_i-\omega^T x_i\leqslant0 ,\omega ^Tx_{i_0}=1,\omega\geqslant0,\mu\geqslant0\end{cases}\tag{P}
 \]</span></p>
 
 <blockquote>
-<p>推导：<span  class="math">\(\mu=tu\Rightarrow\mu^T=tu^T\Rightarrow t={\mu^T\over u^T}\\max{u^Ty_i\over v^Tx_i}\Rightarrow max{tu^Ty_i\Rightarrow max{ {\mu^T\over u^T}u^Ty_i} }\Rightarrow max{\mu^Ty_i}\)</span></p>
+<p>推导：<span  class="math">\(\mu=tu\Rightarrow\mu^T=tu^T\Rightarrow t={\mu^T\over u^T}\\max{u^Ty_i\over v^Tx_i}\Rightarrow maxt\;u^Ty_i\Rightarrow max{ {\mu^T\over u^T}u^Ty_i}\Rightarrow max\;{\mu^Ty_i}\)</span></p>
 
 <p>&emsp;&emsp;&emsp;<span  class="math">\(\omega=tv\Rightarrow \omega^T=tv^T,\mu^T=tu^T\\{u^Ty_i\over v^Tx_i}\leqslant1\Rightarrow u^Ty_i-v^Tx_i\leqslant0\Rightarrow {\mu^T\over t}y_i-{\omega^T\over t}x_i\leqslant0\Rightarrow \mu^T y_i-\omega^T x_i\leqslant0\)</span></p>
 </blockquote>
 
-<p>线性规划的最优解<span  class="math">\(\omega^*,\mu^*\)</span>即为<span  class="math">\(DMU_i\)</span>的最优权向量，其使得<span  class="math">\(DMU_i\)</span>的效率值达到最大。另外，作为线性规划的解，<span  class="math">\(\omega^*,\mu^*\)</span>不唯一。最终有：</p>
+<p>线性规划(P)的解<span  class="math">\(\omega^*,\mu^*\)</span>即为<span  class="math">\(DMU_i\)</span>的最优权向量，其使得<span  class="math">\(DMU_i\)</span>的效率值达到最大。另外，作为线性规划的解，<span  class="math">\(\omega^*,\mu^*\)</span>不唯一。最终有效益分析：</p>
 
 <ol>
 <li>若最优指标值<span  class="math">\(E_{i_0}=1\)</span>，则称<span  class="math">\(DMU_i\)</span>为DEA弱有效；</li>
@@ -250,22 +263,50 @@ t={1\over v^Tx_i},\omega=tv,\mu=tu
 <li>若最优解<span  class="math">\(E_{i_0}\lt1\)</span>，则称该决策单元非DEA有效。</li>
 </ol>
 
-<p>将上述线性模型（P）取其对偶模型得到：</p>
+<p>将上述线性模型（P）取其对偶模型得到（推导见下）：</p>
 
 <p><span  class="math">\[
 \begin{aligned}
-\begin{cases}min\;OE_{i_0}\\s.t.&\sum_{i=1}^n\lambda_ix_i\leqslant\theta x_{i_0}\quad \\&\sum_{i=1}^n\lambda_iy_i\geqslant y_{i_0}\\&\lambda_i\geqslant0,\quad i=1,2,\cdots,n \end{cases}
+\begin{cases}min\;\theta\\s.t.&\sum_{i=1}^n\lambda_ix_{ij}\leqslant\theta x_{i_0j}&j=1,2,\cdots,s\\&\sum_{i=1}^n\lambda_iy_{ij}\geqslant y_{i_0j}&j=1,2,\cdots,t\\&\lambda_i\geqslant0,\quad i=1,2,\cdots,n \end{cases}
 \end{aligned}\tag{D}
 \]</span></p>
 
-<p>其中<span  class="math">\(OE_{i_0}=\theta\)</span>，即第<span  class="math">\({i_0}\)</span>个决策单元的综合技术效率指标。<span  class="math">\(\lambda=(\lambda_1,\lambda_2,\cdots,\lambda_n)\)</span>是n个<span  class="math">\(DMU\)</span>的组合系数。值得说明的是，第一个和第二个约束条件中的<span  class="math">\(x_i=(x_{1i},x_{2i},\cdots x_{si} )\)</span>和<span  class="math">\(y_i=(y_{1i},y_{2i},\cdots y_{ti} )\)</span>，共有n个。</p>
+<p>也有的地方将其写为矩阵形式：</p>
+
+<p><span  class="math">\[
+\begin{aligned}
+\begin{cases}min\;\theta\\s.t.&\sum_{i=1}^n\lambda_ix_{i}\leqslant\theta x_{i_0}\\&\sum_{i=1}^n\lambda_iy_{i}\geqslant y_{i_0}\\&\lambda_i\geqslant0,\quad i=1,2,\cdots,n \end{cases}
+\end{aligned}\tag{D}
+\]</span></p>
+
+<div class="details admonition tip">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-lightbulb fa-fw"></i>约束条件的矩阵形式<i class="details-icon fas fa-angle-right fa-fw"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content"><span  class="math">\(
+\lambda_1\left[\begin{matrix}x_{11}\\x_{12}\\\vdots\\x_{1s} \end{matrix}\right]+\lambda_2\left[\begin{matrix}x_{21}\\x_{22}\\\vdots\\x_{2s} \end{matrix}\right]+\cdots+\lambda_n\left[\begin{matrix}x_{n1}\\x_{n2}\\\vdots\\x_{ns} \end{matrix}\right]=\left[\begin{matrix}\lambda_1x_{11}+\lambda_2x_{21}+\cdots+\lambda_nx_{n1}\\\lambda_1x_{12}+\lambda_2x_{22}+\cdots+\lambda_nx_{n2}\\\vdots\\\lambda_1x_{n1}+\lambda_2x_{n2}+\cdots+\lambda_nx_{ns}\\\end{matrix}\right]\leqslant \theta \left[\begin{matrix}x_{i_01}\\x_{i_02}\\\vdots\\x_{i_0s} \end{matrix}\right]\\
+\)</span>
+（y同上）</div>
+        </div>
+    </div>
+
+<p>其中<span  class="math">\(\theta=O\!E_{i_0}\)</span>，即第<span  class="math">\({i_0}\)</span>个决策单元的<a href="#Overall Efficiency" title="什么是综合技术效率指标">综合技术效率指标</a>。<span  class="math">\(\lambda=(\lambda_1,\lambda_2,\cdots,\lambda_n)\)</span>是n个<span  class="math">\(DMU\)</span>的组合系数。对<span  class="math">\(\lambda\)</span>有：</p>
+
+<p><span  class="math">\(\sum_{i=1}^n\lambda_i=1\)</span>时，该决策单元为“规模报酬固定”；</p>
+
+<p><span  class="math">\(\sum_{i=1}^n\lambda_i\lt1\)</span>时，该决策单元为“规模报酬递增”；</p>
+
+<p><span  class="math">\(\sum_{i=1}^n\lambda_i\gt1\)</span>时，该决策单元为“规模报酬递减”；</p>
+
+<p>另外值得说明的是，<a href="#constrait condition" title="见“转化推导”中展开式">第一个和第二个约束条件</a>中的<span  class="math">\(x_i=(x_{i1},x_{i2},\cdots x_{is} )\)</span>和<span  class="math">\(y_i=(y_{i1},y_{i2},\cdots y_{it} )\)</span>，共有n个。</p>
 
 <blockquote>
 <p>这个模型可以直观地理解为将决策单元<span  class="math">\(DMU_i\)</span>的投入、产出表示为其他决策单元的线性组合。</p>
 
-<p>如果有某个 (或某些) 决策单元的产出量达到决策单元<span  class="math">\(DMU_i\)</span>的水平 (达到，不一定要超过，第二个约束的含义)，而投入量尽可能小 (第一个约束的含义)，那么会出现<span  class="math">\(OE_i\lt1\)</span>的情况, 此时说明该决策单元存在资源浪费。</p>
+<p>如果有某个 (或某些) 决策单元的产出量达到决策单元<span  class="math">\(DMU_{i_0}\)</span>的水平 (达到，不一定要超过，第二个约束的含义)，而投入量尽可能小 (第一个约束的含义)，那么会出现<span  class="math">\(O\!E_{i_0}\lt1\)</span>的情况, 此时说明该决策单元存在资源浪费。</p>
 
-<p>反之，如果该决策单元的效率已经是最高的了，那么任何的决策单元都不能使用比它还要少的投入获得同样 (甚至更多) 的产出，这时候<span  class="math">\(OE_i\gt1\)</span> <sup class="footnote-ref" id="fnref:2"><a class="footnote" href="#fn:2">2</a></sup>。</p>
+<p>反之，如果该决策单元的效率已经是最高的了，那么任何的决策单元都不能使用比它还要少的投入获得同样 (甚至更多) 的产出，这时候<span  class="math">\(O\!E_{i_0}=1\)</span> <sup class="footnote-ref" id="fnref:2"><a class="footnote" href="#fn:2">2</a></sup>。</p>
 </blockquote>
 
 <div class="details admonition tip">
@@ -273,13 +314,15 @@ t={1\over v^Tx_i},\omega=tv,\mu=tu
             <i class="icon fas fa-lightbulb fa-fw"></i>转化推导<i class="details-icon fas fa-angle-right fa-fw"></i>
         </div>
         <div class="details-content">
-            <div class="admonition-content"><p>线性规划模型极其对偶模型的一般式：</p>
+            <div class="admonition-content"><p>线性规划模型及其对偶模型的一般式：</p>
 
 <p><span  class="math">\[
+\begin{cases}max\;c^Tx'\\
 \begin{aligned}
-\begin{cases}max\;c^Tx'\\s.t.&Ax'\geqslant b\\&x'\geqslant 0\end{cases}\qquad \qquad
-\begin{cases}min\;b^Ty'\\s.t.&Ay'\leqslant c\\&y'\geqslant 0\end{cases}
-\end{aligned}
+s.t.&Ax'\geqslant b\\&x'\geqslant 0\end{aligned}\end{cases}\qquad \qquad
+\begin{cases}min\;b^Ty'\\
+\begin{aligned}
+s.t.&Ay'\leqslant c\\&y'\geqslant 0\end{aligned}\end{cases}
 \]</span></p>
 
 <p>则</p>
@@ -292,9 +335,9 @@ max\;\mu^Ty_{i_0}\Rightarrow min\,-\!\mu^Ty_{i_0}
 
 <p><span  class="math">\[
 \begin{aligned}
-c&=[\underbrace{0,\cdots,0}_m,-y_{1{i_0} },\cdots,y_{t{i_0} }]^T\\
+c&=[\underbrace{0,\cdots,0}_m,-y_{ {i_0}1},\cdots,y_{ {i_0}t}]^T\\
 x'&=[\omega_1,\cdots,\omega_s,\mu_1,\cdots,\mu_t]^T\\
-A&=\left[\begin{matrix}x_{11}&\cdots&x_{s1}&-y_{11}&\cdots&-y_{t1}\\\vdots&\ddots&\vdots&\vdots&\ddots&\vdots\\x_{1n}&\cdots&x_{sn}&-y_{1n}&\cdots&-y_{tn}\\-x_{1{i_0} }&\cdots&-x_{s{i_0} }&0&\cdots&0\end{matrix}\right]\\b&=[\underbrace{0,\cdots,0}_n,-1]^T\end{aligned}
+A&=\left[\begin{matrix}x_{11}&\cdots&x_{1s}&-y_{11}&\cdots&-y_{1t}\\\vdots&\ddots&\vdots&\vdots&\ddots&\vdots\\x_{n1}&\cdots&x_{ns}&-y_{n1}&\cdots&-y_{nt}\\-x_{ {i_0}1}&\cdots&-x_{ {i_0}s}&0&\cdots&0\end{matrix}\right]\\b&=[\underbrace{0,\cdots,0}_n,-1]^T\end{aligned}
 \]</span></p>
 
 <p>则目标函数</p>
@@ -303,29 +346,29 @@ A&=\left[\begin{matrix}x_{11}&\cdots&x_{s1}&-y_{11}&\cdots&-y_{t1}\\\vdots&\ddot
 max\;b^Ty'\Rightarrow max[\underbrace{0,\cdots,0}_n,-1][\lambda_1,\cdots,\lambda_n,\theta]^T\Rightarrow max\;-\!\theta\Rightarrow min\; \theta
 \]</span></p>
 
-<p>约束条件</p>
+<p><span id="constrait condition">约束条件</span></p>
 
 <p><span  class="math">\[
 \begin{aligned}
 &A^Ty'\leqslant c\\
 &\Rightarrow \left[\begin{matrix}
-x_{11}&\cdots&x_{1n}&-x_{1{i_0} }\\
+x_{11}&\cdots&x_{n1}&-x_{ {i_0}1}\\
 \vdots&\ddots&\vdots&\vdots\\
-x_{s1}&\cdots&x_{sn}&-x_{s{i_0} }\\
--y_{11}&\cdots&-y_{1n}&0\\
+x_{1s}&\cdots&x_{ns}&-x_{ {i_0}s}\\
+-y_{11}&\cdots&-y_{n1}&0\\
 \vdots&\ddots&\vdots&\vdots\\
--y_{t1}&\cdots&-y_{tn}&0
+-y_{1t}&\cdots&-y_{nt}&0
 \end{matrix}\right]
-[\lambda_1,\cdots,\lambda_n,\theta]^T\leqslant[\underbrace{0,\cdots,0}_m，-y_{1{i_0} },\cdots,-y_{t{i_0} }]^T\\\\
+[\lambda_1,\cdots,\lambda_n,\theta]^T\leqslant[\underbrace{0,\cdots,0}_m，-y_{ {i_0}1},\cdots,-y_{ {i_0}t}]^T\\\\
 &\Rightarrow
 \begin{cases}
 \begin{aligned}
-\lambda_1x_{11}+\lambda_2x_{12}+\cdots+\lambda_nx_{1n}-\theta x_{1{i_0} }&\leqslant0\\
+\lambda_1x_{11}+\lambda_2x_{21}+\cdots+\lambda_nx_{n1}-\theta x_{ {i_0}1}&\leqslant0\\
 \vdots\\
-\lambda_1x_{s1}+\lambda_2x_{s2}+\cdots+\lambda_nx_{sn}-\theta x_{s{i_0} }&\leqslant0\\
-\lambda_1y_{11}+\lambda_2y_{12}+\cdots+\lambda_ny_{1n}&\geqslant y_{1{i_0} }\\
+\lambda_1x_{1s}+\lambda_2x_{2s}+\cdots+\lambda_nx_{ns}-\theta x_{ {i_0}s}&\leqslant0\\
+\lambda_1y_{11}+\lambda_2y_{21}+\cdots+\lambda_ny_{n1}&\geqslant y_{ {i_0}1}\\
 \vdots\\
-\lambda_1y_{t1}+\lambda_2y_{t2}+\cdots+\lambda_ny_{tn}&\geqslant y_{t{i_0} }\\
+\lambda_1y_{1t}+\lambda_2y_{2t}+\cdots+\lambda_ny_{nt}&\geqslant y_{ {i_0}t}\\
 \end{aligned}
 \end{cases}
 \end{aligned}
@@ -337,17 +380,156 @@ x_{s1}&\cdots&x_{sn}&-x_{s{i_0} }\\
 <p>在上述模型（D）中引入松弛变量及非阿基米德无穷小<span  class="math">\(\epsilon\)</span>后，得到：</p>
 
 <p><span  class="math">\[
-\begin{aligned}
 \begin{cases}
-min\;\theta-\epsilon(\sum_{i=1}^ss_i^-+\sum_{i=1}^ts_i^+)\\
-s.t.\sum_{j=1}^n\lambda_ix_j+s_j^-
-\end{cases}
+min\;O\!E_{i_0}-\epsilon(\sum_{i=1}^ss_i^-+\sum_{i=1}^ts_i^+)\\
+\begin{aligned}
+s.t.&\sum_{i=1}^n\lambda_ix_{ij}+s_j^-=O\!E_{i0}x_{i_0j}\quad (j=1,2,\cdots,s)\\
+&\sum_{i=1}^n\lambda_iy_{ij}-s_j^+=y_{i_0j}\quad (j=1,2,\cdots,t)\\
+&\lambda_i\geqslant0(i=1,2.\cdots,n)\\
+&s_i^-,s_j^+\geqslant0\quad (i=1,2,\cdots,s;j=1,2,\cdots,t)
 \end{aligned}
+\end{cases}\tag{D'}
 \]</span></p>
 
-<h4 id="153实例3">1.5.3实例<sup class="footnote-ref" id="fnref:3"><a class="footnote" href="#fn:3">3</a></sup></h4>
+<p>或者用矩阵形式表示：</p>
 
-<h3 id="16-主成分分析">1.6 主成分分析</h3>
+<p><span  class="math">\[
+\begin{cases}
+min\;\theta-\epsilon(e_1s^-+e_2s^+)\\
+\begin{aligned}
+s.t.&\sum_{i=1}^n\lambda_ix_i+s^-=\theta x_{i_0}\\
+&\sum_{i=1}^n\lambda_iy_i-s^+=y_{i_0}\\
+&\lambda\geqslant0\\&s^-,s^+\geqslant0
+\end{aligned}
+\end{cases}\tag{D'}
+\]</span></p>
+
+<p>其中，<span  class="math">\(s^-=(s_1^-,s_2^-,\cdots,s_s^-)\)</span>是<span  class="math">\(s\)</span>项输入指标的松弛变量；<span  class="math">\(s^+=(s_1^+,s_2^+,\cdots,s_t^+)\)</span>是<span  class="math">\(t\)</span>项输出指标的松弛变量；<span  class="math">\(s^-\)</span>成为差额变数，表示该决策单元为达到DEA有效应减少的投入量，<span  class="math">\(s^+\)</span>称为超额变数，为达到DEA有效应增加的产出量。</p>
+
+<p>效益分析：线性规划<span  class="math">\((D')\)</span>的最优解为<span  class="math">\(\lambda^*,s^{*-},s^{*+},\theta^*\)</span>，则</p>
+
+<ol>
+<li>若<span  class="math">\(\theta^*=1\)</span>，此时某一<span  class="math">\(s_i^-\)</span>或<span  class="math">\(s_j^+\)</span>为0，则<span  class="math">\(DMU_i\)</span>为,<a href="#Weakly effective" title="什么是强有效">DEA弱有效</a>；</li>
+<li>若<span  class="math">\(\theta^*=1\)</span>且有<span  class="math">\(s^{*-}=0,s^{*+}=0\)</span>，则<span  class="math">\(DMU_i\)</span>为<a href="#Strongly effective" title="什么是强有效">DEA强有效</a>；</li>
+<li>若<span  class="math">\(\theta^*\lt1\)</span>，则<span  class="math">\(DMU_i\)</span>为非DEA有效，存在资源浪费现象。技术有效和规模有效均不满足。</li>
+</ol>
+
+<h4 id="153数学模型bcsup2sup规模报酬可变">1.5.3数学模型（BC<sup>2</sup>：规模报酬可变）</h4>
+
+<blockquote>
+<p>当决策单元的规模变化时，技术效益（OE）的测度会受到规模效率的影响。BCC模式则是为了排除规模效率，得到的是纯技术效率，即TE。</p>
+</blockquote>
+
+<p>在CCR模型中加入凸性假设条件<span  class="math">\(\sum_{i=1}^n\lambda_i=1\)</span>即得到基于规模报酬变动的BCC模型：</p>
+
+<p><span  class="math">\[
+\begin{cases}
+min\;O\!E_{i_0}-\epsilon(\sum_{i=1}^ss_i^-+\sum_{i=1}^ts_i^+)\\
+\begin{aligned}
+s.t.&\sum_{i=1}^n\lambda_ix_{ij}+s_j^-=O\!E_{i0}x_{i_0j}&j=1,2,\cdots,s\\
+&\sum_{i=1}^n\lambda_iy_{ij}-s_j^+=y_{i_0j}&j=1,2,\cdots,t\\
+&\sum_{i=1}^n\lambda_i=1,\lambda_i\geqslant0(i=1,2.\cdots,n)\\
+&s_i^-,s_j^+\geqslant0&i=1,2,\cdots,s;j=1,2,\cdots,t
+\end{aligned}
+\end{cases}\tag{M}
+\]</span></p>
+
+<p>效益分析：若线性规划（M）的最优解为<span  class="math">\(\lambda^*,s^{*-},s^{*+},\theta^*\)</span>，则</p>
+
+<ol>
+<li>若<span  class="math">\(\theta^*=1\)</span>，此时某一<span  class="math">\(s_i^-\)</span>或<span  class="math">\(s_j^+\)</span>为0，则<span  class="math">\(DMU_i\)</span>为,<a href="#Weakly effective" title="什么是强有效">DEA弱有效</a>；</li>
+<li>若<span  class="math">\(\theta^*=1\)</span>且有<span  class="math">\(s^{*-}=0,s^{*+}=0\)</span>，则<span  class="math">\(DMU_i\)</span>为<a href="#Strongly effective" title="什么是强有效">DEA强有效</a>；</li>
+<li>若<span  class="math">\(\theta^*\lt1\)</span>，则<span  class="math">\(DMU_i\)</span>为非DEA有效，存在资源浪费现象。技术有效和规模有效均不满足。</li>
+</ol>
+
+<p>利用BCC模型得到排除由于规模变动影响的技术效率为纯技术效率，而CCR模型得到的是综合技术效率值，利用<span  class="math">\(OE=TE\times SE\)</span>可计算出规模效率值。对规模效率：</p>
+
+<ol>
+<li>若规模效率值为1，则表示该决策单元处于最优规模效率状态；</li>
+<li>若规模效率值为1，则表示该决策单元未达到规模效率最优，应当着重解决规模效率问题。</li>
+</ol>
+
+<h4 id="154实际意义">1.5.4实际意义</h4>
+
+<p><a href="https://blog.csdn.net/qq_42374697/article/details/109173778">数据包络分析法（DEA）_2_始于足下_行千里致广大。-CSDN博客</a></p>
+
+<h4 id="155实例3">1.5.5实例<sup class="footnote-ref" id="fnref:3"><a class="footnote" href="#fn:3">3</a></sup></h4>
+
+<p><a href="https://zhuanlan.zhihu.com/p/60853027">DEA (数据包络分析)介绍及 python3 实现 - 知乎 (zhihu.com)</a></p>
+
+<h4 id="156运用deap分析">1.5.6运用DEAP分析</h4>
+
+<p><a href="https://deap.readthedocs.io/en/master/index.html">DEAP documentation — DEAP 1.3.1 documentation</a></p>
+
+<h3 id="16-主成分分析pca">1.6 主成分分析（PCA）</h3>
+
+<h4 id="161简述">1.6.1简述</h4>
+
+<p>PCA是最简单的以特征量分析多元统计分布的方法。通常情况下，这种运算可以被看作是揭露数据的内部结构，从而更好的解释数据的变量的方法。如果一个多元数据集能够在一个高维数据空间坐标系中被显现出来，那么PCA就能够提供一幅比较低维度的图像，这幅图像即为在讯息最多的点上原对象的一个‘投影’。这样可以利用少量的主成分使得数据的维度降低, 并且在方差的角度来说， 这种降维方法损失的信息最少。其经典方法是对协方差矩阵进行特征分解，得出数据的主成分和它们的权值（特征值）。仅保留权重大的成分，舍弃权重小的成分，投影达到降维的目的。</p>
+
+<p>PCA的数学定义是：一个正交化线性变换，把数据变换到一个新的坐标系统中，使得这一数据的任何投影的第一大方差在第一个坐标（称为第一主成分）上，第二大方差在第二个坐标（第二主成分）上，依次类推。详细地说，PCA的主要思想是将n维特征映射到k维上，这k维是全新的正交特征也被称为主成分，是在原有n维特征的基础上重新构造出来的k维特征。PCA的工作就是从原始的空间中顺序地找一组相互正交的坐标轴，新的坐标轴的选择与数据本身是密切相关的。其中，第一个新坐标轴选择是原始数据中方差最大的方向，第二个新坐标轴选取是与第一个坐标轴正交的平面中使得方差最大的，第三个轴是与第1,2个轴正交的平面中方差最大的。依次类推，可以得到n个这样的坐标轴。通过这种方式获得的新的坐标轴，我们发现，大部分方差都包含在前面k个坐标轴中，后面的坐标轴所含的方差几乎为0。于是，我们可以忽略余下的坐标轴，只保留前面k个含有绝大部分方差的坐标轴。事实上，这相当于只保留包含绝大部分方差的维度特征，而忽略包含方差几乎为0的特征维度，实现对数据特征的降维处理。</p>
+
+<p>事实上，通过计算数据矩阵的协方差矩阵，然后得到协方差矩阵的特征值特征向量，选择特征值最大(即方差最大)的k个特征所对应的特征向量组成的矩阵。这样就可以将数据矩阵转换到新的空间当中，实现数据特征的降维。由于得到协方差矩阵的特征值特征向量有两种方法：<u>特征值分解协方差矩阵</u>、<u>奇异值分解协方差矩阵(SVD)</u>，所以PCA算法有两种实现方法。</p>
+
+<h4 id="162原理">1.6.2原理</h4>
+
+<p>对<span  class="math">\(m\)</span>个<span  class="math">\(n\)</span>维样本<span  class="math">\(P=(P_1,P_2,\cdots,P_m)\)</span>，为主成分分析对象。对于每一个<span  class="math">\(n\)</span>维样本<span  class="math">\(P_i(i=1,2,\cdots,m)\)</span>可在<span  class="math">\(n\)</span>维坐标空间中用矩阵表示</p>
+
+<p><span  class="math">\[P_i=(P_{i1},P_{i2},\cdots,P_{in})^T\]</span></p>
+
+<p>其中<span  class="math">\(P_{ij}(j=1,2,\cdots,n)\)</span>为在第<span  class="math">\(j\)</span>维上的坐标。当前的<span  class="math">\(n\)</span>维空间的自然基（标准正交基）表示为</p>
+
+<p><span  class="math">\[e_1=(1,0,\cdots,0)^T,e_2=(0,1,\cdots,0)^T,\cdots,e_n=(0,0,\cdots,1)^T\]</span></p>
+
+<p>则对样本<span  class="math">\(P_{i}\)</span>表示为自然基的线性组合</p>
+
+<p><span  class="math">\[P_i=P_{i1}e_1+P_{i2}e_2+\cdots+P_{in}e_n\]</span></p>
+
+<p>现需找到另外一组基<span  class="math">\(e_1',e_2',\cdots,e_k'(k\lt n)\)</span>，通过将当前<span  class="math">\(n\)</span>维空间变换到另一个<span  class="math">\(k\)</span>维空间，达到降维的目的，同时使丢失的信息（即坐标）达到最低，最大程度保留有效信息。更准确的解释为，变换后仍然为不同与当前的<span  class="math">\(n\)</span>维空间，但从第<span  class="math">\(k+1\)</span>维开始包含的信息（坐标）极少（小），几乎为0而因此可将其忽略，则可认为从<span  class="math">\(n\)</span>维变换到了<span  class="math">\(k\)</span>维。</p>
+
+<p>对当前<span  class="math">\(n\)</span>维空间，第<span  class="math">\(j\)</span>维坐标上保存的含<span  class="math">\(m\)</span>项的样本<span  class="math">\(P\)</span>的坐标信息为</p>
+
+<p><span  class="math">\[A_j=(P_{1j},P_{2j},\cdots,P_{mj})(j=1,2,\cdots,n)\]</span></p>
+
+<p>下图更为清晰地表示这一关系：</p>
+
+<p><span  class="math">\[
+\begin{array}{c|cccc}&P_1&P_2&\cdots&P_m\\\hline\\A_1&P_{11}&P_{21}&\cdots&P_{m1}\\A_2&P_{12}&P_{22}&\cdots&P_{m2}\\\vdots&&&\vdots&\\A_n&P_{1n}&P_{2n}&\cdots&P_{mn}\end{array}
+\]</span></p>
+
+<p>假设自然基在变换后的<span  class="math">\(n\)</span>维空间中的表示为</p>
+
+<p><span  class="math">\[e_1=(e_{11},e_{12},\cdots,e_{1n})^T,e_2=(e_{21},e_{22},\cdots,e_{2n})^T,\cdots,e_n=(e_{n1},e_{n2},\cdots,e_{nn})^T\]</span></p>
+
+<p>由点积的表示可知，对<span  class="math">\(n\)</span>维样本<span  class="math">\(P_1,P_2,\cdots,P_m\)</span>有</p>
+
+<p><span  class="math">\[
+P_{11}=e_1^TP_1=\left[\begin{matrix}e_{11}&e_{12}&\cdots&e_{1n} \end{matrix}\right]\left[\begin{matrix}P_{11}\\P_{12}\\\vdots\\P_{1n} \end{matrix}\right]=e_{11}P_{11}+e_{12}P_{12+\cdots}+e_{1n}P_{1n}\\P_{21}=e_1^TP_2=\left[\begin{matrix}e_{11}&e_{12}&\cdots&e_{1n} \end{matrix}\right]\left[\begin{matrix}P_{21}\\P_{22}\\\vdots\\P_{2n} \end{matrix}\right]=e_{11}P_{21}+e_{12}P_{22+\cdots}+e_{1n}P_{2n}\\\vdots\\P_{m1}=e_1^TP_n=\left[\begin{matrix}e_{11}&e_{12}&\cdots&e_{1n} \end{matrix}\right]\left[\begin{matrix}P_{m1}\\P_{m2}\\\vdots\\P_{mn} \end{matrix}\right]=e_{11}P_{m1}+e_{12}P_{m2+\cdots}+e_{1n}P_{mn}
+\]</span></p>
+
+<p>则要使变换后的<span  class="math">\(n\)</span>维坐标前<span  class="math">\(k\)</span>维尽可能包含最多信息，借助最小二乘法可知，需使</p>
+
+<p><span  class="math">\[
+A_1^2+A_2^2+\cdots+A_k^2=\sum_{i=0}^kA_i^2
+\]</span></p>
+
+<p>达到最大值，记</p>
+
+<p><span  class="math">\[
+\sum_{i=1}^mP_{ij}=P_{·j}
+\]</span></p>
+
+<p>则</p>
+
+<p><span  class="math">\[
+A_1=(P_{11},P_{21},\cdots,P_{m1})=e_{11}P_{·1}+e_{12}P_{·2}+\cdots+e_{1n}P_{·n}\\
+A_2=(P_{12},P_{22},\cdots,P_{m2})=e_{21}P_{·1}+e_{22}P_{·2}+\cdots+e_{2n}P_{·n}\\\vdots\\
+A_n=(P_{1n},P_{2n},\cdots,P_{mn})=e_{n1}P_{·1}+e_{n2}P_{·2}+\cdots+e_{nn}P_{·n}
+\]</span></p>
+
+<p>计算过程太过复杂，此处取<span  class="math">\(n=2\)</span>的情况作进一步分析，便于理解</p>
+
+<h4 id="162基于svd的主成分分析">1.6.2基于SVD的主成分分析</h4>
 
 <h3 id="17-理想解方法">1.7 理想解方法</h3>
 
