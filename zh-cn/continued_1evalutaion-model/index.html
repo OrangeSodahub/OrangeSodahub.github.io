@@ -39,7 +39,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/orangesodahub.github.io\/zh-cn\/continued_1evalutaion-model\/"
-        },"image": ["https:\/\/orangesodahub.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "数学建模, 运筹学","wordcount":  6554 ,
+        },"image": ["https:\/\/orangesodahub.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "数学建模, 运筹学","wordcount":  9417 ,
         "url": "https:\/\/orangesodahub.github.io\/zh-cn\/continued_1evalutaion-model\/","datePublished": "2021-07-07T11:52:32+08:00","dateModified": "2021-07-07T11:52:32+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
             "@type": "Organization",
             "name": "ZonLin","logo": "https:\/\/orangesodahub.github.io\/images\/%E4%B8%8B%E8%BD%BD.jpg"},"author": {
@@ -134,8 +134,8 @@
             <div class="toc-content" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animated flipInX">(续1)评价模型</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="/zh-cn/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>记录</a></span>&nbsp;<span class="post-category">收录于 <a href="/zh-cn/categories/%E6%95%B0%E7%90%86%E7%BB%9F%E8%AE%A1/"><i class="far fa-folder fa-fw"></i>数理统计</a>&nbsp;<a href="/zh-cn/categories/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1/"><i class="far fa-folder fa-fw"></i>数学建模</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-07-07">2021-07-07</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 6554 字&nbsp;
-                <i class="far fa-clock fa-fw"></i>&nbsp;预计阅读 14 分钟&nbsp;</div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-07-07">2021-07-07</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 9417 字&nbsp;
+                <i class="far fa-clock fa-fw"></i>&nbsp;预计阅读 19 分钟&nbsp;</div>
         </div><div class="details toc" id="toc-static"  kept="">
                 <div class="details-summary toc-title">
                     <span>目录</span>
@@ -469,67 +469,279 @@ s.t.&\sum_{i=1}^n\lambda_ix_{ij}+s_j^-=O\!E_{i0}x_{i_0j}&j=1,2,\cdots,s\\
 
 <p>PCA的数学定义是：一个正交化线性变换，把数据变换到一个新的坐标系统中，使得这一数据的任何投影的第一大方差在第一个坐标（称为第一主成分）上，第二大方差在第二个坐标（第二主成分）上，依次类推。详细地说，PCA的主要思想是将n维特征映射到k维上，这k维是全新的正交特征也被称为主成分，是在原有n维特征的基础上重新构造出来的k维特征。PCA的工作就是从原始的空间中顺序地找一组相互正交的坐标轴，新的坐标轴的选择与数据本身是密切相关的。其中，第一个新坐标轴选择是原始数据中方差最大的方向，第二个新坐标轴选取是与第一个坐标轴正交的平面中使得方差最大的，第三个轴是与第1,2个轴正交的平面中方差最大的。依次类推，可以得到n个这样的坐标轴。通过这种方式获得的新的坐标轴，我们发现，大部分方差都包含在前面k个坐标轴中，后面的坐标轴所含的方差几乎为0。于是，我们可以忽略余下的坐标轴，只保留前面k个含有绝大部分方差的坐标轴。事实上，这相当于只保留包含绝大部分方差的维度特征，而忽略包含方差几乎为0的特征维度，实现对数据特征的降维处理。</p>
 
-<p>事实上，通过计算数据矩阵的协方差矩阵，然后得到协方差矩阵的特征值特征向量，选择特征值最大(即方差最大)的k个特征所对应的特征向量组成的矩阵。这样就可以将数据矩阵转换到新的空间当中，实现数据特征的降维。由于得到协方差矩阵的特征值特征向量有两种方法：<u>特征值分解协方差矩阵</u>、<u>奇异值分解协方差矩阵(SVD)</u>，所以PCA算法有两种实现方法。</p>
+<p>事实上，通过计算数据矩阵的协方差矩阵，然后得到协方差矩阵的特征值特征向量，选择特征值最大(即方差最大)的k个特征所对应的特征向量组成的矩阵。这样就可以将数据矩阵转换到新的空间当中，实现数据特征的降维。由于得到协方差矩阵的特征值特征向量有两种方法：<u>特征值分解协方差矩阵(EVD)</u>、<u>奇异值分解协方差矩阵(SVD)</u>，所以PCA算法有两种实现方法。</p>
+
+<figure>
+    <img src="/images/08.png"/> <figcaption>
+            <h4>（图示）</h4>
+        </figcaption>
+</figure>
+
 
 <h4 id="162原理">1.6.2原理</h4>
 
-<p>对<span  class="math">\(m\)</span>个<span  class="math">\(n\)</span>维样本<span  class="math">\(P=(P_1,P_2,\cdots,P_m)\)</span>，为主成分分析对象。对于每一个<span  class="math">\(n\)</span>维样本<span  class="math">\(P_i(i=1,2,\cdots,m)\)</span>可在<span  class="math">\(n\)</span>维坐标空间中用矩阵表示</p>
+<p>对<span  class="math">\(m\)</span>个<span  class="math">\(n\)</span>维样本组成的样本矩阵<span  class="math">\(P_{n\times m}=(P_1,P_2,\cdots,P_m)\)</span>，为主成分分析对象。对于每一个<span  class="math">\(n\)</span>维样本<span  class="math">\(P_i(i=1,2,\cdots,m)\)</span>可在<span  class="math">\(n\)</span>维坐标空间中用矩阵表示</p>
 
 <p><span  class="math">\[P_i=(P_{i1},P_{i2},\cdots,P_{in})^T\]</span></p>
 
-<p>其中<span  class="math">\(P_{ij}(j=1,2,\cdots,n)\)</span>为在第<span  class="math">\(j\)</span>维上的坐标。当前的<span  class="math">\(n\)</span>维空间的自然基（标准正交基）表示为</p>
+<p>其中<span  class="math">\(P_{ij}(j=1,2,\cdots,n)\)</span>为在第<span  class="math">\(j\)</span>维上的坐标。为了方便后续计算，首先需对其<u>在同一维度上</u>进行中心化(使各个样本在特定维度上的表示以其原点为中心)，即</p>
 
-<p><span  class="math">\[e_1=(1,0,\cdots,0)^T,e_2=(0,1,\cdots,0)^T,\cdots,e_n=(0,0,\cdots,1)^T\]</span></p>
+<p><span  class="math">\[
+(P_{1i},P_{2i},\cdots,P_{mi})\Rightarrow(P_{i1}-\mu_i,P_{i2}-\mu_i,\cdots,P_{im}-\mu_i),\mu_i={1\over m}\sum_{l=1}^mP_{li}\tag{1}
+\]</span></p>
+
+<p>对于以后的样本<span  class="math">\(P_i\)</span>，均认为其是中心化处理之后的。当前的<span  class="math">\(n\)</span>维空间的自然基（标准正交基）表示为</p>
+
+<p><span  class="math">\[
+e_1=(1,0,\cdots,0)^T,e_2=(0,1,\cdots,0)^T,\cdots,e_n=(0,0,\cdots,1)^T
+\]</span></p>
 
 <p>则对样本<span  class="math">\(P_{i}\)</span>表示为自然基的线性组合</p>
 
-<p><span  class="math">\[P_i=P_{i1}e_1+P_{i2}e_2+\cdots+P_{in}e_n\]</span></p>
+<p><span  class="math">\[
+P_i=P_{i}e_1+P_{i}e_2+\cdots+P_{i}e_n\tag{2}
+\]</span></p>
 
 <p>现需找到另外一组基<span  class="math">\(e_1',e_2',\cdots,e_k'(k\lt n)\)</span>，通过将当前<span  class="math">\(n\)</span>维空间变换到另一个<span  class="math">\(k\)</span>维空间，达到降维的目的，同时使丢失的信息（即坐标）达到最低，最大程度保留有效信息。更准确的解释为，变换后仍然为不同与当前的<span  class="math">\(n\)</span>维空间，但从第<span  class="math">\(k+1\)</span>维开始包含的信息（坐标）极少（小），几乎为0而因此可将其忽略，则可认为从<span  class="math">\(n\)</span>维变换到了<span  class="math">\(k\)</span>维。</p>
 
 <p>对当前<span  class="math">\(n\)</span>维空间，第<span  class="math">\(j\)</span>维坐标上保存的含<span  class="math">\(m\)</span>项的样本<span  class="math">\(P\)</span>的坐标信息为</p>
 
-<p><span  class="math">\[A_j=(P_{1j},P_{2j},\cdots,P_{mj})(j=1,2,\cdots,n)\]</span></p>
-
-<p>下图更为清晰地表示这一关系：</p>
-
 <p><span  class="math">\[
-\begin{array}{c|cccc}&P_1&P_2&\cdots&P_m\\\hline\\A_1&P_{11}&P_{21}&\cdots&P_{m1}\\A_2&P_{12}&P_{22}&\cdots&P_{m2}\\\vdots&&&\vdots&\\A_n&P_{1n}&P_{2n}&\cdots&P_{mn}\end{array}
+A_j=(A_{j1},A_{j2},\cdots,A_{jm})=(P_{1j},P_{2j},\cdots,P_{mj})(j=1,2,\cdots,n)\tag{3}
 \]</span></p>
 
-<p>假设自然基在变换后的<span  class="math">\(n\)</span>维空间中的表示为</p>
-
-<p><span  class="math">\[e_1=(e_{11},e_{12},\cdots,e_{1n})^T,e_2=(e_{21},e_{22},\cdots,e_{2n})^T,\cdots,e_n=(e_{n1},e_{n2},\cdots,e_{nn})^T\]</span></p>
-
-<p>由点积的表示可知，对<span  class="math">\(n\)</span>维样本<span  class="math">\(P_1,P_2,\cdots,P_m\)</span>有</p>
+<p><span id="P">下图</span>更为清晰地表示这一关系：</p>
 
 <p><span  class="math">\[
-P_{11}=e_1^TP_1=\left[\begin{matrix}e_{11}&e_{12}&\cdots&e_{1n} \end{matrix}\right]\left[\begin{matrix}P_{11}\\P_{12}\\\vdots\\P_{1n} \end{matrix}\right]=e_{11}P_{11}+e_{12}P_{12+\cdots}+e_{1n}P_{1n}\\P_{21}=e_1^TP_2=\left[\begin{matrix}e_{11}&e_{12}&\cdots&e_{1n} \end{matrix}\right]\left[\begin{matrix}P_{21}\\P_{22}\\\vdots\\P_{2n} \end{matrix}\right]=e_{11}P_{21}+e_{12}P_{22+\cdots}+e_{1n}P_{2n}\\\vdots\\P_{m1}=e_1^TP_n=\left[\begin{matrix}e_{11}&e_{12}&\cdots&e_{1n} \end{matrix}\right]\left[\begin{matrix}P_{m1}\\P_{m2}\\\vdots\\P_{mn} \end{matrix}\right]=e_{11}P_{m1}+e_{12}P_{m2+\cdots}+e_{1n}P_{mn}
+\begin{array}{c|cccc}&P_1&P_2&\cdots&P_m\\\hline\\A_1&P_{11}&P_{21}&\cdots&P_{m1}\\A_2&P_{12}&P_{22}&\cdots&P_{m2}\\\vdots&&&\vdots&\\A_n&P_{1n}&P_{2n}&\cdots&P_{mn}\end{array}\tag{4}
 \]</span></p>
 
-<p>则要使变换后的<span  class="math">\(n\)</span>维坐标前<span  class="math">\(k\)</span>维尽可能包含最多信息，借助最小二乘法可知，需使</p>
+<p>将其记为矩阵<span  class="math">\(P\)</span>，一般地，将自然基在<span  class="math">\(n\)</span>维空间中的表示为</p>
 
 <p><span  class="math">\[
-A_1^2+A_2^2+\cdots+A_k^2=\sum_{i=0}^kA_i^2
+e_1=(e_{11},e_{12},\cdots,e_{1n})^T,e_2=(e_{21},e_{22},\cdots,e_{2n})^T,\cdots,e_n=(e_{n1},e_{n2},\cdots,e_{nn})^T\tag{5}
 \]</span></p>
 
-<p>达到最大值，记</p>
+<p>由点积的表示可知，对第<span  class="math">\(j\)</span>维坐标有</p>
 
 <p><span  class="math">\[
-\sum_{i=1}^mP_{ij}=P_{·j}
+A_{j1}=P_{1j}=e_j^TP_1=\left[\begin{matrix}e_{j1}&e_{j2}&\cdots&e_{jn} \end{matrix}\right]\left[\begin{matrix}P_{11}\\P_{12}\\\vdots\\P_{1n} \end{matrix}\right]=e_{j1}P_{11}+e_{j2}P_{12+\cdots}+e_{jn}P_{1n}\\A_{j2}=P_{2j}=e_j^TP_2=\left[\begin{matrix}e_{j1}&e_{j2}&\cdots&e_{jn} \end{matrix}\right]\left[\begin{matrix}P_{21}\\P_{22}\\\vdots\\P_{2n} \end{matrix}\right]=e_{j1}P_{21}+e_{j2}P_{22+\cdots}+e_{jn}P_{2n}\\\vdots\\A_{jm}=P_{mj}=e_j^TP_m=\left[\begin{matrix}e_{j1}&e_{j2}&\cdots&e_{jn} \end{matrix}\right]\left[\begin{matrix}P_{m1}\\P_{m2}\\\vdots\\P_{mn} \end{matrix}\right]=e_{j1}P_{m1}+e_{j2}P_{m2+\cdots}+e_{jn}P_{mn}\tag{6}
 \]</span></p>
 
-<p>则</p>
+<p>要使变换后的<span  class="math">\(n\)</span>维坐标前<span  class="math">\(k\)</span>维尽可能包含最多信息，借助最小二乘法可知，需使第<span  class="math">\(j\)</span>维坐标</p>
 
 <p><span  class="math">\[
-A_1=(P_{11},P_{21},\cdots,P_{m1})=e_{11}P_{·1}+e_{12}P_{·2}+\cdots+e_{1n}P_{·n}\\
-A_2=(P_{12},P_{22},\cdots,P_{m2})=e_{21}P_{·1}+e_{22}P_{·2}+\cdots+e_{2n}P_{·n}\\\vdots\\
-A_n=(P_{1n},P_{2n},\cdots,P_{mn})=e_{n1}P_{·1}+e_{n2}P_{·2}+\cdots+e_{nn}P_{·n}
+A_{j1}^2+A_{j2}^2+\cdots+A_{jm}^2=\sum_{l=1}^mA_{jl}^2\quad j=1,2,\cdots,k
 \]</span></p>
 
-<p>计算过程太过复杂，此处取<span  class="math">\(n=2\)</span>的情况作进一步分析，便于理解</p>
+<blockquote>
+<p>实际上，主成分分析的一个重要假设就是方差的大小是衡量一组数据所包含信息量大小的标准。若一组数据方差越大，则其包含的信息越多。做基变换的目的之一，是要使大部分信息被保留下来，具体实现方法就是使各维度坐标轴上数据的方差达到最大。</p>
 
-<h4 id="162基于svd的主成分分析">1.6.2基于SVD的主成分分析</h4>
+<p>此处，<span  class="math">\({1\over m}\sum_{l=1}^mA_{jl}^2\)</span>恰好为<span  class="math">\(A_j\)</span>的方差<span  class="math">\(Var(A_j)\)</span></p>
+</blockquote>
+
+<p>的值最大，则</p>
+
+<p><span  class="math">\[
+\begin{aligned}
+\sum_{l=1}^mA_{jl}^2&=(e_{j1}P_{11}+e_{j2}P_{12+\cdots}+e_{jn}P_{1n})^2+(e_{j1}P_{21}+e_{j2}P_{22+\cdots}+e_{jn}P_{2n})^2+\cdots\\&+(e_{j1}P_{m1}+e_{j2}P_{m2+\cdots}+e_{jn}P_{mn})^2
+\end{aligned}
+\]</span></p>
+
+<p>对上式中的每一项<span  class="math">\(A_{jl}^2\)</span>将其展开式分为两部分：平方项<span  class="math">\(B_{jl}\)</span>和二次项<span  class="math">\(C_{jl}\)</span>，则</p>
+
+<p><span  class="math">\[
+B_{jl}=\sum_{t=1}^n(e_{jt}P_{lt})^2,\quad C_{jl}=2\sum_{t=1}^n\sum_{s=t+1}^n(e_{jt}P_{lt})(e_{js}P_{ls})=2\sum_{t=1}^n\sum_{s=t+1}^n(e_{jt}e_{js})(P_{lt}P_{ls})
+\]</span></p>
+
+<p>其中<span  class="math">\(j=1,2,\cdots,n;l=1,2,\cdots,m\)</span>，则</p>
+
+<p><span  class="math">\[
+\begin{aligned}
+&\sum_{l=1}^mA_{jl}^2=\sum_{l=1}^m\sum_{t=1}^n(e_{jt}P_{lt})^2+2(\sum_{t=1}^n\sum_{s=t+1}^ne_{jt}e_{js})\sum_{l=1}^m(\sum_{t=1}^n\sum_{s=t+1}^nP_{lt}P_{ls})\\&=(P_{11}^2+P_{21}^2+\cdots+P_{m1}^2)e_{j1}^2+(P_{12}^2+P_{22}^2+\cdots+P_{m2}^2)e_{j2}^2+\cdots+(P_{1n}^2+P_{2n}^2+\cdots+P_{mn}^2)e_{jn}^2\\&+2\sum_{t=1}^n\sum_{s=t+1}^n[(P_{1t}P_{1s}+P_{2t}P_{2s}+\cdots+P_{mt}P_{ms})(e_{jt}e_{js})]
+\end{aligned}
+\]</span></p>
+
+<p>不难看出，上式为二次型，将其写为矩阵形式</p>
+
+<p><span  class="math">\[
+\sum_{l=1}^mA_{jl}^2=e_j^T\left[\begin{matrix}\sum_{l=1}^mP_{l1}^2&\sum_{l=1}^mP_{l1}P_{l2}&\cdots&\sum_{l=1}^mP_{l1}P_{ln}\\\sum_{l=1}^mP_{l2}P_{l1}&\sum_{l=1}^2P_{l2}^2&\cdots&\sum_{l=1}^mP_{l2}P_{ln}\\\vdots&\vdots&\ddots&\vdots\\\sum_{l=1}^mP_{ln}P_{l1}&\sum_{l=1}^mP_{ln}P_{l2}&\cdots&\sum_{l=1}^mP_{ln}^2 \end{matrix}\right]e_j=e_j^TP'e_j\tag{7}
+\]</span></p>
+
+<p>这里的矩阵<span  class="math">\(P'\)</span>与矩阵<a href="#P" title="矩阵P"><span  class="math">\(P\)</span></a>的协方差矩阵有关。回到中心化之前的样本可知，这里的<span  class="math">\(A_j=(A_{j1},A_{j2},\cdots,A_{jm})\)</span>是经过中心化处理的，则</p>
+
+<p><span  class="math">\[
+\begin{aligned}
+&Cov(A_{1},A_{2})={1\over m-1}\sum_{i=1}^nA_{1i}A_{2i}={1\over m-1}\sum_{i=1}^nP_{i1}P_{i2}\\
+&Var(A_j)={1\over m-1}\sum_{i=1}^nA_{ji}^2={1\over m-1}\sum_{i=1}^nP_{ij}^2
+\end{aligned}
+\]</span></p>
+
+<p>此处将<span  class="math">\((m-1)\)</span>改为<span  class="math">\(m\)</span>，不会造成太大误差，且便于计算。则</p>
+
+<p><span  class="math">\[
+Q_{n\times n}={1\over m}P'=\left[\begin{matrix}Var(A_1)&Cov(A_1,A_2)&\cdots&Cov(A_1,A_n)\\Cov(A_2,A_1)&Var(A_2)&\cdots&Cov(A_2,A_n)\\\vdots&\vdots&\ddots&\vdots\\Cov(A_n,A_1)&Cov(A_n,A_2)&\cdots&Var(A_n) \end{matrix}\right]\tag{8}
+\]</span></p>
+
+<p>协方差矩阵又可用矩阵<span  class="math">\(P\)</span>表示为</p>
+
+<p><span  class="math">\[
+Q_{n\times n}={1\over m}P_{n\times m}P^T_{m\times n}\tag{9}
+\]</span></p>
+
+<p>(7)式用变换之前的协方差矩阵表示了当前方差。相应地，要使方差的值达到最大，同时使协方差的值达到最小，矩阵<span  class="math">\(P'\)</span>的值不可能改变，因为给定的样本值从根本上无法改变（无论其在不同基下的表示是什么），而必须改变基。</p>
+
+<blockquote>
+<p>变换的目的之二，是使协方差化到最小。协方差一定程度上体现了不同数据之间包含的信息的重叠关系，而重复的信息应当剔除掉。不难发现，最优化的变换结果即是对角矩阵，此时协方差均为0，只保留对角元素——方差。</p>
+</blockquote>
+
+<h4 id="163基于evd的主成分分析">1.6.3基于EVD的主成分分析</h4>
+
+<p><strong>（1）</strong>对协方差矩阵进行特征值分解</p>
+
+<p>接(7)式，要达到使得前<span  class="math">\(k\)</span>维方差最大，同时不同维之间协方差最小的目的，需将矩阵<span  class="math">\(P'\)</span>变换为对角矩阵。即对原样本进行空间变换后的协方差矩阵为对角矩阵，设其为<span  class="math">\(C\)</span>；设原样本矩阵<span  class="math">\(P\)</span>进行变换后的矩阵为<span  class="math">\(M\)</span>，设变换矩阵为<span  class="math">\(W\)</span>，即<span  class="math">\(M=WP\)</span>，则</p>
+
+<p><span  class="math">\[
+C={1\over m}MM^T={1\over m}(WP)(WP)^T=W({1\over m}PP^T)W^T=WQW^T
+\]</span></p>
+
+<p>由于<span  class="math">\(C\)</span>为对角阵，则上式反过来是对矩阵<span  class="math">\(Q\)</span>的对角化，则<span  class="math">\(WW^T=I\)</span>，则最大值目标可表示为</p>
+
+<p><span  class="math">\[
+\begin{aligned}
+&\underset{W}{max} tr(WQW^T)\\
+&s.t.\;WW^T=I
+\end{aligned}
+\]</span></p>
+
+<p>通过拉格朗日乘数法解此最值问题</p>
+
+<p><span  class="math">\[
+J(W)=tr(WQW^T)-\lambda(WW^T-I)\\\Downarrow\\{\partial(J(W))\over \partial W}=QW^T+\lambda W^T\\\Downarrow \\QW^T=(-\lambda)W^T
+\]</span></p>
+
+<p>因此所求变换矩阵<span  class="math">\(W\)</span>为样本矩阵的协方差矩阵<span  class="math">\(Q\)</span>的特征向量组成的矩阵的转置，并且特征向量按照特征值的大小由大到小进行排列。</p>
+
+<p>也可从线性代数角度出发：由(7)式得知协方差矩阵<span  class="math">\(Q\)</span>为实对称矩阵，已知实对称矩阵一定可对角化，即<span  class="math">\(C=M^TQM\)</span>，且对角矩阵<span  class="math">\(C\)</span>为其特征值排列在对角线上构成的对角矩阵，矩阵<span  class="math">\(M\)</span>为其特征向量单位化后按列排列构成的正交矩阵。不难得出，<span  class="math">\(W=M^T\)</span>，即<span  class="math">\(W\)</span>为其特征向量单位化后按行排列构成的矩阵。注意顺序与特征向量保持对应。</p>
+
+<p><strong>（2）</strong>对协方差矩阵或矩阵<span  class="math">\(P'\)</span>进行奇异值分解</p>
+
+<p>接(7)式，可以写出各维度<span  class="math">\(A_j(j=1,2,\cdots,k;k\lt n)\)</span>的方差表示形式</p>
+
+<p><span  class="math">\[
+D_1=e_1^TP'e_1,D_2=e_2^TP'e_2,\cdots,D_n=e_n^TP'e_n
+\]</span></p>
+
+<p>对每一维度的<span  class="math">\(D_i\)</span>，矩阵<span  class="math">\(P'\)</span>可进行[奇异值分解](&quot;如何进行奇异值分解？&quot;)(对协方差矩阵进行奇异值分解与此相同，二者之间相差系数n)</p>
+
+<p><span  class="math">\[
+P'=U\Sigma V^T=U\Sigma U^T\tag{10}
+\]</span></p>
+
+<p>第二个等号成立的原因是<span  class="math">\(P'\)</span>为方阵。其中<span  class="math">\(U\)</span>为正交阵，即<span  class="math">\(UU^T=I\)</span>；<span  class="math">\(\Sigma\)</span>为对角阵，即</p>
+
+<p><span  class="math">\[
+\Sigma=\left[\begin{matrix}\sigma_1&0&\cdots&0\\0&\sigma_2&\cdots&0\\\vdots&\vdots&\ddots&\vdots\\0&0&\cdots&\sigma_n \end{matrix}\right]
+\]</span></p>
+
+<p>其中，奇异值满足<span  class="math">\(\sigma_1\gt \sigma_2\gt \cdots \gt \sigma_n\)</span>，将分解后的矩阵代回<span  class="math">\(D_i\)</span></p>
+
+<p><span  class="math">\[
+D_i=e_i^TP'e_i=e_i^TU\Sigma Ue_i=(U^Te_i)^T\Sigma(U^Te_i)=W_i^T\Sigma W_i,i=1,2,\cdots,n\tag{11}
+\]</span></p>
+
+<p>即</p>
+
+<p><span  class="math">\[
+\Sigma=W_iD_iW_i^T
+\]</span></p>
+
+<p>方阵的奇异值分解和特征值分解并无区别，只是从不同的角度出发。由（11）式明显看出<span  class="math">\(W_i=U^Te_i\)</span>，进而<span  class="math">\(W=U^Te\)</span>即矩阵<span  class="math">\(W\)</span>为变换过后的基，矩阵<span  class="math">\(U^T\)</span>为变换矩阵。而<span  class="math">\(U^T\)</span>由矩阵<span  class="math">\(P'\)</span>(或协方差矩阵)的特征向量按照特征值的大小从大到小以行排列构成。</p>
+
+<p>设最终构成的变换矩阵<span  class="math">\(W\)</span>(或<span  class="math">\(U^T\)</span>)为</p>
+
+<p><span  class="math">\[
+W=[w_1,w_2,\cdots,w_n]^T
+\]</span></p>
+
+<p><span  class="math">\(w_1,w_2,\cdots,w_n\)</span>为特征向量，则由此变换过后的样本矩阵为</p>
+
+<p><span  class="math">\[
+W_{n\times n}P_{n\times m}=M_{n\times m}
+\]</span></p>
+
+<p>此时矩阵<span  class="math">\(M\)</span>的第<span  class="math">\(k\)</span>至<span  class="math">\(n\)</span>维上的数据已非常之小，几乎为0。因此将其忽略掉，则变换后的矩阵为</p>
+
+<p><span  class="math">\[
+M_{k\times m}
+\]</span></p>
+
+<p>显然<span  class="math">\(k\lt n\)</span>，即原样本矩阵的维数从<span  class="math">\(n\)</span>降到了<span  class="math">\(k\)</span>。</p>
+
+<p>综上，运用对协方差矩阵进行分解实现PCA的步骤为：</p>
+
+<ol>
+<li>对样本矩阵<span  class="math">\(P_{n\times m}\)</span>进行中心化；</li>
+<li>求出矩阵<span  class="math">\(P\)</span>的协方差矩阵 <span  class="math">\(Q_{n\times n}={1\over m}PP^T\)</span>；</li>
+<li>求出协方差矩阵的特征值和对应的特征向量（特征值分解或奇异值分解）；</li>
+<li>将特征向量按照特征值从大到小以行排列构成变换矩阵<span  class="math">\(W_{n\times n}\)</span>；</li>
+<li>对原样本矩阵进行变换<span  class="math">\(M_{n\times m}=WP\)</span>，再进行降维<span  class="math">\(M_{k\times m}\)</span>。</li>
+</ol>
+
+<h4 id="164-基于svd的主成分分析">1.6.4 基于SVD的主成分分析</h4>
+
+<p>设有样本矩阵<span  class="math">\(P_{n\times m}=(P_1,P_2,\cdots,P_m)\)</span>，首先对行（维度）进行中心化。再对其进行奇异值分解</p>
+
+<p><span  class="math">\[
+P=U\Sigma V^T
+\]</span></p>
+
+<p>其中<span  class="math">\(U\)</span>为<span  class="math">\(n\times n\)</span>的酉矩阵，<span  class="math">\(V\)</span>为<span  class="math">\(m\times m\)</span>的酉矩阵，即<span  class="math">\(UU^T=VV^T=I\)</span>。<span  class="math">\(\Sigma\)</span>为<span  class="math">\(m\times n\)</span>的非负对角阵，对角线上为奇异值且奇异值按照从大到小的顺序排列。</p>
+
+<p>由上式可得</p>
+
+<p><span  class="math">\[
+PP^T=(U\Sigma V^T)(U\Sigma V^T)^T=U\Sigma^2 U^T\\
+P^TP=(U\Sigma V^T)^T(U\Sigma V^T)=V\Sigma^2V^T
+\]</span></p>
+
+<p>其中<span  class="math">\(PP^T\)</span>和<span  class="math">\(P^TP\)</span>为<span  class="math">\(n\times n\)</span>和<span  class="math">\(m\times m\)</span>的方阵且为实对称矩阵，由特征值分解可知，（1）方阵<span  class="math">\(PP^T\)</span>的归一化特征向量按列排列构成的矩阵为<span  class="math">\(U\)</span>矩阵，其行向量成为左奇异向量；（2）方阵<span  class="math">\(P^TP\)</span>的归一化特征向量按列排列构成的矩阵为<span  class="math">\(V\)</span>矩阵，其行向量成为右奇异向量；（3）二者的特征值的非零平方根为矩阵<span  class="math">\(P\)</span>的奇异值，并与<span  class="math">\(U\)</span>和<span  class="math">\(V\)</span>的行向量对应。</p>
+
+<p>奇异值的衰减速度非常快，以致前少数部分奇异值的和占据总和的大部分，故可用这少部分来估计整体，达到降维的目的。要降低维度，需用到左奇异矩阵<span  class="math">\(U\)</span></p>
+
+<p><span  class="math">\[
+M_{n\times m}=U^TP=U^TU\Sigma V^T=\Sigma V^T
+\]</span></p>
+
+<p>矩阵<span  class="math">\(M\)</span>为变换过后的样本矩阵，而矩阵<span  class="math">\(U^T\)</span>即为此时的变换矩阵<span  class="math">\(W\)</span>，<span  class="math">\(W\)</span>的行向量为变换后的空间的基。变换后的样本矩阵均满足所需要求。于是，丢弃掉第<span  class="math">\(k\)</span>至<span  class="math">\(n\)</span>维的数据部分，因为此时这部分数据包含的信息已非常之少，基本上没有贡献作用，则矩阵<span  class="math">\(M\)</span>的维数降到了<span  class="math">\(k\)</span>维。</p>
+
+<blockquote>
+<p>不难发现，和协方差矩阵分解有相似之处。此处的变换矩阵<span  class="math">\(W=U^T\)</span>的行向量为方阵<span  class="math">\(PP^T\)</span>的特征向量，此方阵即为样本矩阵的协方差矩阵。</p>
+</blockquote>
+
+<p>从另一个角度，可以理解为直接从左奇异矩阵中选取了最大的<span  class="math">\(k\)</span>个<u>列</u>向量按<u>行</u>构成了变换矩阵<span  class="math">\(W_{k\times n}(k\lt n)\)</span>，经过<span  class="math">\(W_{k\times n}P_{n\times m}=M_{k\times m}\)</span>计算后，矩阵的维数从<span  class="math">\(n\)</span>降到了<span  class="math">\(k\)</span>。</p>
+
+<div class="details admonition tip">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-lightbulb fa-fw"></i>右奇异矩阵的作用<i class="details-icon fas fa-angle-right fa-fw"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content"><p>对矩阵<span  class="math">\(P\)</span>进行奇异值分解后，可将其用下式表示</p>
+
+<p><span  class="math">\[
+P_{n\times m}\approx U_{n\times k}\Sigma_{k\times k}V_{k\times m}^T
+\]</span></p>
+
+<p>两边左乘<span  class="math">\(U^T_{n\times k}\)</span>则得到<span  class="math">\(\Sigma_{k\times k}V_{k\times m}^T\)</span>，即对矩阵<span  class="math">\(P\)</span>的行进行了压缩，和PCA一致；</p>
+
+<p>两边右乘<span  class="math">\(V_{k\times m}\)</span>则得到<span  class="math">\(U_{n\times k}\Sigma_{k\times k}\)</span>，即对矩阵<span  class="math">\(P\)</span>的列进行了压缩，而PCA只能进行一个方向（维度）方向的压缩。</p>
+
+<p><a href="https://www.cnblogs.com/liangflying/archive/2012/09/25/2701148.html">强大的矩阵奇异值分解(SVD)及其应用 - liangflying - 博客园 (cnblogs.com)</a></p>
+</div>
+        </div>
+    </div>
+
+<h4 id="165维数k的确定">1.6.5维数k的确定</h4>
 
 <h3 id="17-理想解方法">1.7 理想解方法</h3>
 
