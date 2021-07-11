@@ -4,10 +4,17 @@
         <link>https://orangesodahub.github.io/zh-cn/</link>
         <description>关于作者</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>gzzyyxy@gmail.com (ZonLin)</managingEditor>
-            <webMaster>gzzyyxy@gmail.com (ZonLin)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 07 Jul 2021 11:52:32 &#43;0800</lastBuildDate>
+            <webMaster>gzzyyxy@gmail.com (ZonLin)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 11 Jul 2021 14:23:36 &#43;0800</lastBuildDate>
             <atom:link href="https://orangesodahub.github.io/zh-cn/index.xml" rel="self" type="application/rss+xml" />
         <item>
-    <title>(续1)评价模型</title>
+    <title>(续2)评价模型</title>
+    <link>https://orangesodahub.github.io/zh-cn/continued_2evaluation-model/</link>
+    <pubDate>Sun, 11 Jul 2021 14:23:36 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://orangesodahub.github.io/zh-cn/continued_2evaluation-model/</guid>
+    <description><![CDATA[这是一个提示 若(部分)数学公式、表达式或图表显示不完整、不正常，请保持网络流畅并刷新等待，加载时间可能较长~ 任何疑问请致邮：E-mail 1.7 理]]></description>
+</item><item>
+    <title>(续1)评价模型(DEA,PCA)</title>
     <link>https://orangesodahub.github.io/zh-cn/continued_1evalutaion-model/</link>
     <pubDate>Wed, 07 Jul 2021 11:52:32 &#43;0800</pubDate>
     <author>作者</author>
@@ -72,12 +79,5 @@ XHTML XHTML is more rigorous and clean version of HTML. There are the difference
     <author>作者</author>
     <guid>https://orangesodahub.github.io/zh-cn/blogsite-creat-note/</guid>
     <description><![CDATA[I&rsquo;ve jot down here the essentials of creating my first blog using Hugo for future reference.Even though there are a lot of resources and instructions on the Internet, it is still more convenient to view mine. [windows] INSTALL CHOCOLATE More info: https://chocolatey.org/ First, ensure that you are using an administrative shell - you can also install as a non-admin, check out Non-Administrative Installation. Install with powershell.exe With PowerShell, you must]]></description>
-</item><item>
-    <title>在LA专业学习</title>
-    <link>https://orangesodahub.github.io/zh-cn/study-in-la/</link>
-    <pubDate>Wed, 28 Oct 2020 10:55:26 &#43;0800</pubDate>
-    <author>作者</author>
-    <guid>https://orangesodahub.github.io/zh-cn/study-in-la/</guid>
-    <description><![CDATA[]]></description>
 </item></channel>
 </rss>
